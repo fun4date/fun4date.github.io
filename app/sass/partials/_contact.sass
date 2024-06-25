@@ -3,7 +3,12 @@
     .banner
     main
         padding-bottom: $spacing-lg
-        
+        p
+            @apply text-gray-100
+        h3 
+            @apply text-ffdGreen-400
+
+            
         .about_description
         .contact_info
             display: flex
@@ -17,6 +22,10 @@
         .contact
             display: flex
             flex-direction: column
+            .contact_title
+                h4
+                    font-weight: $bold
+                    @apply text-gray-300
             .contact_content
                 display: flex
 
@@ -71,11 +80,13 @@
             width: 1.5rem
             height: auto
             padding-right: $spacing-xsm
+            
 h5
 
 h4, h5
     display: flex
     align-items: center
+
 
 @media (max-width: 640px)
     .about
