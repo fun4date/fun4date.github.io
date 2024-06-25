@@ -14,14 +14,14 @@ const nextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-  basePath: isProd ? '/' : '',
+  basePath: isProd ? '' : '',
 
   /**
    * Set asset prefix. This is the URL prefix for assets.
    *
    * @see https://nextjs.org/docs/api-reference/next.config.js/cdn-support-with-asset-prefix
    */
-  assetPrefix: isProd ? '/' : '',
+  assetPrefix: isProd ? '' : '',
 
   /**
    * Disable server-based image optimization. Next.js does not support
