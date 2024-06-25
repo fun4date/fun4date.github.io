@@ -1,0 +1,272 @@
+@import "../lib/_mixins.sass"
+@import "../lib/_variables.sass"
+// Correcciones: código duplicado para select e input. 
+// Recomendado hacer mixins
+
+
+@media (min-width: 150px)  
+    .research 
+        @apply flex flex-col
+        flex: 1
+        
+        .filters
+            justify-content: space-between
+        .filter
+            display: flex
+            flex-direction: column
+            align-items: start
+        
+        .research_results
+            display: flex
+            flex-wrap: wrap
+            min-height: 3rem
+            align-content: center
+            margin-right: 1rem
+            @apply mb-8
+           
+            //width: 13rem
+            justify-content: flex-end
+            b 
+                margin-left: 0.4rem
+                width: 2rem
+                
+        section 
+            gap: $spacing_md
+            display: flex
+            flex-direction: column
+    .load_more 
+        padding-top: $spacing_sm
+        padding-bottom: 0
+        display: flex
+        justify-content: center
+        button 
+            outline: none
+            border: none
+            @include button-load-more
+        
+
+
+    .filters 
+        text-align: left
+        display: flex
+        flex-wrap: wrap
+        padding-bottom: $spacing_lg
+        margin-top: $spacing_lg
+        border-bottom: solid 1px $ca-blue-200
+        justify-content: left
+        .filter
+            margin: 0 0.5rem
+            width: 100%
+            text-align: right
+            label
+                display: flex
+                //min-width: 5.1rem
+                //width: 100%
+                padding-right: 1.6rem
+                margin-bottom: 0.4rem
+                line-height:120%
+                @apply text-gray-400
+                font-weight: $light
+                border-radius: 0
+            @include select
+           
+  
+    .papers 
+        @apply grid md:grid-cols-2 gap-8
+        .paper 
+            @apply h-full
+            display: flex
+            flex-direction: column
+            border-bottom: $gray-300 1px solid
+            
+            
+        .paper_main 
+            @apply flex flex-col justify-between
+
+            .paper_date
+                display: flex
+                border-width: 4px
+                border-style: solid
+                border-right-width: 4px
+                border-left-width: 0px
+                border-top-width: 0px
+                border-bottom-width: 0px
+                // border-right: 3px solid red 
+                -webkit-border-image: -webkit-gradient(linear, 0% 0%, 0% 0%, from(rgba(152, 206, 9, 1)), to(rgba(152, 206, 0, 0))) 1 100%
+
+                .year
+                    // @include border-tag
+                    @apply text-gray-400 pl-4
+                    font-size: 1.25rem
+                    font-weight: 400
+                    display: block
+                
+            .paper_content
+
+
+            .paper_title 
+                @apply text-ffdGreen-300
+
+            .paper_subtitle 
+                font-family: 16px
+                //padding-bottom: $spacing_md
+                @apply text-gray-100
+                margin-bottom: $spacing_xsm
+            .paper_doi 
+                font-weight: 400
+
+        .paper_link      
+            @include icon-button-right
+            @include link-button       
+           
+            
+            
+@media (min-width: 640px) 
+    .research
+        .filters
+            text-align: right
+            display: flex
+            flex-wrap: wrap
+            gap: 4px
+            padding-bottom: $spacing_sm
+            border-bottom: solid 1px $ca-blue-100
+            justify-content: space-between
+            .filter
+                display: flex
+                flex-direction: row
+                align-items: center
+                font-size: 1.3rem
+                margin: 0
+                height: 42px
+                width: auto
+                label
+                    display: inline-block
+                    margin-bottom: 0rem
+                    min-width: 10.2rem
+                input
+                    width: 20.6rem
+    .papers 
+        padding: $spacing_sm 0 $spacing_md 0
+        .paper 
+            @apply h-full
+            padding-bottom: $spacing_md
+       
+
+
+        .paper_main 
+            @apply flex flex-row justify-start
+            gap: $spacing_md
+            .paper_date
+                display: flex
+                border-width: 4px
+                border-style: solid
+                border-right-width: 4px
+                border-left-width: 0px
+                border-top-width: 0px
+                border-bottom-width: 0px
+                // border-right: 3px solid red 
+                -webkit-border-image: -webkit-gradient(linear, 0% 0%, 0% 0%, from(rgba(152, 206, 9, 1)), to(rgba(152, 206, 0, 0))) 1 100%
+
+                h5
+                    // @include border-tag
+                
+            .paper_content 
+                width:100%
+
+
+            .paper_title 
+                @apply text-ffdGreen-300
+                font-weight: 300
+
+            .paper_subtitle 
+                //padding-bottom: $spacing_md
+
+            .paper_doi 
+                font-weight: 600
+
+        .button_container
+            @apply mt-4 
+            @apply flex justify-end
+            .paper_link
+                @include button
+                display: flex
+                flex-direction: row
+                //gap: $spacing_xsm
+                align-content: flex-end
+                justify-content: flex-end
+                flex-wrap: wrap
+                margin: 0
+                p 
+                    font-weight: 600
+                    margin: 0
+                a
+                    display: flex
+@media (min-width: 750px)
+    .research
+      .filters       
+        .filter      
+            label
+                width: auto !important
+                min-width: 6.5rem
+        .research-results
+            margin-top: 0
+            color: $gray-100
+            p
+                color: $gray-100
+
+@media (min-width: 900px)
+    .research
+        .filters       
+            .filter      
+                label
+                    width: auto !important
+                    min-width: 6rem
+        .papers
+            .paper
+                .paper_main
+                    .paper_date
+                        display: flex
+                        border-width: 4px
+                        border-style: solid
+                        border-right-width: 4px
+                        border-left-width: 0px
+                        border-top-width: 0px
+                        border-bottom-width: 0px
+                        // border-right: 3px solid red 
+                        -webkit-border-image: -webkit-gradient(linear, 0% 0%, 0% 0%, from(rgba(152, 206, 9, 1)), to(rgba(152, 206, 0, 0))) 1 100%
+
+                    .paper_content 
+                        width:70%
+@media (max-width: 640px)
+            .papers
+            .paper
+                .paper_main
+                    .paper_date
+                        display: flex
+                        border-width: 4px
+                        border-style: solid
+                        border-right-width: 0px
+                        border-left-width: 4px
+                        border-top-width: 0px
+                        border-bottom-width: 0px
+                        // border-right: 3px solid red 
+                        -webkit-border-image: -webkit-gradient(linear, 0% 0%, 0% 0%, from(rgba(152, 206, 9, 1)), to(rgba(152, 206, 0, 0))) 1 100%
+                .button_container
+                    display: flex
+                    justify-content: end
+                    .paper_link
+                        @include button
+                        display: flex
+                        flex-direction: row
+                        //gap: $spacing_xsm
+                        align-content: flex-end
+                        justify-content: flex-end
+                        flex-wrap: wrap
+                        margin: 0
+                        p 
+                            font-weight: 600
+                            margin: 0
+                        a
+                            display: flex
+.papers
+    

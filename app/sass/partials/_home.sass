@@ -1,0 +1,175 @@
+@import "../lib/_variables.sass"
+@import "../lib/_mixins.sass"
+    
+@media (min-width: 150px)
+
+    .home
+        .head
+            display: flex
+            justify-content: space-between
+            height: 50vh
+            margin-top: 3rem
+        h3
+            @apply text-ca_blue-700
+            margin-bottom: 2rem
+   
+    .project_description
+        background-image: url("/assets/img/section_description_home.png")
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        text-align: left
+        display: flex
+        justify-content: center
+        div
+            display: flex
+            flex-direction: column
+            gap: 2rem
+            align-items: center
+        h5
+            text-align: center
+            max-width: 70vw
+        p
+            margin-bottom: 2rem
+            width:100%
+            
+    .group_description 
+        z-index:100
+        .logo_home
+            width: 60vw
+            max-width: 300px
+            height: auto
+        //logo
+        img
+            width:100%
+            height:26.2vw
+            z-index:0
+            object-fit: cover
+            object-position: 50% 0
+    // .banner_f4d
+    //     width: 100vw
+    //     height:30vh
+    //     position: absolute
+    .banner_f4d_img
+        // width:100%
+        position: absolute
+        width: 100%
+        height: 50vh
+        //scale:1.5
+        opacity: 45%
+        z-index:0
+        background-image: url("/assets/img/banner-prov.svg")
+        margin: -6vh 0 0
+        background-size: cover
+        background-position: 70% 0
+    .award_section 
+        display: flex
+        margin: $spacing_xl auto
+        background: #fff9e6
+        gap: $spacing_md
+        border-radius: 24px
+        border: 2px $ca-or-100 solid
+        @apply text-orange-500
+        width:100%
+        flex-direction: column
+        align-self: center
+        align-items: center
+        text-align: center
+        .award_title
+            display: flex
+            flex-direction: column
+            align-self: center
+            align-items: center
+            gap: 1rem
+            
+            div
+                display: flex
+                flex-direction: column
+                align-items: center
+        h3
+            @apply text-slate-600
+            margin-bottom: 0.3rem   
+        h5
+            @apply text-gray-600
+            font-weight: 500
+            margin-bottom: 0rem 
+        
+        small
+            @apply  text-slate-500
+            padding-bottom: 1rem
+            display: block
+       
+               
+        .award_icon 
+            // display: none
+
+            border-radius: 70px
+            max-width: 2.4rem
+            height: 2.4rem
+            padding: 0.75rem
+            margin-bottom: 0.8rem
+            background: #ffe489
+            border-radius: 80px
+            @apply text-orange-400
+            @include drop-shadow-lighter
+      
+
+
+@media (min-width: 640px)
+    .home
+        .head
+            display: flex
+            justify-content: space-between
+            height: 80vh
+            margin-top: 6rem
+    .project_description
+        p
+            width:80%
+    .group_description 
+        width: 100vw
+        .logo_home
+            height: auto
+            width: 12rem
+        img
+            width: auto
+            height: 25rem
+            object-fit: cover
+            object-position: 50% 0
+    // .banner_f4d
+    //     position: relative
+    .banner_f4d_img
+        position: relative
+        height: 27vw
+        //height: 28.8vw
+        opacity: 100%
+        z-index:0
+        //background-size: cover
+        background-position: 100% 0
+@media (min-width: 900px)
+    .home
+        .head
+            display: flex
+            justify-content: space-between
+            height: 100vh
+            margin-top: 0rem
+    .project_description
+        p
+            width:80%
+
+    .group_description 
+        .logo_home
+            height: auto
+            width: 16rem
+        img
+            height: 35rem
+
+@media (min-width: 1400px)
+    .award_section
+        flex-direction: row
+        width:60%
+    .group_description 
+        .logo_home
+            height: auto
+            width: 24rem
+        img
+            height: 50rem

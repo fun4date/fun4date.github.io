@@ -1,0 +1,1224 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  @apply border-2 border-primary;
+}
+
+/* ==========================================================================
+    VARIABLES
+   ========================================================================== */
+/* ==========================================================================
+    GENERAL
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::selection {
+  background-color: #74f2ec;
+}
+
+body,
+html {
+  color: black;
+  @apply text-primary;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+body a:hover,
+html a:hover {
+  text-decoration: none;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  padding: 1.5rem 0 1.5rem 0;
+  z-index: 200;
+}
+header .imagotype {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .imagotype .isotype {
+  background-color: #282828;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin: 0 0 0 2rem;
+}
+header .imagotype .logotype {
+  font-size: 1.7rem;
+  font-weight: 900;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #282828;
+  padding: 0 20rem 0 0.7rem;
+}
+header .menu_icon .close {
+  display: none;
+}
+header .menu_icon .show {
+  padding: 2% 0 0 0;
+  display: none;
+  position: absolute;
+  top: 26.5%;
+  right: 6.5%;
+}
+header .menu {
+  width: 55%;
+  font-weight: 600;
+  margin: 0 3rem 0 0;
+}
+header .menu ul {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+header li.li-selected a {
+  border-bottom: 5px solid #FCCD05;
+}
+header li.li-selected a:hover {
+  border-bottom: 5px solid #FCCD05;
+}
+header li a {
+  transition: 15ms;
+}
+header li a:hover {
+  border-bottom: 5px dashed #282828;
+}
+header li a:active {
+  border-bottom: 5px solid #282828;
+}
+
+.spinner {
+  display: flex;
+  min-height: calc(100vh - 275px);
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #17E9E0;
+}
+
+footer {
+  padding: 2.5rem;
+  font-size: 1.1rem;
+}
+footer ul {
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+footer ul li {
+  margin: 0 1.3rem 0 0;
+}
+
+.lang_en {
+  font-weight: 900;
+}
+
+/*---- Scroll Bar ----*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #424242;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ==========================================================================
+   HOME
+   ========================================================================== */
+.home_page .border_nav_bar {
+  border-bottom: solid 1.5px #f4f4f4;
+  transition: none;
+}
+
+.home {
+  margin: 0 8rem 0 17rem;
+}
+.home a:hover {
+  color: inherit;
+}
+.home h1 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  color: #282828;
+  font-size: 4rem;
+  margin: 0;
+}
+.home h2 {
+  font-family: "Lora", serif;
+  color: #282828;
+  font-size: 2rem;
+  margin: 0;
+}
+.home .head {
+  display: flex;
+  flex-grow: revert;
+  justify-content: space-evenly;
+  border-bottom: solid 1.5px #3a3a3a;
+  padding: 6rem 2rem 6rem 5rem;
+}
+.home .head .group_logo {
+  display: inline-block;
+  width: 20%;
+  object-fit: contain;
+  object-position: left;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+.home .head .group_logo img {
+  width: 100%;
+  size: auto;
+}
+.home .head .group_logo .group_name {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  color: white;
+  line-height: 3.35em;
+}
+.home .head .group_description {
+  width: 70%;
+}
+.home .body {
+  padding-top: 4rem;
+  display: flex;
+  width: 100%;
+}
+.home .body .carousel {
+  display: inline-block;
+  width: 95%;
+  align-items: center;
+}
+.home .body .carousel img {
+  width: 100%;
+  object-fit: cover;
+}
+.home .body .carousel h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px #282828;
+}
+.home .body .carousel p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px #282828;
+}
+.home .body .latest_publications {
+  width: 30%;
+  object-fit: cover;
+  padding: 10px;
+}
+.home .body .latest_publications h3 {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  font-size: 2.1rem;
+  text-align: center;
+  color: black;
+}
+.home .body .latest_publications p {
+  font-size: 1.2rem;
+  text-align: left;
+  color: white;
+  padding: 2% 2% 2% 2%;
+}
+.home .body .latest_publications .more {
+  font-size: 1.2rem;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  color: #FCCD05;
+  text-align: left;
+  padding: 2% 2% 2% 2%;
+}
+
+.background .circle {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: #FFB38F;
+  position: absolute;
+  top: 60%;
+  left: 75%;
+}
+.background .triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 120.5px 188.9px 98.5px;
+  border-color: transparent transparent #FCCD05 transparent;
+  position: absolute;
+  top: -18%;
+  left: -4%;
+  transform: rotate(85deg);
+}
+.background .rectangle {
+  width: 20rem;
+  height: 6rem;
+  background-color: #17E9E0;
+  position: absolute;
+  top: 120%;
+  left: 20%;
+  transform: rotate(-40deg);
+}
+
+/* PARALAX */
+.parallax {
+  perspective: 2px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px);
+  z-index: -1;
+}
+
+/* ==========================================================================
+   PROJECTS
+   ========================================================================== */
+.projects {
+  color: inherit;
+  background-color: #282828;
+  padding: 5rem 0 0 0;
+  /*---- Scroll Bar ----*/
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.projects .spinner {
+  min-height: calc(100vh - 150px);
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+}
+.projects .nav_bar {
+  background-color: inherit;
+  color: inherit;
+}
+.projects .nav_bar .imagotype .isotype {
+  background-color: white;
+}
+.projects .nav_bar .imagotype .logotype {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+.projects .nav_bar li.li-selected a {
+  border-bottom: 5px solid #FFB38F;
+}
+.projects .nav_bar li.li-selected a:hover {
+  border-bottom: 5px solid #FFB38F;
+}
+.projects .nav_bar li a:hover {
+  border-bottom: 5px dashed white;
+  text-decoration: none;
+  color: inherit;
+}
+.projects main .our_projects .project {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  border-bottom: solid 1.5px #3a3a3a;
+  padding: 6rem 2rem 6rem 5rem;
+}
+.projects main .our_projects .project .project_logo {
+  width: 10%;
+  margin: 0.8rem 0 0 0;
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+}
+.projects main .our_projects .project .project_logo img {
+  object-fit: contain;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+}
+.projects main .our_projects .project .project_main {
+  width: 70%;
+}
+.projects main .our_projects .project .project_main h2 {
+  font-weight: bold;
+}
+.projects main .our_projects .project .project_main a {
+  color: inherit;
+}
+.projects main .our_projects .project .project_main a:hover h2,
+.projects main .our_projects .project .project_main a:hover h3 {
+  color: #FFB38F;
+  transition: 0.5s;
+}
+.projects .border_nav_bar {
+  border-bottom: solid 1.5px #3a3a3a;
+  transition: none;
+}
+.projects ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.projects ::-webkit-scrollbar-thumb {
+  background: #FFB38F;
+}
+.projects ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ==========================================================================
+   TOOLS
+   ========================================================================== */
+.tools {
+  color: white;
+  background-color: #282828;
+  padding: 5rem 0 0 0;
+  /*---- Scroll Bar ----*/
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.tools .spinner {
+  min-height: calc(100vh - 150px);
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+}
+.tools .nav_bar {
+  background-color: inherit;
+  color: inherit;
+}
+.tools .nav_bar .imagotype .isotype {
+  background-color: white;
+}
+.tools .nav_bar .imagotype .logotype {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+.tools .nav_bar li.li-selected a {
+  border-bottom: 5px solid #FFB38F;
+}
+.tools .nav_bar li.li-selected a:hover {
+  border-bottom: 5px solid #FFB38F;
+}
+.tools .nav_bar li a:hover {
+  border-bottom: 5px dashed white;
+  text-decoration: none;
+  color: inherit;
+}
+.tools main .our_tools .tool {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  border-bottom: solid 1.5px #3a3a3a;
+  padding: 6rem 2rem 6rem 5rem;
+}
+.tools main .our_tools .tool .tool_logo {
+  width: 10%;
+  margin: 0.8rem 0 0 0;
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+}
+.tools main .our_tools .tool .tool_logo img {
+  object-fit: contain;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+}
+.tools main .our_tools .tool .tool_main {
+  width: 70%;
+}
+.tools main .our_tools .tool .tool_main h2 {
+  font-weight: bold;
+}
+.tools main .our_tools .tool .tool_main a {
+  color: inherit;
+}
+.tools main .our_tools .tool .tool_main a:hover h2,
+.tools main .our_tools .tool .tool_main a:hover h3 {
+  color: #17E9E0;
+  transition: 0.5s;
+}
+.tools .border_nav_bar {
+  border-bottom: solid 1.5px #3a3a3a;
+  transition: none;
+}
+.tools ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.tools ::-webkit-scrollbar-thumb {
+  background: #FFB38F;
+}
+.tools ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ==========================================================================
+   RESEARCH
+   ========================================================================== */
+.research {
+  color: inherit;
+  background-color: #FFB38F;
+  padding: 5rem 0 0 0;
+}
+.research .nav_bar {
+  background-color: #FFB38F;
+  color: #282828;
+}
+.research .nav_bar .imagotype .isotype {
+  background-color: #282828;
+}
+.research .nav_bar .imagotype .logotype {
+  color: #282828;
+  font-weight: #282828;
+}
+.research .nav_bar li.li-selected a {
+  border-bottom: 5px solid white;
+}
+.research .nav_bar li.li-selected a:hover {
+  border-bottom: 5px solid white;
+}
+.research .nav_bar li a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.research main {
+  min-height: calc(100vh - 150px);
+}
+.research main .research .filters {
+  text-align: right;
+  padding: 1rem 5rem 1rem 5rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.research main .research .filters label, .research main .research .filters select, .research main .research .filters input {
+  padding: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+.research main .research .filters select, .research main .research .filters input {
+  border: 1px solid black;
+  margin-right: 3rem;
+}
+.research main .research .filters label {
+  font-weight: bolder;
+}
+.research main .research .filters option {
+  text-align: right;
+}
+.research main .research .filters .filter {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.research main .research .filters .filter input, .research main .research .filters .filter select {
+  background-color: #FFB38F;
+  outline: none;
+  height: 40px;
+  line-height: 40px;
+}
+.research main .research .paper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  border-bottom: solid 1.5px #ffcbb3;
+  padding: 6rem 2rem 6rem 5rem;
+}
+.research main .research .paper .paper_date {
+  width: 10%;
+  margin: 0.8rem 0 0 0;
+}
+.research main .research .paper .paper_date img {
+  object-fit: contain;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+}
+.research main .research .paper .paper_main {
+  width: 70%;
+}
+.research main .research .paper .paper_main .paper_title h2 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 2.2rem;
+  font-weight: normal;
+}
+.research main .research .paper .paper_main .paper_authors {
+  margin: 1.5rem 0 0 0;
+}
+.research main .research .paper .paper_main a {
+  color: inherit;
+}
+.research .border_nav_bar {
+  border-bottom: solid 1.5px #ffcbb3;
+  transition: none;
+}
+
+/* ==========================================================================
+   TEAM
+   ========================================================================== */
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 300ms ease-in-out;
+  /*&:hover {
+      @include grayscale_element(0);
+      mix-blend-mode: normal;
+      transition: all 300ms ease-in-out;
+  }*/
+}
+
+.team {
+  color: #282828;
+  background-color: #a3f6f3;
+  padding: 5rem 0 0 0;
+}
+.team .spinner {
+  min-height: calc(100vh - 150px);
+}
+.team .nav_bar {
+  background-color: inherit;
+  color: #282828;
+}
+.team .nav_bar .imagotype .isotype {
+  background-color: #282828;
+}
+.team .nav_bar .imagotype .logotype {
+  color: #282828;
+  font-weight: #282828;
+}
+.team .nav_bar li.li-selected a {
+  border-bottom: 5px solid white;
+}
+.team .nav_bar li.li-selected a:hover {
+  border-bottom: 5px solid white;
+}
+.team .nav_bar li a:hover {
+  color: inherit;
+}
+.team main .teammates {
+  padding-top: 4rem;
+}
+.team main .teammates .teamgrouptitle {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  padding: 3rem 5rem 1rem 5rem;
+}
+.team main .teammates .teamgrouptitle h2 {
+  margin-left: 80px;
+}
+.team main .teammates .teammate {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  border-bottom: solid 1.5px #d1fbf9;
+  padding: 5rem 1rem 5rem 1rem;
+  width: 100%;
+}
+.team main .teammates .teammate h3 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.team main .teammates .teammate .mate_img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  /* &:hover {
+      border: $black solid 5px;
+  }*/
+}
+.team main .teammates .teammate .mate_img img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.team main .teammates .teammate .mate_info {
+  width: 70%;
+}
+.team main .teammates .teammate .mate_info a:hover h2,
+.team main .teammates .teammate .mate_info a:hover h3 {
+  transition: 1s ease-in-out;
+}
+.team main .teammates .teammate .at {
+  width: 1em;
+  padding: 1px;
+  margin-right: 3px;
+}
+.team .border_nav_bar {
+  border-bottom: solid 1.5px #d1fbf9;
+  transition: none;
+}
+
+/* ==========================================================================
+   ABOUT
+   ========================================================================== */
+.about main {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 100px;
+}
+.about main .about_description {
+  border-bottom: solid 1.5px #c1c1c1;
+  padding: 9rem 3rem 6rem 7rem;
+}
+.about main .location {
+  display: flex;
+  flex-flow: row no-wrap;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+}
+.about main .location .col1 {
+  flex: 1;
+  padding: 1rem 4rem;
+}
+.about main .location .col1 .location_map {
+  height: 500px;
+  width: 700px;
+  background-color: #FCCD05;
+}
+.about main .location .col1 .map-responsive {
+  overflow: hidden;
+  padding: 36.25%;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.about main .location .col1 .map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.about main .location .col2 {
+  flex: 1;
+}
+.about main .location .col2 .location_info h2 {
+  padding: 1rem 0 0.5rem 0;
+}
+.about main .location .col2 .contact h2 {
+  padding: 1rem 0 0.5rem 0;
+}
+.about main section:last-child {
+  border-bottom: solid 1.5px #c1c1c1;
+}
+.about h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+.about h2 {
+  color: #282828;
+  font-size: 2rem;
+  width: 100%;
+  padding: 1rem 0 0.5rem 2rem;
+}
+.about h3 {
+  color: #282828;
+  font-size: 2rem;
+}
+.about p {
+  font-size: 1.5rem;
+}
+.about .border_nav_bar {
+  border-bottom: solid 1.5px #c1c1c1;
+  transition: none;
+}
+
+/* =========================================================================
+TYPOGRAPHY
+   ========================================================================== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+
+p {
+  font-size: 2rem;
+}
+
+h1 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  color: #282828;
+  font-size: 8rem;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 4rem;
+  margin: 0;
+  /* &::selection {
+      background-color: red;
+  }*/
+}
+
+h3 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/* =========================================================================
+RESPONSIVE
+   ========================================================================== */
+@media (max-width: 940px) {
+  header {
+    padding: 1.5rem 0 1.6rem 0;
+  }
+  header .menu {
+    width: 100%;
+    font-weight: 600;
+    margin: 0;
+    padding: 2rem 3rem 0 3rem;
+  }
+  header .menu ul {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    font-size: 1.2rem;
+  }
+  .home {
+    margin: 0 4rem 0 4rem;
+  }
+  .home .body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .home .body .carousel {
+    align-self: center;
+    margin-left: 13px;
+  }
+  .home .body .latest_publications {
+    width: 90.2%;
+    align-self: center;
+  }
+}
+@media (max-width: 800px) {
+  .home {
+    margin: 0 4rem 0 5rem;
+  }
+  .home .group_logo {
+    width: 20%;
+    height: 10%;
+    border-radius: 50%;
+  }
+  .home h1 {
+    font-size: 3rem;
+  }
+  .home h2 {
+    font-size: 1.5rem;
+  }
+  .home .body {
+    display: block;
+    width: 100%;
+  }
+  .home .body .carousel {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .home .body .latest_publications {
+    width: 100%;
+  }
+  .projects main .our_projects {
+    padding: 3.5rem 0 0 0;
+  }
+  .projects main .our_projects .project {
+    padding: 3rem 1rem 3rem 3rem;
+  }
+  .projects main .our_projects .project h2 {
+    font-size: 3rem;
+  }
+  .projects main .our_projects .project h3 {
+    font-size: 1.5rem;
+  }
+  .tools main .our_tools {
+    padding: 3.5rem 0 0 0;
+  }
+  .tools main .our_tools .tool {
+    padding: 3rem 1rem 3rem 3rem;
+  }
+  .tools main .our_tools .tool .tool_title h2 {
+    font-size: 2rem;
+  }
+  .tools main .our_tools .tool .tool_content h3 {
+    font-size: 1.5rem;
+  }
+  .team .teammates {
+    padding-top: 5rem;
+  }
+  .team .teammates .teamgrouptitle {
+    padding: 2rem 2rem 2rem 2rem !important;
+  }
+  .team .teammates .teamgrouptitle h2 {
+    font-size: 3rem;
+  }
+  .team .teammates .teamgrouptitle .teammate {
+    display: flex;
+    flex-flow: column;
+  }
+  .team .teammates .teamgrouptitle .teammate .mate_img {
+    align-self: center;
+  }
+  .team .teammates .teamgrouptitle .teammate .mate_info {
+    width: 100%;
+  }
+  .about .about_description {
+    padding: 6rem 3rem 6rem 3rem !important;
+  }
+}
+@media (max-width: 600px) {
+  .responsive-hidden {
+    display: none !important;
+  }
+  .responsive-shown {
+    display: block !important;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    padding: 1rem 0 0.7rem 0;
+  }
+  header .imagotype {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .imagotype .isotype {
+    background-color: #282828;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: 0 0 0 2rem;
+  }
+  header .imagotype .logotype {
+    font-size: 1.7rem;
+    font-weight: 900;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #282828;
+    padding: 0 0 0 0.7rem;
+  }
+  header .menu_icon {
+    padding: 0;
+  }
+  header .menu_icon .close {
+    position: absolute;
+    display: none;
+    top: 5%;
+    right: 6.5%;
+    cursor: pointer;
+  }
+  header .menu_icon .show {
+    padding: 0;
+    display: unset;
+    cursor: pointer;
+  }
+  header .menu {
+    width: 100%;
+    font-weight: 600;
+    margin: 0;
+    padding: 2rem 3rem 0 3rem;
+    display: none;
+  }
+  header .menu ul {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  header .menu ul li {
+    padding: 0.8rem 0 0 0;
+  }
+  .parallax__layer {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .home {
+    margin: 0 1.6rem 0 2.5rem;
+    padding: 1rem 0 0 0;
+  }
+  .home h2 {
+    font-size: 1.25rem;
+  }
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  .home .head {
+    padding: 0rem 0rem 2rem 0rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .home .head .group_description {
+    width: 100%;
+  }
+  .home .body .carousel h3 {
+    font-size: 1.5rem;
+  }
+  .home .body .carousel p {
+    font-size: 1rem;
+  }
+  .projects main .our_projects {
+    padding: 3.5rem 0 0 0;
+  }
+  .projects main .our_projects .project {
+    flex-flow: column;
+    padding: 2rem 1rem 2rem 2rem;
+  }
+  .projects main .our_projects .project h2 {
+    font-size: 1.6rem;
+  }
+  .projects main .our_projects .project h3 {
+    font-size: 1.2rem;
+  }
+  .projects main .our_projects .project .project_logo {
+    width: 40%;
+    padding-bottom: 2rem;
+    align-self: center;
+  }
+  .projects main .our_projects .project .project_main {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+  .projects main .our_projects .project .project_main .project_title {
+    padding: 1rem 0rem 1rem 0rem;
+  }
+  .tools main .our_tools {
+    padding: 3.5rem 0 0 0;
+  }
+  .tools main .our_tools .tool {
+    flex-flow: column;
+    padding: 2rem 1rem 2rem 2rem;
+  }
+  .tools main .our_tools .tool .tool_title h2 {
+    font-size: 1.2rem;
+  }
+  .tools main .our_tools .tool .tool_logo {
+    width: 40%;
+    padding-bottom: 2rem;
+    align-self: center;
+  }
+  .tools main .our_tools .tool .tool_description {
+    width: 140%;
+  }
+  .tools main .our_tools .tool .tool_description h3 {
+    font-size: 1rem;
+  }
+  .research h4 {
+    font-size: 1.5rem;
+  }
+  .research h2 {
+    font-size: 1.2rem;
+  }
+  .research i {
+    font-size: 1.2rem;
+  }
+  .research main .research .filters {
+    padding-right: 0rem;
+  }
+  .research main .research .paper {
+    flex-flow: column wrap;
+    padding: 2rem 2rem 2rem 2rem;
+    width: 100%;
+  }
+  .research main .research .paper .paper_date {
+    width: 100%;
+    margin: 0 0 0.5rem 0;
+    color: white;
+  }
+  .research main .research .paper .paper_main {
+    width: 100%;
+  }
+  .research main .research .paper .paper_main .paper_title {
+    width: 100%;
+  }
+  .research main .research .paper .paper_main .paper_title h2 {
+    font-size: 1.2rem;
+  }
+  .team main .teammates {
+    padding-top: 2rem;
+  }
+  .team main .teammates .teamgrouptitle {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem !important;
+  }
+  .team main .teammates .teamgrouptitle h2 {
+    margin-left: 20px;
+    font-size: 2rem;
+  }
+  .team main .teammates .teammate {
+    padding: 3rem 2rem 3rem 2rem;
+  }
+  .team main .teammates .teammate .mate_info {
+    width: 95%;
+  }
+  .team main .teammates .teammate h2 {
+    font-size: 1.6rem;
+  }
+  .team main .teammates .teammate h3 {
+    padding: 2rem 0rem 1rem 0rem;
+    font-size: 1.6rem;
+  }
+  .team main .teammates .teammate p {
+    font-size: 1.2rem;
+  }
+  .about main {
+    margin-top: 20px;
+  }
+  .about main .about_description {
+    padding: 9rem 2rem 3rem 2rem;
+  }
+  .about main .about_description h1 {
+    font-size: 1.2rem;
+  }
+  .about main .about_description p {
+    font-size: 1.2rem;
+  }
+  .about main h2 {
+    padding: 1rem 1rem 1rem 2rem;
+  }
+  .about main .location {
+    flex-flow: column;
+  }
+  .about main .location h2 {
+    font-size: 1.6rem;
+    padding: 1rem 1rem 1rem 0rem;
+  }
+  .about main .location h3 {
+    font-size: 1.2rem;
+  }
+  .about main .location {
+    padding: 4rem 1rem 3rem 3rem;
+  }
+  footer {
+    padding: 2.5rem 0 2.5rem 0;
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+  }
+  footer ul {
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  footer ul li {
+    margin: 0 1.3rem 0 0;
+  }
+  .background .circle {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: #FFB38F;
+    position: absolute;
+    top: 35%;
+    left: 60%;
+  }
+  .background .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 120.5px 188.9px 98.5px;
+    border-color: transparent transparent #FCCD05 transparent;
+    position: absolute;
+    top: -18%;
+    left: -4%;
+    transform: rotate(85deg);
+  }
+  .background .rectangle {
+    width: 20rem;
+    height: 6rem;
+    background-color: #17E9E0;
+    position: absolute;
+    top: 140%;
+    left: 20%;
+    transform: rotate(-40deg);
+  }
+}
+body :not(.menu) a:hover {
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */

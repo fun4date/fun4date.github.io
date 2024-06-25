@@ -1,0 +1,101 @@
+//--------------------
+//BUTTONS
+//-------------------
+
+//eliminar estilo por defecto de botón
+@mixin button
+    outline: none
+    border: none
+    background: none
+
+@mixin icon-button-right
+    svg 
+        align-self: center
+        margin-left: 0.6rem
+
+@mixin icon-button-left
+    svg 
+        align-self: center
+        margin-right: 0.6rem
+@mixin  link-button
+    @include button
+    border: none
+    @apply text-gray-100 
+    &:hover
+        color: white
+        transition: 200ms ease-in-out
+        @apply text-ffdGreen-300
+        text-decoration: underline
+        text-decoration-thickness: 1px
+@mixin button-load-more
+    @include button
+    font-size: $button
+    padding: 0.5rem 1.2rem 0.7rem 1.4rem
+    background: transparent
+    @apply text-gray-100
+    cursor: pointer
+    &:hover
+        @apply bg-gray-100 text-black
+         font-size: $xl-text
+        transition: 200ms ease-in-out
+
+@mixin border-button-white
+    @include button
+    border: 1px solid white
+    border-radius: 4px
+    padding: 0.6rem 1rem 0.8rem 0.8rem
+    color: white
+    p 
+        margin-bottom: 0
+@mixin big-border-button-blue
+    border: 1px solid $ca-blue-700
+    color: $ca-blue-700
+    border-radius: 24px
+    padding: 0.5rem 1.2rem 0.7rem 1.4rem
+    transition: 200ms ease-in-out
+    p 
+        font-weight: 500
+    &:hover
+        color: white
+        transition: 200ms ease-in-out
+        background-color: $ca-blue-600
+    &:active
+        color: white
+        transition: 200ms ease-in-out
+        background-color: $ca-blue-600
+
+@mixin button-load-more
+    border: 1px solid $gray-100
+    padding: 0.5rem 1.2rem 0.7rem 1.4rem
+    
+    @apply bg-transparent text-gray-100 border border-gray-100
+    cursor: pointer
+    &:hover
+        @apply bg-gray-100 text-black border border-gray-100
+       
+        transition: 200ms ease-in-out
+        
+
+@mixin invisible-button
+    @include button
+    border-radius: 24px
+    @apply text-gray-800
+    padding: 0.5rem 1.2rem 0.7rem 1.4rem
+    transition: 200ms ease-in-out
+    &:hover
+        @apply text-gray-900
+        transition: 200ms ease-in-out
+        background-color: $ca-blue-300
+    &:active
+        @apply text-ca_blue-800
+        transition: 200ms ease-in-out
+        background-color: $ca-blue-300
+
+//CLASSES
+    
+
+.action_button 
+    @include border-button-white
+    @include icon-button-right
+    
+   

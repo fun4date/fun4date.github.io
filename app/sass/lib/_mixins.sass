@@ -1,0 +1,336 @@
+@import "./_variables.sass"
+//Correcciones: añadir media queries a mixins para ajustar tamaños
+// quizá no sea necesario si los paddings etc están en ems (con rems se quedan igual)
+
+
+@mixin drop-shadow
+    -webkit-box-shadow: 0px 10px 13px -7px rgba(0,0,0,0.18)
+    -moz-box-shadow: 0px 10px 13px -7px rgba(0,0,0,0.18)
+    box-shadow: 0px 10px 13px -7px rgba(0,0,0,0.18)
+
+@mixin drop-shadow-blue 
+    -webkit-box-shadow: 0px 8px 12px -11px rgba(91, 115, 255, 0.525)
+    -moz-box-shadow: 0px 8px 12px -11px rgba(91, 115, 255, 0.525)
+    box-shadow: 0px 8px 12px -11px rgba(91, 115, 255, 0.525)
+
+@mixin drop-shadow-blue-spread 
+    -webkit-box-shadow: 0px 4px 12px -6px rgba(91, 115, 255, 0.525)
+    -moz-box-shadow: 0px 4px 12px -6px rgba(91, 115, 255, 0.525)
+    box-shadow: 0px 4px 12px -6px rgba(91, 115, 255, 0.525)
+
+@mixin drop-shadow-intermediate 
+    box-shadow: 0px 4px 4px 0px rgba(29, 29, 27, 0.15)
+@mixin drop-shadow-lighter
+    -webkit-box-shadow: 0px 10px 13px -7px rgba(0,0,0,0.08)
+    -moz-box-shadow: 0px 10px 13px -7px rgba(0,0,0,0.08)
+    box-shadow: 0px 10px 13px -7px rgba(0,0,0,0.08)
+
+//IMAGES
+@mixin img_cover() // hay que ponérsela al padre de la etiqueta <img>
+    @apply overflow-hidden flex
+    img
+        @apply h-full w-full object-cover
+   
+  
+//NAVEGACIÓN
+
+//LANGUAGE SWICHER: Su posición en el header, 
+// añadir a breakpoints distintos según lo
+// que ocupe la lista de items (ul)
+
+@mixin lang_switcher_top_absolute
+    .lang_switcher
+        position: absolute
+        right: 2rem
+        top: 2.4rem
+        div
+            margin: 0rem 
+    
+@mixin lang_switcher_menu_relative
+    .lang_switcher
+        position: relative
+        right: 0rem
+        top: 0rem
+
+// BARRA DE NAVEGACIÓN DE TELEFONO
+@mixin nav_bar_phone
+    @include drop-shadow-blue
+    width: 100vw
+    display: flex
+    flex-flow: wrap row
+    justify-content: space-between
+    align-items: flex-start
+    transition: 0.5s
+    padding: 1rem 1.4rem 0.7rem 1.4rem
+    .imagotype 
+        width: 100%
+        display: flex
+        flex-flow: wrap row
+        justify-content: space-between
+        align-items: center
+        .isotype 
+            display: flex
+            width: auto
+            height: 2rem
+            //margin: 0 0 0 1.4rem   
+        .logotype 
+            .logoheader
+                width: 7rem
+    .menu_icon 
+        padding: 0
+        display: flex
+        align-items: center
+        min-height: 2rem
+    .close 
+        position: absolute
+        display: none
+        top: 4%
+        right: 5%
+        cursor: pointer
+    .show 
+        position: absolute
+        padding: 0
+        display: unset
+        cursor: pointer
+        top: 30% 
+        right: 5% 
+    .menu 
+        width: 100%
+        font-weight: $semi-bold
+        margin: 0
+        padding: 1rem 1.6rem 0 1.6rem
+        display: none   
+        li 
+            padding: 0.66rem 0
+            width: 100%
+            text-align: center
+            border-bottom: 1px solid $ca-blue-300
+        li:last-child 
+            border-bottom: 0px
+
+//BARRA NAVEGACIÓN DOS LINEAS (TABLET)
+// ajustar los breakpoints según lo
+// que ocupe la lista de items (ul)
+@mixin nav_bar_two_lines
+    @include drop-shadow-blue
+    width: 100vw
+    display: flex
+    flex-flow: wrap row
+    gap: 1.5rem
+    justify-content: space-between
+    align-items: center
+    transition: 0.5s
+    padding: 1.5rem 2.25rem 1.5rem 2.25rem
+    .imagotype 
+        width: 100%
+        display: flex
+        justify-content: center
+        flex-flow: wrap row
+        justify-content: space-between
+        align-items: center
+        // padding-left: 4rem;
+        .isotype 
+            display: flex
+            //width: 4rem
+            height: auto
+            margin: 0 0 0 0rem
+        .logoheader 
+            width: 11rem
+        .logotype 
+            display: flex
+            width: auto
+        
+            font-weight: $bold
+            font-family: $montserrat-alternates
+            color: $blue_primary
+            padding: 0 6rem 0 0.7rem
+        span 
+            color: $ca-or-300
+    .menu_icon 
+        .close 
+            display: none        
+        .show 
+            padding: 2% 0 0 0
+            display: none
+    .menu 
+        width: 100%
+        font-weight: $semi-bold
+        margin: 0 0rem 0 0
+        display: flex
+        justify-content: space-between
+        flex-wrap: nowrap
+        align-items: center
+        // padding: 1.6rem 0rem 0 0rem
+        ul 
+            display: flex
+            flex-flow: row nowrap
+            justify-content: space-between
+            //font-size: 1.2rem
+            gap: 2rem
+
+@mixin nav_bar_one_line
+    .imagotype
+        .logoheader
+            width: 7rem
+      
+    .menu 
+        width: auto
+        font-weight: $semi-bold
+        margin: 0
+        padding: 0rem
+        justify-content: right
+    ul 
+        display: flex
+        flex-flow: wrap row
+        justify-content: space-between
+  
+
+@mixin nav_bar_one_line_xl
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem
+    .imagotype
+        .logotype 
+            .logoheader
+                width:9.4rem
+        .isotype
+            
+@mixin li_nav_bar
+    li 
+        a 
+            &:hover 
+                border-bottom: $border1 $link_header   
+                text-decoration: none
+        &.li-selected 
+            a 
+                color: $link_header   
+                border-bottom: $border1 $link_header   
+                &:hover 
+                    border-bottom: $border1 $link_header   
+       
+
+//ES
+@mixin nav_bar_es
+    @media (max-width: $max-phone-width-es) 
+        @include nav_bar_phone
+
+    @media (min-width: $min-tablet-width-es) 
+        @include nav_bar_two_lines
+        @include lang_switcher_top_absolute
+
+    //este media query no cambia la estructura, sólo cambia
+    //de lugar el idioma en el header
+    @media (min-width: $inter-tablet-width-es)
+        @include lang_switcher_menu_relative 
+
+    @media (min-width: $min-desktop-width-es) 
+        @include nav_bar_one_line
+
+    @media (min-width: $min-xl-desktop-width-es)
+        @include nav_bar_one_line_xl
+
+//EN
+@mixin nav_bar_en
+    @media (max-width: $max-phone-width-en) 
+        @include nav_bar_phone
+
+    @media (min-width: $min-tablet-width-en) 
+        @include nav_bar_two_lines
+        @include lang_switcher_top_absolute
+
+    //este media query no cambia la estructura, sólo cambia
+    //de lugar el idioma en el header
+    @media (min-width: $inter-tablet-width-en)
+        @include lang_switcher_menu_relative 
+
+    @media (min-width: $min-desktop-width-en) 
+        @include nav_bar_one_line
+
+    @media (min-width: $min-xl-desktop-width-en)
+        @include nav_bar_one_line_xl
+
+//ES
+@mixin content_page_es
+    @media (min-width: $min-phone-width-es)      
+        .banner
+            padding-top: 46px
+            height: 7.4em
+            // background-image: url("/assets/img/headers/projects-banner-phone.svg")
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            // object-fit: cover;
+          
+            align-items: flex-start
+            h1, p
+                color: white
+        #banner-publications
+            // background-image: url("/assets/img/headers/publications-banner-phone.svg")
+        .parallax__layer
+            padding-top: 60px
+    @media (min-width:$min-tablet-width-es)     
+        .banner
+            padding-top: 112px
+            height: 14vw
+            width: 100%
+            // background-image: url("/assets/img/headers/projects-banner-desktop.svg")
+        #banner-publications
+            // background-image: url("/assets/img/headers/publications-banner-desktop.svg")
+        .parallax__layer
+            padding-top: 98px
+
+    @media (min-width:$min-desktop-width-es) 
+        .banner
+            padding-top: 60px
+            height: 14vw
+        .parallax__layer
+            padding-top: 58px
+
+    @media (min-width:$min-xl-desktop-width-es) 
+        .banner
+            padding-top: 72px
+            height: 14vw
+        .head
+            padding-top: 72px
+
+// EN
+@mixin content_page_en
+    @media (min-width: $min-phone-width-en)      
+        .banner
+            padding-top: 46px
+            height: 7.4em
+            //background-image: url("/assets/img/headers/projects-banner-phone.svg")
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            // object-fit: cover;
+
+            h1 
+                color: white
+        #banner-publications
+            //background-image: url("/assets/img/headers/publications-banner-phone.svg")
+        .parallax__layer
+            padding-top: 54px
+    @media (min-width:$min-tablet-width-en)     
+        .banner
+            padding-top: 112px
+            height: 14vw
+            width: 100%
+            //background-image: url("/assets/img/headers/projects-banner-desktop.svg")
+        #banner-publications
+            //background-image: url("/assets/img/headers/publications-banner-desktop.svg")
+        .parallax__layer
+            padding-top: 98px
+
+    @media (min-width:$min-desktop-width-en) 
+        .banner
+            padding-top: 60px
+            height: 14vw
+        .parallax__layer
+            padding-top: 58px
+
+    @media (min-width:$min-xl-desktop-width-en) 
+        .banner
+            padding-top: 72px
+            height: 14vw
+        .head
+            padding-top: 72px
+

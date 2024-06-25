@@ -1,0 +1,57 @@
+.team
+    @apply text-white font-main-font
+    main
+        .teammates
+            @apply sm:grid grid-cols-2 lg:grid-cols-3 gap-8 justify-between
+            @apply sm:mx-2 md:mx-14 lg:mx-36 xl:mx-44 2xl:mx-60 my-2 sm:my-8 md:my-8 lg:my-12 xl:my-16 2xl:my-20
+
+            &__title
+                @apply my-4
+                @apply w-full flex justify-center
+
+            .teammate
+                @apply mb-12 w-[230px] mx-auto sm:mb-4
+                @apply text-center
+                @apply bg-slate-950
+
+                -webkit-box-shadow: -8px -8px 0px 0px $primary_green-400
+                -moz-box-shadow: -8px -8px 0px 0px $primary_green-400
+                box-shadow: -8px -8px 0px 0px $primary_green-400
+                
+                .mate_img 
+                    @apply max-h-[230px] overflow-hidden
+                    a
+                     @include img_cover()
+
+
+                .mate_info
+                    @apply py-8 px-6
+
+                    .mate_name
+                        @apply flex justify-center
+                        @apply h-[68px]
+                        font-size:1.5rem
+                    .mate_role
+                        margin-bottom: 1em
+                        height: 100%
+                        span
+                            padding:  0.2em 0.65em 0.25em 0.65em 
+                            font-weight: 600
+                    .mate_position
+                        margin: 0.6rem 0
+                    .mate_email
+                        margin: 01.6rem 0 0.6rem 0
+                        font-weight: 600
+                        display: inline
+                        word-break: break-all
+
+                    .mate_coordination
+                        @apply text-primary-green-400 font-medium
+                        .coordinator
+                            border-radius: 24px
+                    .mate_description
+                        span
+                            img
+                                height: 18px
+                                width: 18px
+                                

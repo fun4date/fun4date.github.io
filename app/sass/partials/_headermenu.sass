@@ -1,0 +1,52 @@
+@import "../lib/_variables.sass"
+@import "../lib/_mixins.sass"
+
+    
+header 
+  //@include nav_bar_es
+  background-color: $background
+  z-index: 200
+  color: white
+  @include li_nav_bar
+        
+.nav_bar 
+  position: fixed
+  top: 0
+  left: 0
+
+
+@media (min-width: 150px)         
+    .lang_switcher 
+        //@apply text-white
+        margin-left: 2.4rem
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        cursor: pointer
+        div
+            display: flex
+            margin: 1.7rem 0 0.6rem 0 
+            align-items: center
+        svg
+            margin: 0rem 0.6rem 0 0
+        a:last-child
+            margin-left: 0.26rem
+        
+
+@media (max-width: 600px)
+    //responsive
+    .responsive-hidden 
+        display: none !important
+        
+    .responsive-shown 
+        display: block !important
+
+    
+
+    
+
+           
+
+
+    
+   

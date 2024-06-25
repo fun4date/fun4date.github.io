@@ -1,0 +1,214 @@
+@import "../lib/_variables.sass"
+@import "../lib/_mixins.sass"
+
+// IMPORTANTE CORRECCIONES! Hace falta hacer correcciones de código duplicado
+// tool_github tiene enganchado un mixin que se llama invisible_button para ciertos media 
+// queries. Para otros hace falta crear otro nuevo mixin, algo como "invisible_button_inline", 
+// sino, no se puede cambiar sus propiedades desde el mixin, sino que hay que hacerlo desde 
+// los 3 media queries con ese botón distinto
+
+//mixins exclusivo de tools
+@mixin container-button-column
+    .tool_button_container
+        margin-top: 0.3rem
+        display: flex
+        flex-direction: column-reverse
+        gap: 0.3rem
+        .tool_github
+            justify-content: left
+            padding-left:0rem
+            margin: 0.6rem 0
+            a
+                padding-left: 0
+            &:hover
+                @apply text-ca_blue-600
+                
+//corrección aquí (1/3)
+
+@mixin container-button-inline
+    .tool_button_container
+        margin-top: 1rem
+        display: flex
+        flex-direction: row
+        gap: 0.3rem
+        .tool_button
+            justify-content: left
+            a
+                @include big-border-button-blue
+                align-items: center
+            svg
+                display: flex
+        .tool_github
+            margin: 0rem
+            a
+                
+                display: flex
+                justify-content: left
+                padding-left: 1rem
+                align-items: center
+            
+
+@mixin container-button-inline-no-icon
+    .tool_button_container
+        margin-top: 1rem
+        display: flex
+        flex-direction: row
+        gap: 0.3rem
+        .tool_button
+            a
+                @include big-border-button-blue
+            svg
+                display: none
+        .tool_github
+            margin: 0rem
+            button
+                display: flex
+                justify-content: left
+                padding-left: 1rem
+                margin-bottom: 0rem
+            &:hover
+                @apply text-ca_blue-800
+                background-color: $ca-blue-200
+
+@mixin img-tool
+    .tool_logo
+        width: 100%
+        //margin: 0.8rem 0 0 0
+        border-radius: 11px 11px 0 0
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            border-radius: 11px 11px 0 0
+            object-fit: contain
+            align-self: center
+            min-height: 135px
+            max-height: 160px
+            max-width: 100%
+            padding: 3rem
+        
+
+@media (min-width:150px)
+    .tools
+        .tool
+            @include img-tool
+            @include drop-shadow
+            border-radius: 12px
+            border: solid 1px $ca-blue-200
+            transition: 200ms ease-in-out
+            @apply bg-slate-100
+            
+            .tool_logo
+                //background-color: $blue_primary                
+                img
+                    // filter: brightness(0) invert(1)
+                    // -webkit-filter: brightness(0) invert(1)
+                    
+            .tool_content
+                @apply text-gray-800
+                padding: 1rem 1.8rem 1.8rem 1.8rem
+                display: flex
+                flex-direction: column
+                .tool_title
+                    h2
+                        line-height: 115%
+                        font-weight: 700
+                        margin-bottom: 0.6rem
+                .tool_button_container
+                    display: flex
+                    justify-content: space-between
+                    margin-top: 1rem
+                    .tool_button
+                        @include button
+                        @apply text-ca_blue-700 /*apply siempre al inicio del sass, sino da error (lo hemos vivido)*/
+                        display: flex
+                        flex-wrap: wrap
+                        align-items: center
+                        background: none                                                                  
+                        a
+                            @include big-border-button-blue
+                            display: flex
+                            
+                        svg
+                            display: none
+                            margin-right: 0.6rem
+                    .tool_github
+                        @include invisible-button
+                        @apply text-gray-600
+                        text-decoration: underline
+                        display: flex
+                        
+@media (min-width: 370px )
+    .tools
+        .tool
+            .tool_content
+                @include container-button-inline
+                
+@media (min-width: 500px)
+    .tools
+        .tool
+            .tool_content
+                @include container-button-inline
+@media (min-width: 600px)
+    .tools
+        .tool
+            .tool_description
+                p
+                    margin-bottom:0rem
+            .tool_content
+                @include container-button-column
+                
+                
+@media (min-width: 730px)
+    .tools
+        .tool
+            .tool_content
+                @include container-button-inline
+                
+                   
+@media (min-width: 900px)
+    .tools
+        .tool
+            .tool_content
+                @include container-button-column
+                
+@media (min-width: 1150px)
+    .tools
+        .tool
+            .tool_content
+                @include container-button-inline-no-icon
+                        
+@media (min-width: 1220px)
+    .tools
+        .tool
+            .tool_content
+                @include container-button-inline
+
+
+.bg-blue-gradient-plain
+    background: linear-gradient(139deg, rgba(83,64,255,0.5) 0%, rgba(111,199,255,0.5) 100%)
+    background-position: center
+
+    img
+        filter: brightness(0) invert(0.4)
+        -webkit-filter: brightness(0) invert(0.4)
+        mix-blend-mode: multiply
+
+.bg-purple-gradient-plain
+    background: linear-gradient(320deg, rgba(83,64,255,0.5) 0%, rgba(196,141,116,0.5) 100%)
+    background-position: center
+
+    img
+        filter: brightness(0) invert(0.4)
+        -webkit-filter: brightness(0) invert(0.4)
+        mix-blend-mode: multiply
+
+.bg-yellow-gradient-plain
+    background: linear-gradient(225deg,  rgba(255,127,0,0.65)0%, rgba(192,112,168,0.65) 100%)
+    background-position: center 
+
+    img
+        filter: brightness(0) invert(0.4)
+        -webkit-filter: brightness(0) invert(0.4)
+        mix-blend-mode: multiply
+        

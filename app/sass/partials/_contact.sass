@@ -1,0 +1,114 @@
+.about
+    
+    .banner
+    main
+        padding-bottom: $spacing-lg
+        
+        .about_description
+        .contact_info
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+            .contact,
+            .location
+                flex-grow: 1
+                flex-basis: 0
+
+        .contact
+            display: flex
+            flex-direction: column
+            .contact_content
+                display: flex
+
+                h5
+
+                    text-align: left
+                    // padding-bottom: $spacing-sm
+                ul
+                    display: flex
+                    flex-direction: column
+                    flex-grow: 1
+                    // gap: $spacing-sm
+                    li
+                        gap: $spacing-md
+                        padding-bottom: $spacing-sm
+                        // margin-bottom: 10px 
+
+    .location
+        display: flex
+        flex-direction: column
+
+        .location_title
+            display: flex
+            align-items: center
+
+        .location_icon
+            width: 2rem
+            height: auto
+            padding-right: $spacing-xsm
+
+        .location_info
+        .location_map
+            &.map-responsive
+                position: relative
+                padding-bottom: 85%
+                height: 0
+                overflow: hidden
+
+            iframe
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+    .contact_content
+        .icon
+            width: 2rem
+            height: auto
+            padding-right: $spacing-xsm
+    .location
+        .icon
+            width: 1.5rem
+            height: auto
+            padding-right: $spacing-xsm
+h5
+
+h4, h5
+    display: flex
+    align-items: center
+
+@media (max-width: 640px)
+    .about
+        main
+            padding-top: $spacing-lg
+            padding-left: $spacing-md
+            padding-right: $spacing-md
+            .about_description
+            .contact_info
+                display: flex
+                .contact
+                    display: flex
+                    flex-direction: column
+                    .contact_title
+                    
+                        
+            .contact_content
+                display: flex
+
+                h4
+
+                    text-align: center
+                    padding-bottom: $spacing-md
+                ul
+                    display: flex
+                    flex-direction: column
+                    flex-grow: 1
+                    // gap: $spacing-sm
+                    li
+                        gap: $spacing-sm
+                        // margin-bottom: 10px 
+
+            .location_title
+                display: flex
+                // justify-content: center
+                h4

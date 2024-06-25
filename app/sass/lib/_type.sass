@@ -1,0 +1,221 @@
+@import "./_variables.sass"
+// Estilos de tipografía
+// Hay tres estilos
+// 1) para móvil (300-650px), 
+// 2) para ipad/ desktop (650px-1400px),
+// 3) para pantallas desktop con alta resolución (1400px-2000px)
+
+// DESCRIPCION DE ATRIBUTOS DE VARIABLES DE TEXTO
+// 1er atributo: tamaño móvil, 
+// 2do atributo: tamaño ipad/ desktop
+// 3er atributo: tamaño desktop alta resolución
+// 4to atributo: peso
+// 5to atributo: alto de linea
+// 6to atributo: margen bajo
+
+$icon: 14px,14px, 18px,400
+$xs-text: 14px, 13px, 18px, 400, 140%, 1rem, 0.6rem //small
+$body-text: 14px, 16px, 20px, 300, 140%, 1rem, 0.6rem
+$button: 14px, 16px, 20px, 300 //buttons
+$sm-text: 16px, 18px, 22px, 400, 140%, 1rem, 0.6rem //h5
+$md-text: 18px, 20px, 24px, 400, 140%, 1rem //h4
+$lg-text: 22px, 26px, 32px, 400,140%, 1rem //h3
+$xl-text: 23px, 30px, 38px, 300, 140%, 1rem //h2
+$xxl-text: 28px, 36px, 44px, 600, 140%, 1rem //h1
+
+$slim-weight: 500
+$regular: 400
+$semibold: 600
+$bold: 800
+
+
+h1
+    @media screen and (min-width: 150px)
+        font-family: $main_font, sans-serif
+        font-size: nth($xxl-text,1)
+        line-height: nth($xxl-text,5)
+        margin-bottom: nth($xxl-text,6)
+        font-weight: nth($xxl-text,4)
+    @media screen and (min-width: 640px)
+        font-family: $main_font, sans-serif
+        font-size: nth($xxl-text,2)
+        line-height: nth($xxl-text,5)
+        margin-bottom: nth($xxl-text,6)
+        font-weight: nth($xxl-text,4)
+    @media screen and (min-width: 1400px)
+        font-family: $main_font, sans-serif
+        font-size: nth($xxl-text,3)
+        line-height: nth($xxl-text,5)
+        margin-bottom: nth($xxl-text,6)
+        font-weight: nth($xxl-text,4)
+
+h2
+    @media screen and (min-width: 150px)
+        font-family: $main_font, sans-serif
+        font-size: nth($xl-text,1)
+        line-height: nth($xl-text,5)
+        margin-bottom: nth($xl-text,6)
+        font-weight: nth($xl-text,4)
+    @media screen and (min-width: 640px)
+        font-family: $main_font, sans-serif
+        font-size: nth($xl-text,2)
+        line-height: nth($xl-text,5)
+        margin-bottom: nth($xl-text,6)
+        font-weight: nth($xl-text,4)
+    @media screen and (min-width: 1400px)
+        font-family: $main_font, sans-serif
+        font-size: nth($xl-text,3)
+        line-height: nth($xl-text,5)
+        margin-bottom: nth($xl-text,6)
+        font-weight: nth($xl-text,4)
+h3
+    @media screen and (min-width: 150px)
+        font-family: $main_font, sans-serif
+        font-size: nth($lg-text,1)
+        line-height: nth($lg-text,5)
+        margin-bottom: nth($lg-text,6)
+        font-weight: nth($lg-text,4)
+    @media screen and (min-width: 640px)
+        font-family: $main_font, sans-serif
+        font-size: nth($lg-text,2)
+        line-height: nth($lg-text,5)
+        margin-bottom: nth($lg-text,6)
+        font-weight: nth($lg-text,4)
+    @media screen and (min-width: 1400px)
+        font-family: $main_font, sans-serif
+        font-size: nth($lg-text,3)
+        line-height: nth($lg-text,5)
+        margin-bottom: nth($lg-text,6)
+        font-weight: nth($lg-text,4)
+h4
+    @media screen and (min-width: 150px)
+        font-family: $main_font, sans-serif
+        font-size: nth($md-text,1)
+        line-height: nth($md-text,5)
+        margin-bottom: nth($md-text,6)
+        font-weight: nth($lg-text,4)
+    @media screen and (min-width: 640px)
+        font-family: $main_font, sans-serif
+        font-size: nth($md-text,2)
+        line-height: nth($md-text,5)
+        margin-bottom: nth($md-text,6)
+        font-weight: nth($lg-text,4)
+    @media screen and (min-width: 1400px)
+        font-family: $main_font, sans-serif
+        font-size: nth($md-text,3)
+        line-height: nth($md-text,5)
+        margin-bottom: nth($md-text,6)
+        font-weight: nth($lg-text,4)
+h5
+    @media screen and (min-width: 150px)
+        font-family: $main_font, sans-serif
+        font-size: nth($sm-text,1)
+        line-height: nth($sm-text,5)
+        margin-bottom: nth($sm-text,6)
+    @media screen and (min-width: 640px)
+        font-family: $main_font, sans-serif
+        font-size: nth($sm-text,2)
+        line-height: nth($sm-text,5)
+        margin-bottom: nth($sm-text,6)
+    @media screen and (min-width: 1400px)
+        font-family: $main_font, sans-serif
+        font-size: nth($sm-text,3)
+        line-height: nth($sm-text,5)
+        margin-bottom: nth($sm-text,6)
+
+// parrafos, etiquetas e inputs
+p, label, input, select
+    @media screen and (min-width: 150px)
+        font-family: $main_font, sans-serif
+        font-size: nth($body-text,1)
+        line-height: nth($body-text,5)
+        font-weight: nth($body-text,4)
+        // @apply  text-ffdBlue-400
+        //margin-bottom: nth($body-text,6)
+    @media screen and (min-width: 640px)
+        font-family: $main_font, sans-serif
+        font-size: nth($body-text,2)
+        line-height: nth($body-text,5)
+        font-weight: nth($body-text,4)
+        // @apply  text-ffdBlue-400
+        //margin-bottom: nth($body-text,6)
+    @media screen and (min-width: 1400px)
+        font-family: $main_font, sans-serif
+        font-size: nth($body-text,3)
+        line-height: nth($body-text,5)
+        font-weight: nth($body-text,4)
+        // @apply  text-ffdBlue-400
+        //margin-bottom: nth($body-text,6)
+
+// texto pequeño 
+small
+    @media screen and (min-width: 150px)
+        font-family: $main_font, sans-serif
+        font-size: nth($xs-text,1)
+        line-height: nth($xs-text,5)
+        //margin-bottom: nth($xs-text,6)
+    @media screen and (min-width: 640px)
+        font-family: $main_font, sans-serif
+        font-size: nth($xs-text,2)
+        line-height: nth($xs-text,5)
+        //margin-bottom: nth($xs-text,6)
+    @media screen and (min-width: 1400px)
+        font-family: $main_font, sans-serif
+        font-size: nth($xs-text,3)
+        line-height: nth($xs-text,5)
+        //margin-bottom: nth($xs-text,6)
+
+// texto extra pequeño
+    // parrafos
+.xs-text
+    @media screen and (min-width: 150px)
+        font-family: $main_font, sans-serif
+        font-size: nth($xs-text,1)
+        line-height: nth($xs-text,5)
+        //margin-bottom: nth($xs-text,6)
+    @media screen and (min-width: 640px)
+        font-family: $main_font, sans-serif
+        font-size: nth($xs-text,2)
+        line-height: nth($xs-text,5)
+        //margin-bottom: nth($xs-text,6)
+    @media screen and (min-width: 1400px)
+        font-family: $main_font, sans-serif
+        font-size: nth($xs-text,3)
+        line-height: nth($xs-text,5)
+        //margin-bottom: nth($xs-text,6)
+
+// botones + botones con links
+button, a
+    @media screen and (min-width: 150px)
+        font-family: $main_font, sans-serif
+        font-size: nth($button,1)
+        font-weight: nth($button,4)
+    @media screen and (min-width: 640px)
+        font-family: $main_font, sans-serif
+        font-size: nth($button, 2)
+        font-weight: nth($button,4)
+    @media screen and (min-width: 1400px)
+        font-family: $main_font, sans-serif
+        font-size: nth($button,3)
+        font-weight: nth($button,4)
+    a
+        @media screen and (min-width: 150px)
+            font-family: $main_font, sans-serif
+            font-size: nth($button,1)
+            font-weight: nth($button,4)
+        @media screen and (min-width: 640px)
+            font-family: $main_font, sans-serif
+            font-size: nth($button, 2)
+            font-weight: nth($button,4)
+        @media screen and (min-width: 1400px)
+            font-family: $main_font, sans-serif
+            font-size: nth($button,3)
+            font-weight: nth($button,4)
+
+.icon
+    @media screen and (min-width: 150px)
+        font-size: nth($icon,1)
+    @media screen and (min-width: 640px)
+        font-size: nth($icon, 2)
+    @media screen and (min-width: 1400px)
+        font-size: nth($icon,3)

@@ -1,0 +1,25 @@
+@mixin icon_circle
+
+    @apply bg-backgroundSecondary
+    border-radius: 50px
+    @apply text-slate-400
+    
+    @media (min-width: $min-phone-width)
+        height: 1rem
+        width: 1rem
+        padding: 0.5rem
+    @media (min-width: $min-tablet-width)
+        height: 1.5rem
+        width: 1.5rem
+        padding: 0.8rem
+    @media (min-width: $min-desktop-width)
+        height: 1.8rem
+        width: 1.8rem
+        padding: 1rem
+    @media (min-width: $min-xl-desktop-width)
+        height: 2.1rem
+        width: 2.1rem
+        padding: 1rem
+
+.icon_circle
+    @include icon_circle

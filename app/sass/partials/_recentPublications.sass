@@ -1,0 +1,92 @@
+@import '../lib/_variables.sass'
+@import "../lib/_mixins.sass"
+
+._publications._recent_publications
+    // display: grid
+    // display: grid
+    // grid-template-rows: repeat(3, 1fr)
+    // grid-template-columns: repeat(2, 1fr)
+
+    gap: $spacing_xsm
+    height: 100%
+
+._recent_publications
+    a 
+        height: 100%
+    .article
+        height:100%
+.more
+    // grid-column: 3 / span 2
+    // grid-row: 6 / span 1
+    display: flex
+    width: fit-content
+    align-items: right
+    justify-content: right
+
+
+/* If you need specific responsive adjustments */
+@media (min-width: 900px)
+
+
+.article
+    transition: 200ms ease-in-out
+    display: flex
+    flex-direction: column
+    @apply bg-gray-50
+    &:hover
+        transition: 200ms ease-in-out
+
+        @apply bg-gray-100
+
+    .article_stroke.color-orange
+        border: 4px solid $ca-or-300
+
+    .article_stroke.color-yellow
+        border: 4px solid $ca-or-100
+
+    .article_stroke.color-purple
+        border: 4px solid $ca-blue-400
+
+    .article_content
+        gap: $spacing_xsm
+        display: flex
+        flex-direction: column
+        padding-left: $spacing_sm
+        padding-bottom: $spacing_sm
+        padding-right: $spacing_md
+        padding-top: $spacing_sm
+        .article_date
+            span
+                display: flex
+                small
+                    display: flex
+                    @include border-tag
+            
+
+        .article_title
+            font-weight: $bold
+            @apply text-gray-800
+            margin-top: 0.6rem
+            margin-bottom: 0
+
+        .article_author
+            font-weight: $regular
+            @apply text-gray-800
+            margin-bottom: 1em
+
+// este código está duplicado en publications.
+//habría que ver si se puede convertir en otro mixin
+.paper_link      
+    // @include icon-button-left 
+    // @include button    
+    // display: flex
+    // flex-direction: row
+    // //gap: $spacing_xsm
+    // align-content: center
+    // justify-content: left
+    // margin-top: 0.6rem        
+    // a 
+    //     @include big-border-button-blue
+    //     display: flex
+    //     align-content: center
+    //     //margin-top: $spacing_sm     

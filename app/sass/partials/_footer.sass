@@ -1,0 +1,105 @@
+@media (min-width: 150px) 
+    footer
+        width: 100%
+        padding: 2.5rem 2.5rem 1.5rem 2.5rem
+        font-size: 1.1rem
+        display: flex
+        flex-direction: column
+        //display: grid
+        //grid-template-columns: 1fr 1fr
+        @apply bg-backgroundSecondary
+        @apply text-white
+        .container_line_1 
+            display: flex
+            flex-direction: column 
+            margin-bottom: 2rem
+            gap: 2rem
+            justify-content: space-between
+        .footer_left
+            grid-column: span 2
+            text-align: left
+            h1
+                margin-bottom: 1rem
+            .footer_subtitle
+                font-size: 16px //mientras no furule la hoja de _type.sass
+
+                h5
+                    //line-height: 2rem
+
+        .footer_mid
+            display: flex
+            text-align: center
+            .footer_img_container_funder
+                text-align: left
+                display: block
+                margin-bottom: 2rem
+                p 
+                    margin-bottom: 1rem
+                img
+                    width: 80vw
+                    max-width: 400px
+            .footer_img_container_partners
+                text-align: left
+                display: block
+                div
+                    display: flex
+                    align-items: center
+            
+                img
+                    width: 40vw
+                    max-width: 400px
+        
+       
+        .footer_right
+            text-align: left
+           
+            .copyright
+                max-width: 80vw
+                @apply text-gray-400
+        
+        ul
+            justify-content: center
+            display: flex
+            flex-direction: column
+
+            li
+                margin: 0 1.3rem 0 0
+
+
+@media (min-width: 700px) 
+    footer
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .container_line_1 
+            display: flex
+            flex-direction: row 
+            margin-bottom: 2rem
+            justify-content: space-between
+        .footer-right
+            text-align: right
+            align-items: right
+        .footer_mid
+            .footer_img_container_funder
+                text-align: left
+                display: block
+                p 
+                    margin-bottom: 2rem
+                img
+                    max-width: 20vw
+            .footer_img_container_partners
+                text-align: left
+                display: block
+                div
+                    display: flex
+                    align-items: center
+                    gap: 1rem
+                img
+                    height: auto
+                    max-width: 13vw
+        .footer_right
+            text-align: left
+            .copyright
+                max-width: 42vw
+            
+        
