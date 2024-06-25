@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html hola="bye">
-      <body className={montserrat.className}>{isClient ? children:null}</body>
+      <body className={montserrat.className}>{isClient  ? children:null}</body>
     </html>
   );
 }
