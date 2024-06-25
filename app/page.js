@@ -50,10 +50,16 @@ export default function Home() {
 
               <div className="body">
                 <section className="project_description">
-                  <div className="xl_margin">
+                  <div className="xl_margin gap_text">
+                    <div>
                     <h2>{t("front.projectTitle")} </h2>
-                    <h5>{t("front.projectSubtitle")} </h5>
-                    <p>{t("front.projectDescription")} </p>
+                 
+                      <h5 className="text-center">
+                        {t("front.projectSubtitle")}{" "}
+                      </h5>
+                      </div>
+                      <p>{t("front.projectDescription")} </p>
+               
                   </div>
                 </section>
                 <section className="standard_margin">
@@ -75,8 +81,6 @@ export default function Home() {
                     <RecentPublications />
                   </div>
                 </section>
-             
-              
               </div>
             </section>
           </main>
