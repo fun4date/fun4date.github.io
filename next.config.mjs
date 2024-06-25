@@ -37,7 +37,7 @@ const nextConfig = {
    * Environment variables
    */
   env: {
-    PUBLIC_URL: isProd ? "https://ging.github.io/" : "",
+    PUBLIC_URL: isProd ? "https://fun4date.github.io/" : "",
     BASE_PATH: isProd ? "" : ""
   }
 };
