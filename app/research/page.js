@@ -72,7 +72,7 @@ export default function Research() {
   const handleLoadMore = () => {
     setState((prevState) => ({
       ...prevState,
-      papersToShow: prevState.papersToShow + 3,
+      papersToShow: prevState.papersToShow + 4,
     }));
   };
 
@@ -82,7 +82,7 @@ export default function Research() {
 
       <main>
         <div
-          className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6"
+          className="banner px-4 sm:px-8  md:px-14 lg:py-2 lg:px-24 xl:py-4 xl:px-28 2xl:px-32 2xl:py-6"
           id="banner-publications"
         >
           <h1>{t("publications.title")}</h1>
@@ -93,7 +93,7 @@ export default function Research() {
             en sistemas de redes de no se cuantitos.
           </p>
         </div>
-        <section className="research lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4 my-4 xl:mx-44 2xl:mx-60">
+        <section className="research lg:mx-36 md:mx-14 sm:mx-8 mx-4  md:my-8 sm:my-4 my-4 xl:mx-44 2xl:mx-60">
           <Filters
             search={search}
             year={year}
@@ -106,7 +106,7 @@ export default function Research() {
               papersFiltered instanceof Array ? papersFiltered.length : 0
             }
           />
-          <div className="papers">
+          <div className="papers block lg:grid lg:grid-cols-2">
             {papersFiltered
               .slice(0, papersToShow)
               .map(({ date, doi, author, title, journal }, ind) => {

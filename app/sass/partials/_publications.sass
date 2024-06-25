@@ -5,24 +5,24 @@
 .paper_content
     display: flex
     flex-direction: column
-@media (min-width: 150px)
-    .research
+@media (min-width: 150px)  
+    .research 
         display: flex
         flex-direction: column
         flex: 1
-
+        
         .filters
             justify-content: space-between
         .filter
             display: flex
             flex-direction: column
             align-items: start
-
+           
         // .main
         //     min-height: calc(100vh - 150px)
         //     padding: 5rem 0 0 0
         //     background-color: red
-
+        
         .research_results
             display: flex
             flex-wrap: wrap
@@ -30,32 +30,34 @@
             align-content: center
             margin-right: 1rem
             @apply mb-8
-
+           
             //width: 13rem
-                justify-content: flex-end
-            b
+            justify-content: flex-end
+            b 
                 margin-left: 0.4rem
                 width: 2rem
-
-        section
+                
+        section 
             gap: $spacing_md
             display: flex
             flex-direction: column
-    .load_more
+    .load_more 
         padding-top: $spacing_sm
         padding-bottom: 0
         display: flex
         justify-content: center
-        button
+        button 
             outline: none
             border: none
             @include button-load-more
+        
 
-    .filters
+
+    .filters 
         text-align: left
         display: flex
         flex-wrap: wrap
-        gap: 2rem
+        gap: 2rem   
         padding-bottom: $spacing_lg
         margin-top: $spacing_lg
         border-bottom: solid 1px $ca-blue-200
@@ -64,34 +66,37 @@
             margin: 0 0.8rem 0.8rem 0
             width: 100%
             text-align: right
-
+            
             label
                 display: flex
                 //min-width: 5.1rem
                 //width: 100%
                 padding-right: 1.6rem
                 margin-bottom: 0.4rem
-                line-height: 120%
+                line-height:120%
                 @apply text-gray-400
                 font-weight: $light
                 border-radius: 0
             @include select
-
-    .papers
+           
+  
+    .papers 
         display: flex
-
+        
         padding-left: 0px
-        .paper
-
+        .paper 
+            
             display: flex
             flex-direction: column
             border-bottom: $gray-300 1px solid
-
-        .paper_main
+            
+            
+        .paper_main 
             display: flex
             flex-direction: column
             justify-content: space-between
-
+            
+            
             .paper_date
                 display: flex
                 border-width: 4px
@@ -109,21 +114,21 @@
                     font-size: 2.2rem
                     font-weight: 400
                     display: block
-
+                
             .paper_content
                 gap: .5rem
 
-            .paper_title
+            .paper_title 
                 @apply text-ffdGreen-300
 
-            .paper_subtitle
+            .paper_subtitle 
                 //padding-bottom: $spacing_md
                 @apply text-gray-100
                 margin-bottom: $spacing_xsm
-            .paper_doi
+            .paper_doi 
                 font-weight: 400
 
-        .paper_link
+        .paper_link      
             @include icon-button-right
             @include link-button
             // @include button    
@@ -134,18 +139,20 @@
             // justify-content: left
             // margin-top: 0.6rem        
             // a 
-
+                
             //     display: flex
             //     align-content: center
                 //margin-top: $spacing_sm          
-
-@media (min-width: 640px)
+           
+            
+            
+@media (min-width: 640px) 
     .research
         .filters
             text-align: right
             display: flex
             flex-wrap: wrap
-            gap: 2rem
+            gap: 2rem   
             padding-bottom: $spacing_lg
             border-bottom: solid 1px $ca-blue-100
             justify-content: space-between
@@ -163,17 +170,19 @@
                     min-width: 10.2rem
                 input
                     width: 20.6rem
-    .papers
+    .papers 
         display: flex
         flex-direction: column
         gap: $spacing_xsm
         display: flex
         flex-direction: column
         padding: $spacing_sm 0 $spacing_md 0
-        .paper
+        .paper 
             padding: $spacing_sm 0 $spacing_md 0
+       
 
-        .paper_main
+
+        .paper_main 
             display: flex
             flex-direction: row
             justify-content: left
@@ -191,19 +200,19 @@
 
                 h5
                     @include border-tag
-
-            .paper_content
-                width: 100%
+                
+            .paper_content 
+                width:100%
                 gap: .5rem
 
-            .paper_title
+            .paper_title 
                 @apply text-ffdGreen-300
                 font-weight: 300
 
-            .paper_subtitle
+            .paper_subtitle 
                 //padding-bottom: $spacing_md
 
-            .paper_doi
+            .paper_doi 
                 font-weight: 600
 
         .button_container
@@ -218,17 +227,17 @@
                 justify-content: flex-end
                 flex-wrap: wrap
                 margin: 0
-                p
+                p 
                     font-weight: 600
                     margin: 0
                 a
                     display: flex
 @media (min-width: 750px)
     .research
-    .filters
-        gap: 2rem
-        justify-content: space-between
-        .filter
+      .filters
+        gap: 2rem   
+        justify-content: space-between       
+        .filter      
             label
                 width: auto !important
                 min-width: 6.5rem
@@ -241,9 +250,9 @@
 @media (min-width: 900px)
     .research
         .filters
-            justify-content: space-between
-            gap: 2rem
-            .filter
+            justify-content: space-between  
+            gap: 2rem     
+            .filter      
                 label
                     width: auto !important
                     min-width: 6rem
@@ -261,25 +270,25 @@
                         // border-right: 3px solid red 
                         -webkit-border-image: -webkit-gradient(linear, 0% 0%, 0% 0%, from(rgba(152, 206, 9, 1)), to(rgba(152, 206, 0, 0))) 1 100%
 
-                    .paper_content
+                    .paper_content 
                         gap: 1rem
-                        width: 70%
+                        width:70%
 @media (max-width: 640px)
-    .papers
-        .paper
-            .paper_main
-                .paper_date
-                    display: flex
-                    border-width: 4px
-                    border-style: solid
-                    border-right-width: 0px
-                    border-left-width: 4px
-                    border-top-width: 0px
-                    border-bottom-width: 0px
+            .papers
+            .paper
+                .paper_main
+                    .paper_date
+                        display: flex
+                        border-width: 4px
+                        border-style: solid
+                        border-right-width: 0px
+                        border-left-width: 4px
+                        border-top-width: 0px
+                        border-bottom-width: 0px
                         // border-right: 3px solid red 
-                    -webkit-border-image: -webkit-gradient(linear, 0% 0%, 0% 0%, from(rgba(152, 206, 9, 1)), to(rgba(152, 206, 0, 0))) 1 100%
+                        -webkit-border-image: -webkit-gradient(linear, 0% 0%, 0% 0%, from(rgba(152, 206, 9, 1)), to(rgba(152, 206, 0, 0))) 1 100%
                     .paper_content
-
+    
                         gap: .5rem
                 .button_container
                     display: flex
@@ -293,7 +302,7 @@
                         justify-content: flex-end
                         flex-wrap: wrap
                         margin: 0
-                        p
+                        p 
                             font-weight: 600
                             margin: 0
                         a
