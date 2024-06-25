@@ -65,7 +65,7 @@ TYPOGRAPHY
 /* ==========================================================================
     ESTRUCTURA SEGÚN IDIOMA
    ========================================================================== */
-.page_es {
+.page_es, .page_es-ES {
   background-color: $background;
   header {
     @include nav_bar_es;
