@@ -78,7 +78,7 @@ export default function Home() {
                     </div>
                   </div>
                 </section>
-                <section className="latest_publications standard_margin">
+                <section className="latest_publications standard_padding ">
                   <h3>{t("front.latestPublicationsTitle")}</h3>
                   <div className="recent_pubs_container">
                     <RecentPublications />

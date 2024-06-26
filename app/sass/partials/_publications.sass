@@ -2,6 +2,11 @@
 @import "../lib/_variables.sass"
 // Correcciones: código duplicado para select e input. 
 // Recomendado hacer mixins
+
+._recent_publications
+    .paper
+        @apply bg-backgroundSecondary
+
 .paper_content
     display: flex
     flex-direction: column
@@ -82,7 +87,6 @@
   
     .papers 
         display: flex
-        
         padding-left: 0px
         .paper 
             

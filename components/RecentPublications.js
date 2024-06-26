@@ -20,13 +20,13 @@ export default function RecentPublications(props) {
   return (
     <div className="_publications _recent_publications ">
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 2 }}>
-        <Masonry gutter="24px">
+        <Masonry gutter="24px" className="papers">
           {papers
             .filter((paper) => {
               return paper.type === "article-journal";
             })
             .filter((i, index) => index < 4)
-            .map(({ doi, title, author, date, stroke, content }, index) => {
+            .map(({ doi, title, author, date, journal, ind, stroke, content }, index) => {
               return (
                 // <a
                 //   key={doi}
@@ -34,14 +34,21 @@ export default function RecentPublications(props) {
                 //   target="_blank"
                 //   rel="noopener noreferrer"
                 // >
-                  <div key={doi} className={`article`}>
-                    <div className={`article_stroke ${stroke}`}></div>
-                    <div className="article_content">
-                      <div className="article_date">
-                        <span><small>{date}</small></span>
-                      </div>
-                      <h5 className="article_title">{title}</h5>
-                      <p className="article_author">{author}</p>
+                <div key={ind} className="paper">
+                <div className="paper_main">
+                  <div className="paper_date">
+                    <p className="year">{date ? date[0] : ""}</p>
+                  </div>
+                  <div className="paper_content">
+                    <div className="paper_title">
+                      <h4>{title}</h4>
+                    </div>
+                    <div className="paper_subtitle">
+                      <p>
+                        {author}. {journal}
+                      </p>
+                    </div>
+                    <div className="button_container">
                       {doi ? (
                         <button className="paper_link text-nowrap">
                           <Link
@@ -55,6 +62,9 @@ export default function RecentPublications(props) {
                         </button>
                       ) : null}
                     </div>
+                  </div>
+                </div>
+      
                   </div>
                 // </a>
               );
