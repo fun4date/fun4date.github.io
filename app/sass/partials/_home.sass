@@ -7,18 +7,15 @@
         .head
             display: flex
             justify-content: space-between
-            height: 50vh
+            height: 60vh
             margin-top: 3rem
+            @apply py-8 sm:py-12 md:py-20 lg:py-24 2xl:py-32
         h3
             @apply text-slate-200
             margin-bottom: 0rem
         p
-            @apply text-slate-300
             margin-bottom: 1.4rem
-    .container_front_description
-        padding-left:2rem
-        border-left: $link_header 2px solid
-        .front_description
+  
            
     .project_description
         background-image: url("/assets/img/section_description_home.png")
@@ -66,7 +63,7 @@
         opacity: 45%
         z-index:0
         background-image: url("/assets/img/banner-prov.svg")
-        margin: -6vh 0 0
+        margin: 0 0 0
         background-size: cover
         background-position: 70% 0
     .award_section 
@@ -129,6 +126,9 @@
             justify-content: space-between
             height: 80vh
             margin-top: 6rem
+    .container_front_description
+        padding-left:2rem
+        border-left: $link_header 2px solid
     .project_description
         h5
             width:80%

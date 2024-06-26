@@ -116,9 +116,12 @@ li {
 
 body,
 html {
-  @apply text-ffdBlue-300;
+  color: white;
   // margin: 0 auto;
   scroll-behavior: smooth;
+}
+p {
+  @apply text-slate-300;
 }
 section {
     // @media (min-width:150px) {

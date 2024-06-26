@@ -61,7 +61,7 @@ export default function Home() {
                         {t("front.projectSubtitle")}{" "}
                       </h5>
                       </div>
-                      <p>{t("front.projectDescription")} </p>
+                      <p className="text-white">{t("front.projectDescription")} </p>
                
                   </div>
                 </section>
