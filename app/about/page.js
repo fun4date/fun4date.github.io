@@ -16,12 +16,13 @@ export default function About(props) {
       <Header route={"/about"} />
       <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6">
         <h1>{t("contact.title")}</h1>
-      </div>
-      <main className=" xs:my-4 sm:mx-8 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2">
-        <section className="md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg about_description text-slate-700">
-          <p>
+        <p>
           Para consultas sobre este proyecto o solicitudes para futuras colaboraciones, puedes ponerte en contacto con los equipos de ambas universidades. 
           </p>
+      </div>
+      <main className=" xs:my-4 sm:mx-8 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2">
+        <section className="md:max-w-screen-sm mb-28 lg:max-w-screen-md xl:max-w-screen-lg about_description text-slate-700">
+          
         </section>
         <section className="contact_info ">
           <div className="contact col1">
