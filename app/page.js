@@ -32,18 +32,21 @@ export default function Home() {
           <main>
             <section className="home">
               <div className="head block sm:flex sm:flew-row items-center py-8 sm:py-12 md:py-20 lg:py-24 2xl:py-32">
-                <div className="group_description flex flex-col gap-4 sm:justify-center md:gap-8 sm:items-center mx-8 sm:mx-8 md:ml-12 lg:ml-16 xl:ml-20 2xl:ml-24 sm:w-2/5">
+                <div className="group_description flex flex-col gap-4 sm:items-start md:gap-8  mx-8 sm:mx-8 md:ml-12 lg:ml-16 xl:ml-20 2xl:ml-24 sm:w-3/5">
                   <img
                     className="logo_home mt-4 sm:mt-0 self-start w-full"
                     src="assets/img/iso_logo.svg"
                   />
-                  <h2 className="text-white self-start">{t("front.title")}</h2>
+                  <h3 className="self-start">{t("front.title")}</h3>
+                  <div className="container_front_description">
+                  <p className="front_description ">{t("front.description")}</p>
                   <button className="action_button self-start">
                     <Link rel="noopener noreferrer" target="_blank" href="#">
                       <span>{t("front.action-button")}</span>
                       <FontAwesomeIcon icon={faArrowRight} />
                     </Link>
                   </button>
+                  </div>
                 </div>
                 <div className="banner_f4d_img sm:mt-0 sm:w-3/5" />
               </div>

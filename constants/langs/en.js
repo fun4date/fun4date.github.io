@@ -11,6 +11,7 @@ export const en = {
     },
     "front": {
         "title": "Future Networks for Datacenters and Telcos",
+        "description": "The project proposal is a holistic and comprehensive approach that requires the active involvement and collaboration of both experts in networking and computing.",
         "action-button": "About the project",
         "projectTitle": "Short description of the project",
         "projectSubtitle": "FuN4DaTe aims at designing a cost-effective energy-efficient network architecture",

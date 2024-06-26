@@ -11,13 +11,16 @@ export const es = {
     },
     "front": {
         "title": "Redes Futuras para Centros de Datos y Empresas de Telecomunicaciones",
+        "description": "La propuesta del proyecto es un enfoque holístico e integral que requiere la participación y colaboración activa de expertos en redes e informática.",
         "action-button": "Sobre el proyecto",
         "projectTitle": "Short description of the project",
         "projectSubtitle": "FuN4DaTe aims at designing a cost-effective energy-efficient network architecture",
         "projectDescription": "FuN4DaTe aims at designing a cost-effective energy-efficient network architecture that approaches the envisioned by the ITU FG-NET2030 network and the Hyperscale cloud providers to upgrade telco networks by boosting bandwidth, latency, security, manynets while incorporating AI/ML into the network operations, on attempts to deal with forthcoming challenging services like holographic-type communications, tactile Internet for remote operations, intelligent operations networks, network and computing convergence, digital twins, space-terrestrial integrated network and industrial IoT with cloudification.",
         "latestPublicationsTitle": "Últimas publicaciones",
         "latestPublicationsButton": "Ver todas las publicaciones",
-    
+        "sectionHomeTitle": "A collaborative project between UC3M and UPM",
+        "sectionHomeBody": "The collaboration between the groups will help in aligning the strategies to meet the objectives, instead of producing divergent solutions. Finally, the PI1 for the UPM subproject was part of UC3M team until a few months ago, with multipleshared projects and papers published with both PIs from UC3M, many of them related to the topics of this project. This will greatly facilitate the alignment of both subprojects and effective coordination.",
+        "sectionHomeSubtitle": "“The collaboration between the groups will help in aligning the strategies to meet the objectives, instead of producing divergent solutions”.",
     },
     "project": {
         "Intro": {
