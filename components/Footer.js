@@ -26,7 +26,7 @@ export default function Footer(props) {
     { route: "/about", key: "nav.item6" },
   ];
   return (
-    <footer>
+    <footer className="padding_footer">
       <div className="container_line_1">
         <div className="footer_left ">
           <div className="footer_title">

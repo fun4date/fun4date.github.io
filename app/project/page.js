@@ -67,7 +67,7 @@ export default function Projects() {
           {t("project.Subprojects.sectionTitle")}
         </h2>
         <div className="flex flex-col sm:flex-row subprojects_container gap-0 sm:gap-16">
-          <div className="standard_margin-l subproject text-ffdGreen-300 basis-6/12 py-6 border-4 border-solid border-transparent border-t-ffdGreen-400">
+          <div className="standard_margin-l subproject text-ffdGreen-300 basis-6/12 py-3 sm:py-6 border-2 sm:border-4 border-solid border-transparent border-t-ffdGreen-400">
          
               <h3 className="mb-1">
                 {t("project.Subprojects.Subproject1.Title")}
@@ -88,7 +88,7 @@ export default function Projects() {
               src="assets/img/divisor-partial.png"
             ></img> 
           </div> */}
-          <div className="standard_margin-r subproject text-ffdBlue-300 basis-6/12 py-6 border-4 border-solid border-transparent border-t-ffdBlue-300">
+          <div className="standard_margin-r subproject text-ffdBlue-300 basis-6/12 py-3 sm:py-6 border-2 sm:border-4 border-solid border-transparent border-t-ffdBlue-300">
            
               <h3 className="mb-1">
               

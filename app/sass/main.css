@@ -108,7 +108,7 @@
 @media screen and (min-width: 150px) {
   h2 {
     font-family: "Archivo", sans-serif;
-    font-size: 23px;
+    font-size: 26px;
     line-height: 140%;
     margin-bottom: 1rem;
     font-weight: 300;
@@ -343,27 +343,27 @@
 }
 
 .standard_margin {
-  @apply m-4 sm:my-4 sm:mx-8 md:my-8 md:mx-14 lg:my-12 lg:mx-36 xl:mx-44 2xl:mx-60;
+  @apply m-6 sm:my-6 sm:mx-8 md:my-8 md:mx-14 lg:my-12 lg:mx-36 xl:mx-44 2xl:mx-60;
 }
 
 .xl_margin {
-  @apply m-8 sm:my-12 sm:mx-16 md:my-16 md:mx-24 lg:my-20 lg:mx-44 xl:mx-60 2xl:mx-80;
+  @apply m-6 sm:my-12 sm:mx-16 md:my-16 md:mx-24 lg:my-20 lg:mx-44 xl:mx-60 2xl:mx-80;
 }
 
 .standard_margin-x {
-  @apply mx-4 sm:mx-8 md:mx-14 lg:mx-36 xl:mx-44 2xl:mx-60;
+  @apply mx-6 sm:mx-8 md:mx-14 lg:mx-36 xl:mx-44 2xl:mx-60;
 }
 
 .standard_margin-y {
-  @apply my-4 sm:my-4 md:my-8 lg:my-12;
+  @apply my-6 sm:my-6 md:my-8 lg:my-12;
 }
 
 .standard_margin-l {
-  @apply m-4 sm:ml-8 sm:mr-0 md:ml-14 lg:ml-36 xl:ml-44 2xl:ml-60;
+  @apply mx-6 sm:ml-8 sm:mr-0 md:ml-14 lg:ml-36 xl:ml-44 2xl:ml-60;
 }
 
 .standard_margin-r {
-  @apply m-4 sm:mr-8 sm:ml-0 md:mr-14 lg:mr-36 xl:mr-44 2xl:mr-60;
+  @apply mx-6 mt-6 sm:mr-8 sm:ml-0 md:mr-14 lg:mr-36 xl:mr-44 2xl:mr-60;
 }
 
 .margin_top_button {
@@ -371,7 +371,11 @@
 }
 
 .standard_padding {
-  @apply p-4 sm:py-4 sm:px-8 md:py-8 md:px-14 lg:py-12 lg:px-36 xl:px-44 2xl:px-60;
+  @apply p-6 sm:py-6 sm:px-8 md:py-8 md:px-14 lg:py-12 lg:px-36 xl:px-44 2xl:px-60;
+}
+
+.padding_footer {
+  @apply p-6 sm:py-6 sm:px-8 md:py-8 md:px-16 lg:py-16 lg:px-16 xl:px-24 2xl:px-36;
 }
 
 .padding_card_highlight {
@@ -734,6 +738,10 @@ header li.li-selected a:hover {
   width: 100%;
   height: 100%;
 }
+.about .contact_content {
+  display: flex;
+  gap: 32px;
+}
 .about .contact_content .icon {
   width: 2rem;
   height: auto;
@@ -744,8 +752,7 @@ header li.li-selected a:hover {
   height: auto;
   padding-right: 8px;
 }
-
-h4, h5 {
+.about h4, .about h5 {
   display: flex;
   align-items: center;
 }
@@ -765,6 +772,8 @@ h4, h5 {
   }
   .about main .contact_content {
     display: flex;
+    gap: 64px;
+    flex-wrap: wrap;
   }
   .about main .contact_content h4 {
     text-align: center;
@@ -1015,7 +1024,6 @@ h4, h5 {
     width: 2rem;
   }
   .research section {
-    gap: 32px;
     display: flex;
     flex-direction: column;
   }
@@ -1042,8 +1050,8 @@ h4, h5 {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    padding-bottom: 48px;
-    margin-top: 48px;
+    padding-bottom: 16px;
+    margin-top: 16px;
     border-bottom: solid 1px #dbe2ff;
     justify-content: space-between;
   }
@@ -1131,12 +1139,13 @@ h4, h5 {
   }
   .papers .paper_main .paper_date p {
     @apply text-gray-400 px-4;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 400;
     display: block;
+    padding-left: 0px;
   }
   .papers .paper_main .paper_content {
-    gap: 0.5rem;
+    height: 10rem;
   }
   .papers .paper_main .paper_title {
     @apply text-ffdGreen-300;
@@ -1173,7 +1182,7 @@ h4, h5 {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    padding-bottom: 48px;
+    padding-bottom: 16px;
     border-bottom: solid 1px #ebf0ff;
     justify-content: space-between;
   }
@@ -1197,7 +1206,6 @@ h4, h5 {
   .papers {
     display: flex;
     flex-direction: column;
-    gap: 8px;
     display: flex;
     flex-direction: column;
     padding: 16px 0 32px 0;
@@ -1232,7 +1240,6 @@ h4, h5 {
   }
   .papers .paper_main .paper_content {
     width: 100%;
-    gap: 0.5rem;
   }
   .papers .paper_main .paper_title {
     @apply text-ffdGreen-300;
@@ -1282,7 +1289,7 @@ h4, h5 {
     color: #F8F8F8;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   .research .filters {
     justify-content: space-between;
     gap: 2rem;
@@ -1303,8 +1310,13 @@ h4, h5 {
     -webkit-border-image: -webkit-gradient(linear, 0% 0%, 0% 0%, from(rgb(152, 206, 9)), to(rgba(152, 206, 0, 0))) 1 100%;
   }
   .research .papers .paper .paper_main .paper_content {
-    gap: 1rem;
+    height: 16rem;
     width: 70%;
+  }
+}
+@media (min-width: 1400px) {
+  .research .papers .paper .paper_main .paper_content {
+    height: 20rem;
   }
 }
 @media (max-width: 640px) {
@@ -1317,9 +1329,6 @@ h4, h5 {
     border-top-width: 0px;
     border-bottom-width: 0px;
     -webkit-border-image: -webkit-gradient(linear, 0% 0%, 0% 0%, from(rgb(152, 206, 9)), to(rgba(152, 206, 0, 0))) 1 100%;
-  }
-  .paper .paper_main .paper_content {
-    gap: 0.5rem;
   }
   .paper .button_container {
     display: flex;
@@ -1363,9 +1372,12 @@ h4, h5 {
 }
 .team main .teammates .teammate .mate_img {
   @apply max-h-[230px] overflow-hidden;
-  @apply overflow-hidden flex;
 }
-.team main .teammates .teammate .mate_img img {
+.team main .teammates .teammate .mate_img a {
+  @apply overflow-hidden flex;
+  @apply aspect-square;
+}
+.team main .teammates .teammate .mate_img a img {
   @apply h-full w-full object-cover;
 }
 .team main .teammates .teammate .mate_info {
@@ -1373,7 +1385,7 @@ h4, h5 {
 }
 .team main .teammates .teammate .mate_info .mate_name {
   @apply flex justify-center;
-  @apply h-[68px];
+  @apply min-h-[68px];
   font-size: 1.5rem;
 }
 .team main .teammates .teammate .mate_info .mate_role {
@@ -1797,7 +1809,6 @@ h4, h5 {
 @media (min-width: 150px) {
   footer {
     width: 100%;
-    padding: 2.5rem 2.5rem 1.5rem 2.5rem;
     font-size: 1.1rem;
     display: flex;
     flex-direction: column;
@@ -2371,11 +2382,11 @@ TYPOGRAPHY
 @media (min-width: 150px) {
   .page_es .banner, .page_es-ES .banner {
     padding-top: 72px;
-    height: 7.4em;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: start;
   }
   .page_es .banner h1, .page_es .banner p, .page_es-ES .banner h1, .page_es-ES .banner p {
     color: white;
@@ -2387,8 +2398,9 @@ TYPOGRAPHY
 @media (min-width: 641px) {
   .page_es .banner, .page_es-ES .banner {
     padding-top: 142px;
-    height: 14vw;
     width: 100%;
+    flex-direction: column;
+    align-items: start;
   }
   .page_es .parallax__layer, .page_es-ES .parallax__layer {
     padding-top: 124px;
@@ -2396,8 +2408,10 @@ TYPOGRAPHY
 }
 @media (min-width: 970px) {
   .page_es .banner, .page_es-ES .banner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 90px;
-    height: 14vw;
   }
   .page_es .parallax__layer, .page_es-ES .parallax__layer {
     padding-top: 58px;
@@ -2406,7 +2420,6 @@ TYPOGRAPHY
 @media (min-width: 1400px) {
   .page_es .banner, .page_es-ES .banner {
     padding-top: 102px;
-    height: 14vw;
   }
   .page_es .head, .page_es-ES .head {
     padding-top: 72px;
@@ -2585,10 +2598,11 @@ TYPOGRAPHY
 @media (min-width: 150px) {
   .page_en .banner, .page .banner {
     padding-top: 72px;
-    height: 7.4em;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: start;
   }
   .page_en .banner h1, .page .banner h1 {
     color: #F8F8F8;
@@ -2603,8 +2617,9 @@ TYPOGRAPHY
 @media (min-width: 641px) {
   .page_en .banner, .page .banner {
     padding-top: 142px;
-    height: 14vw;
     width: 100%;
+    flex-direction: column;
+    align-items: start;
   }
   .page_en .parallax__layer, .page .parallax__layer {
     padding-top: 124px;
@@ -2613,7 +2628,9 @@ TYPOGRAPHY
 @media (min-width: 896px) {
   .page_en .banner, .page .banner {
     padding-top: 90px;
-    height: 14vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   .page_en .parallax__layer, .page .parallax__layer {
     padding-top: 58px;
@@ -2621,8 +2638,10 @@ TYPOGRAPHY
 }
 @media (min-width: 1400px) {
   .page_en .banner, .page .banner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 102px;
-    height: 14vw;
   }
   .page_en .head, .page .head {
     padding-top: 72px;
