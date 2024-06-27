@@ -21,15 +21,15 @@
                 .mate_img 
                     @apply max-h-[230px] overflow-hidden
                     a
-                    @include img_cover()
-
+                        @include img_cover()
+                        @apply aspect-square
 
                 .mate_info
                     @apply py-8 px-6
 
                     .mate_name
                         @apply flex justify-center
-                        @apply h-[68px]
+                        @apply min-h-[68px]
                         font-size:1.5rem
                     .mate_role
                         margin-bottom: 1em

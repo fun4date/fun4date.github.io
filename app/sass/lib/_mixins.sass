@@ -259,7 +259,8 @@
             background-repeat: no-repeat
             // object-fit: cover;
           
-            align-items: flex-start
+            flex-direction: column
+            align-items: start
             h1, p
                 color: white
         #banner-publications
@@ -271,6 +272,8 @@
             padding-top: 142px
             height: 14vw
             width: 100%
+            flex-direction: column
+            align-items: start
             // background-image: url("/assets/img/headers/projects-banner-desktop.svg")
         #banner-publications
             // background-image: url("/assets/img/headers/publications-banner-desktop.svg")
@@ -279,6 +282,9 @@
 
     @media (min-width:$min-desktop-width-es) 
         .banner
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
             padding-top: 90px
             height: 14vw
         .parallax__layer
@@ -301,6 +307,8 @@
             background-size: cover
             background-position: center
             background-repeat: no-repeat
+            flex-direction: column
+            align-items: start
             // object-fit: cover;
 
             h1 
@@ -316,6 +324,8 @@
             padding-top: 142px
             height: 14vw
             width: 100%
+            flex-direction: column
+            align-items: start
             //background-image: url("/assets/img/headers/projects-banner-desktop.svg")
         #banner-publications
             //background-image: url("/assets/img/headers/publications-banner-desktop.svg")
@@ -326,11 +336,17 @@
         .banner
             padding-top: 90px
             height: 14vw
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
         .parallax__layer
             padding-top: 58px
 
     @media (min-width:$min-xl-desktop-width-en) 
         .banner
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
             padding-top: 102px
             height: 14vw
         .head
