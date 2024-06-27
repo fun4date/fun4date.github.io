@@ -73,7 +73,7 @@ TYPOGRAPHY
     @include content_page_es;
 }
 
-.page_en {
+.page_en, .page {
   background-color: $background;
   header {
     @include nav_bar_en;

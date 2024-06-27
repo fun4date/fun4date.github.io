@@ -46,7 +46,7 @@ export default function Team(props) {
             </div>
             <div className="mate_info">
               <div className="mate_name">
-                <h4>{name}</h4>
+                <h5>{name}</h5>
               </div>
               {/* <div className="mate_role">
                 <span>
