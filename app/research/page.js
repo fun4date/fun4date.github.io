@@ -106,7 +106,7 @@ export default function Research() {
               papersFiltered instanceof Array ? papersFiltered.length : 0
             }
           />
-          <div className="papers block lg:grid lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 xl:gap-10">
+          <div className="papers block lg:grid lg:grid-cols-2 gap_grid-r">
             {papersFiltered
               .slice(0, papersToShow)
               .map(({ date, doi, author, title, journal }, ind) => {
