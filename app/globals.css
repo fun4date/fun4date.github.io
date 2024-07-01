@@ -1167,14 +1167,15 @@ header li.li-selected a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.6rem 0;
+    padding: 1.2rem 0.8rem;
   }
   .papers .paper_main .paper_date p {
     @apply text-gray-400 pr-4 pb-2;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
     display: block;
     padding-left: 0px;
+    margin-bottom: 0;
   }
   .papers .paper_main .paper_content {
     height: 100%;
@@ -1259,7 +1260,7 @@ header li.li-selected a:hover {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    gap: 32px;
+    gap: 1.4rem;
     padding: 0.4rem 0;
   }
   .papers .paper_main .paper_date {
@@ -1274,7 +1275,7 @@ header li.li-selected a:hover {
     border-bottom: 0;
   }
   .papers .paper_main .paper_date .year {
-    @apply pt-4 pr-6;
+    @apply pt-4 px-4;
   }
   .papers .paper_main .paper_content {
     width: 100%;
@@ -2156,7 +2157,7 @@ header li.li-selected a:hover {
   }
   .container_front_description {
     padding-left: 2rem;
-    border-left: #9ECBFF 2px solid;
+    border-left: 2px solid #6c707e;
   }
   .project_description h5 {
     width: 80%;
@@ -4380,14 +4381,15 @@ body :not(.menu) a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.6rem 0;
+    padding: 1.2rem 0.8rem;
   }
   .papers .paper_main .paper_date p {
     @apply text-gray-400 pr-4 pb-2;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
     display: block;
     padding-left: 0px;
+    margin-bottom: 0;
   }
   .papers .paper_main .paper_content {
     height: 100%;
@@ -4472,7 +4474,7 @@ body :not(.menu) a:hover {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    gap: 32px;
+    gap: 1.4rem;
     padding: 0.4rem 0;
   }
   .papers .paper_main .paper_date {
@@ -4487,7 +4489,7 @@ body :not(.menu) a:hover {
     border-bottom: 0;
   }
   .papers .paper_main .paper_date .year {
-    @apply pt-4 pr-6;
+    @apply pt-4 px-4;
   }
   .papers .paper_main .paper_content {
     width: 100%;

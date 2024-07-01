@@ -55,7 +55,7 @@ export default function Home() {
                 <section className="project_description">
                   <div className="xl_margin gap_text">
                     <div>
-                    <h2>{t("front.projectTitle")} </h2>
+                    <h2 className="text-left">{t("front.projectTitle")} </h2>
                  
                       <h5 className="text-left sm:text-center">
                         {t("front.projectSubtitle")}{" "}
@@ -70,7 +70,7 @@ export default function Home() {
                     <h2 className="text-left md:text-center">
                       {t("front.sectionHomeTitle")}
                     </h2>
-                    <div className="flex flex-col-reverse md:flex-row gap-0 sm:gap-4 md:gap-12">
+                    <div className="flex flex-col-reverse md:text-left md:flex-row gap-0 sm:gap-4 md:gap-12">
                       <p className="basis-2/3">{t("front.sectionHomeBody")}</p>
                       <h4 className="basis-1/3 font-semibold">
                         {t("front.sectionHomeSubtitle")}
