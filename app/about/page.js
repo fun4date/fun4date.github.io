@@ -14,7 +14,7 @@ export default function About(props) {
   return (
     <div className={"about page_"+ currentLang}>
       <Header route={"/about"} />
-      <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6">
+      <div className="banner">
         <h1>{t("contact.title")}</h1>
         <p>
           Para consultas sobre este proyecto o solicitudes para futuras colaboraciones, puedes ponerte en contacto con los equipos de ambas universidades. 

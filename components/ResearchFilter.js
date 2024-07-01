@@ -35,13 +35,13 @@ export default function Filters (props) {
 				</select>
 			</div>
 			<div className="filter" id="filter_year">
-				<label htmlFor="year">{t('publications.filter.fieldTitle3')}</label>
+				<label id="year_label" htmlFor="year">{t('publications.filter.fieldTitle3')}</label>
 				<select id="year" name="year" onChange={(e)=>props.changeYear(e.target.value === "all" ? undefined: e.target.value)}>
 					<option key={"all"} value={"all"}>{t('publications.filter.fieldOpt')}</option>
 					{years.map(y=><option key={y} value={y}>{y}</option>)}
 				</select>
 			</div>
-			{props.results === undefined ? null:<div className='research_results'><div> <p className='text-gray-400'> {t('publications.filter.text')}<b> {props.results} </b> </p></div></div>}
+			{props.results === undefined ? null:<div className='research_results'><p className=""> {t('publications.filter.text')}<b> {props.results} </b> </p></div>}
 		</div>)
 	
 }

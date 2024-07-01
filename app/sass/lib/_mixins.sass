@@ -251,15 +251,13 @@
     @media (min-width: $min-phone-width-es)      
         .banner
             padding-top: 72px
-            //height: 7.4em
-            // background-image: url("/assets/img/headers/projects-banner-phone.svg")
             background-size: cover
             background-position: center
             background-repeat: no-repeat
-            // object-fit: cover;
-          
             flex-direction: column
             align-items: start
+            //PADDINGS
+            @apply px-6 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6
             h1, p
                 color: white
         #banner-publications
@@ -301,14 +299,12 @@
     @media (min-width: $min-phone-width-en)      
         .banner
             padding-top: 72px
-            //height: 7.4em
-            //background-image: url("/assets/img/headers/projects-banner-phone.svg")
             background-size: cover
             background-position: center
             background-repeat: no-repeat
             flex-direction: column
             align-items: start
-            // object-fit: cover;
+            @apply px-6 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6
 
             h1 
                 color: $gray-100
