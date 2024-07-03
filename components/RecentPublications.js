@@ -73,15 +73,7 @@ export default function RecentPublications(props) {
           }
         )}
 
-      <a
-        className="flex justify-center"
-        href="/research"
-        rel="noopener noreferrer"
-      >
-        <div className="more margin_top_button">
-          {t("front.latestPublicationsButton")}
-        </div>
-      </a>
+      
     </div>
   );
 }

@@ -7,6 +7,7 @@ import { myteam } from "@/constants/team";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Team(props) {
   const [team, setTeam] = useState(myteam);
@@ -85,10 +86,16 @@ export default function Team(props) {
   return (
     <div className={"team page_" + currentLang}>
       <Header route={"/team"} />
-      <div className="banner">
+      
+      <motion.div className="body"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}>
+        <div className="banner">
         <h1>{t("team.title")}</h1>
       </div>
-      <main>
+        <main>
         <h2 className="teammates__title">UC3M</h2>
         <section className="teammates">
           {team["UC3M Team"]?.members ? renderMembers(team["UC3M Team"].members) : <p>No members found.</p>}
@@ -98,6 +105,8 @@ export default function Team(props) {
           {team["UPM Team"]?.members ? renderMembers(team["UPM Team"].members) : <p>No members found.</p>}
         </section>
       </main>
+      </motion.div>
+      
       <Footer />
     </div>
   );

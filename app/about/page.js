@@ -7,90 +7,96 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function About(props) {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
   return (
-    <div className={"about page_"+ currentLang}>
+    <div className={"about page_" + currentLang}>
       <Header route={"/about"} />
-      <div className="banner">
-        <h1>{t("contact.title")}</h1>
-        <p>
-          Para consultas sobre este proyecto o solicitudes para futuras colaboraciones, puedes ponerte en contacto con los equipos de ambas universidades. 
+      <motion.div
+        className="body"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className="banner">
+          <h1>{t("contact.title")}</h1>
+          <p>
+            Para consultas sobre este proyecto o solicitudes para futuras
+            colaboraciones, puedes ponerte en contacto con los equipos de ambas
+            universidades.
           </p>
-      </div>
-      <main className=" xs:my-4 sm:mx-8 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2">
-        <section className="md:max-w-screen-sm mb-28 lg:max-w-screen-md xl:max-w-screen-lg about_description text-slate-700">
-          
-        </section>
-        <section className="contact_info ">
-          <div className="contact col1">
-            <div className="contact_title">
-              <h4>{t("contact.title2")}</h4>
+        </div>
+        <main className=" xs:my-4 sm:mx-8 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2">
+          <section className="md:max-w-screen-sm mb-28 lg:max-w-screen-md xl:max-w-screen-lg about_description text-slate-700"></section>
+          <section className="contact_info ">
+            <div className="contact col1">
+              <div className="contact_title">
+                <h4>{t("contact.title2")}</h4>
+              </div>
+              <div className="contact_content ">
+                <ul className="contact_info">
+                  <li className="info_title">
+                    <h3>UPM</h3>
+                  </li>
+                  <li>
+                    <h5>
+                      <FontAwesomeIcon className="icon" icon={faAt} />
+                      <p>gi.internetng@upm.es</p>
+                    </h5>
+                  </li>
+                  <li>
+                    <h5>
+                      {" "}
+                      <FontAwesomeIcon className="icon" icon={faPhone} />
+                      <p>91 336 73 31</p>
+                    </h5>
+                  </li>
+                  <li>
+                    <h5>
+                      {" "}
+                      <FontAwesomeIcon className="icon" icon={faLocationDot} />
+                      <p>
+                        E.T.S. DE INGENIEROS DE TELECOMUNICACIÓN Av.
+                        Complutense, 30, 28040 Madrid Edificio B
+                      </p>
+                    </h5>
+                  </li>
+                </ul>
+                <ul className="contact_info">
+                  <li className="info_title">
+                    <h3>UC3M</h3>
+                  </li>
+                  <li>
+                    <h5>
+                      <FontAwesomeIcon className="icon" icon={faAt} />
+                      <p>secre@inv.it.uc3m.es</p>
+                    </h5>
+                  </li>
+                  <li>
+                    <h5>
+                      {" "}
+                      <FontAwesomeIcon className="icon" icon={faPhone} />
+                      <p>91 624 87 78</p>
+                    </h5>
+                  </li>
+                  <li>
+                    <h5>
+                      {" "}
+                      <FontAwesomeIcon className="icon" icon={faLocationDot} />
+                      <p>
+                        Escuela Politécnica Superior, Avda. de la Universidad,
+                        30. 28911 Leganés (Madrid) España
+                      </p>
+                    </h5>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="contact_content ">
-              <ul className="contact_info"  >
-                <li className="info_title">
-                  <h3>UPM</h3>
-                </li>
-                <li>
-                  <h5>
-                    <FontAwesomeIcon className="icon" icon={faAt} />
-                    <p>gi.internetng@upm.es</p>
-                  </h5>
-                  
-                </li>
-                <li>
-                  <h5>
-                    {" "}
-                    <FontAwesomeIcon className="icon" icon={faPhone} />
-                    <p>91 336 73 31</p>
-                  </h5>
-                  
-                </li>
-                <li>
-                  <h5>
-                    {" "}
-                    <FontAwesomeIcon className="icon" icon={faLocationDot} />
-                    <p>E.T.S. DE INGENIEROS DE TELECOMUNICACIÓN
-                  Av. Complutense, 30, 28040 Madrid Edificio B</p>
-                  </h5>
-                  
-                </li>
-              </ul>
-              <ul className="contact_info"  >
-                <li className="info_title">
-                  <h3>UC3M</h3>
-                </li>
-                <li>
-                  <h5>
-                    <FontAwesomeIcon className="icon" icon={faAt} />
-                    <p>secre@inv.it.uc3m.es</p>
-                  </h5>
-                  
-                </li>
-                <li>
-                  <h5>
-                    {" "}
-                    <FontAwesomeIcon className="icon" icon={faPhone} />
-                    <p>91 624 87 78</p>
-                  </h5>
-                  
-                </li>
-                <li>
-                  <h5>
-                    {" "}
-                    <FontAwesomeIcon className="icon" icon={faLocationDot} />
-                    <p>Escuela Politécnica Superior, Avda. de la Universidad, 30. 28911 Leganés (Madrid) España</p>
-
-                  </h5>
-                </li>
-              </ul>
-
-            </div>
-          </div>
-          {/* <div className="location col2">
+            {/* <div className="location col2">
             <div className="location_title">
               <h4>
                 {" "}
@@ -117,8 +123,9 @@ export default function About(props) {
               </div>
             </div>
           </div> */}
-        </section>
-      </main>
+          </section>
+        </main>
+      </motion.div>
       <Footer />
     </div>
   );

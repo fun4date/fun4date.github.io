@@ -102,10 +102,19 @@ export default function Home() {
                     </div>
                   </div>
                 </section>
-                <section className="latest_publications standard_padding ">
+                <section className="latest_publications standard_padding justify-center ">
                   <h2>{t("front.latestPublicationsTitle")}</h2>
                   <div className="recent_publications_container">
                     <RecentPublications />
+                    <a
+        className="flex justify-center"
+        href="/research"
+        rel="noopener noreferrer"
+      >
+        <div className="more margin_top_button">
+          {t("front.latestPublicationsButton")}
+        </div>
+      </a>
                   </div>
                 </section>
               </div>
