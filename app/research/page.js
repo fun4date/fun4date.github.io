@@ -106,7 +106,7 @@ export default function Research() {
               papersFiltered instanceof Array ? papersFiltered.length : 0
             }
           />
-          <div className="papers block lg:grid lg:grid-cols-2 gap_grid-r">
+          <div className="papers ">
             {papersFiltered
               .slice(0, papersToShow)
               .map(({ date, doi, author, title, journal }, ind) => {
@@ -115,6 +115,7 @@ export default function Research() {
                     <div className="paper_main">
                       <div className="paper_date">
                         <p className="year">{date ? date[0] : ""}</p>
+                        <span className="gradient_bg"></span>
                       </div>
                       <div className="paper_content justify-between">
                         <div className="">

@@ -18,26 +18,29 @@ export default function RecentPublications(props) {
   }, []);
 
   return (
-    <div className="_publications _recent_publications ">
-      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 2 }}>
-        <Masonry gutter="24px" className="papers">
-          {papers
-            .filter((paper) => {
-              return paper.type === "article-journal";
-            })
-            .filter((i, index) => index < 4)
-            .map(({ doi, title, author, date, journal, ind, stroke, content }, index) => {
-              return (
-                // <a
-                //   key={doi}
-                //   href={doi}
-                //   target="_blank"
-                //   rel="noopener noreferrer"
-                // >
-                <div key={ind} className="paper">
+    <div className="papers">
+      {papers
+        .filter((paper) => {
+          return paper.type === "article-journal";
+        })
+        .filter((i, index) => index < 4)
+        .map(
+          (
+            { doi, title, author, date, journal, ind, stroke, content },
+            index
+          ) => {
+            return (
+              // <a
+              //   key={doi}
+              //   href={doi}
+              //   target="_blank"
+              //   rel="noopener noreferrer"
+              // >
+              <div key={ind} className="paper">
                 <div className="paper_main">
                   <div className="paper_date">
                     <p className="year">{date ? date[0] : ""}</p>
+                    <span className="gradient_bg"></span>
                   </div>
                   <div className="paper_content">
                     <div className="paper_title">
@@ -64,13 +67,12 @@ export default function RecentPublications(props) {
                     </div>
                   </div>
                 </div>
-      
-                  </div>
-                // </a>
-              );
-            })}
-        </Masonry>
-      </ResponsiveMasonry>
+              </div>
+              // </a>
+            );
+          }
+        )}
+
       <a
         className="flex justify-center"
         href="/research"

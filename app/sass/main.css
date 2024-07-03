@@ -1114,10 +1114,7 @@ header li.li-selected a:hover {
     @apply text-gray-400;
     @apply bg-black px-3 py-2 rounded;
   }
-  .papers {
-    display: flex;
-    padding-left: 0px;
-  }
+
   .papers .paper {
     display: flex;
     flex-direction: column;
