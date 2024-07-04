@@ -3,13 +3,10 @@
 // Correcciones: código duplicado para select e input. 
 // Recomendado hacer mixins
 
-._recent_publications
-    .paper
-        @apply bg-backgroundSecondary
 
 .paper_content
-    display: flex
-    flex-direction: column
+    @apply flex flex-col justify-between
+
 
 @media (min-width: 150px)
     .research
@@ -87,37 +84,31 @@
                 @apply bg-black px-3 py-2 rounded
 
     .papers
-        display: flex
-        padding-left: 0px
+        @apply block 
         .paper
+            @apply mt-2
             display: flex
             flex-direction: column
             border-bottom: $gray-600 1px solid
 
         .paper_main
+            @apply h-full
             display: flex
             flex-direction: column
             justify-content: space-between
             padding: 1.2rem 0.8rem
             .paper_date
-                // border: 10px solid
-                // border-image-slice: 1
-                // border-width: 5px
-                // border-image-source: linear-gradient(to bottom, $ffd_green, #d53a9c00)
-                // border-right: 0
-                // border-left: 0
-                // border-top: 0
-                // border-bottom: 0
-               
                 p
                     // @include border-tag
-                    @apply text-gray-400 pr-4 pb-2
+                    @apply text-gray-400 pr-4 pt-[2px]
                     font-size: 1.6rem
                     font-weight: 400
                     display: block
-                    padding-left: 0px
-                    margin-bottom: 0
+                .gradient_bg
+                    width: 4px
+                    background: linear-gradient(to bottom, $ffd_green, #97ce004b, #97ce0000)
             .paper_content
+                @apply flex flex-col justify-between
                 height: 100%
                 .button_container
                     .paper_link
@@ -190,9 +181,11 @@
         flex-direction: column
         //padding: $spacing_sm 0 $spacing_md 0
         .paper
+            @apply mt-2
             padding: $spacing_sm 0 
 
         .paper_main
+            @apply h-full
             display: flex
             flex-direction: row
             justify-content: left
@@ -200,20 +193,17 @@
             padding: 0.4rem 0
             .paper_date
                 display: flex
-                margin-top: -1.35rem
-                border: 10px solid
-                border-image-slice: 1
-                border-width: 5px
-                border-image-source: linear-gradient(to bottom, $ffd_green, #97ce004b, #97ce0000)
-              
-                border-left: 0
-                border-top: 0
-                border-bottom: 0
                 .year
-                    @apply pt-4 px-4
+                    @apply px-4 
+                .gradient_bg
+                    width: 4px
+                    background: linear-gradient(to bottom, $ffd_green, #97ce004b, #97ce0000)
+
+
 
             .paper_content
                 width: 100%
+                @apply flex flex-col justify-between
 
             .paper_title
                 @apply text-ffdGreen-300
@@ -258,9 +248,15 @@
             p
                 color: $gray-100
     .papers
+
         .paper
+            @apply mt-2
+
             .paper_main
+                @apply h-full
+
                 .paper_content
+                    @apply flex flex-col justify-between
                     
 
 @media (min-width: 1024px)
@@ -299,22 +295,37 @@
             #filter_year
                 
         .papers
+
             .paper
+                @apply mt-2
+
                 .paper_main
+                    @apply h-full
                     .paper_date
                         display: flex
+                        p
+                            @apply pt-[1px]
+                        .gradient_bg
+                            width: 4px
+                            background: linear-gradient(to bottom, $ffd_green, #97ce004b, #97ce0000)
                      
                     .paper_content
-                        height: 18rem
-                        width: 70%
+                        @apply flex flex-col justify-between
+
 @media (min-width: 1200px)
     .research
-        .papers
-            .paper
-                .paper_main
-                    .paper_content
-                        height: 16rem
-                        width: 70%
+    .papers
+        @apply grid grid-cols-2 gap_grid-r
+
+        .paper
+            @apply mt-2
+
+            .paper_main
+                @apply h-full
+
+                .paper_content
+                    @apply flex flex-col justify-between
+
 
 @media (min-width: 1400px)
     .research
@@ -325,23 +336,24 @@
         .papers
             .paper
                 .paper_main
+                    @apply h-full
+
                     .paper_content
-                        height: 20rem
+                        @apply flex flex-col justify-between
 @media (max-width: 640px)
     .papers
         .paper
+            @apply mt-2
             .paper_main
+                @apply h-full   
                 .paper_date
                     display: flex
-                        // border-width: 4px
-                        // border-style: solid
-                        // border-right-width: 0px
-                        // border-left-width: 4px
-                        // border-top-width: 0px
-                        // border-bottom-width: 0px
-                        // // border-right: 3px solid red 
-                        // -webkit-border-image: -webkit-gradient(linear, 0% 0%, 0% 0%, from(rgba(152, 206, 9, 1)), to(rgba(152, 206, 0, 0))) 1 100%
-                    .paper_content
+
+                    .gradient_bg
+                        width: 4px
+                        background: linear-gradient(to bottom, $ffd_green, #97ce004b, #97ce0000)
+                .paper_content
+                    @apply flex flex-col justify-between
 
                 .button_container
                     display: flex

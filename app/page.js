@@ -90,43 +90,50 @@ export default function Home() {
                           {t("front.projectTitle")}{" "}
                         </h2>
 
-                        <h5 className="text-left sm:text-center">
-                          {t("front.projectSubtitle")}{" "}
-                        </h5>
-                      </div>
-                      <p className="text-white">
-                        {t("front.projectDescription")}{" "}
-                      </p>
+                      <h5 className="text-left sm:text-center">
+                        {t("front.projectSubtitle")}{" "}
+                      </h5>
                     </div>
-                  </section>
-                  <section className="standard_margin">
-                    <div className="text-left md:text-center flex flex-col gap-0 sm:gap-4 md:gap-12">
-                      <h2 className="text-left md:text-center">
-                        {t("front.sectionHomeTitle")}
-                      </h2>
-                      <div className="flex flex-col-reverse md:text-left md:flex-row gap-0 sm:gap-4 md:gap-12">
-                        <p className="basis-2/3">
-                          {t("front.sectionHomeBody")}
-                        </p>
-                        <h4 className="basis-1/3 font-semibold">
-                          {t("front.sectionHomeSubtitle")}
-                        </h4>
-                      </div>
+                    <p className="text-white">
+                      {t("front.projectDescription")}{" "}
+                    </p>
+                  </div>
+                </section>
+                <section className="standard_margin">
+                  <div className="text-left md:text-center flex flex-col gap-0 sm:gap-4 md:gap-12">
+                    <h2 className="text-left md:text-center">
+                      {t("front.sectionHomeTitle")}
+                    </h2>
+                    <div className="flex flex-col-reverse md:text-left md:flex-row gap-0 sm:gap-4 md:gap-12">
+                      <p className="basis-2/3">{t("front.sectionHomeBody")}</p>
+                      <h4 className="basis-1/3 font-semibold">
+                        {t("front.sectionHomeSubtitle")}
+                      </h4>
                     </div>
-                  </section>
-                  <section className="latest_publications standard_padding ">
-                    <h2>{t("front.latestPublicationsTitle")}</h2>
-                    <div className="recent_pubs_container">
-                      <RecentPublications />
-                    </div>
-                  </section>
-                </div>
-              </section>
-            </main>
-            <Footer />
-          </div>
+                  </div>
+                </section>
+                <section className="latest_publications standard_padding justify-center ">
+                  <h2>{t("front.latestPublicationsTitle")}</h2>
+                  <div className="recent_publications_container">
+                    <RecentPublications />
+                    <a
+        className="flex justify-center"
+        href="/research"
+        rel="noopener noreferrer"
+      >
+        <div className="more margin_top_button">
+          {t("front.latestPublicationsButton")}
+        </div>
+      </a>
+                  </div>
+                </section>
+              </div>
+            </section>
+          </main>
+          <Footer />
         </div>
       </div>
+    </div>
     </AnimatePresence>
   );
 }

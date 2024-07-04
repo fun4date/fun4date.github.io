@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Research() {
   const { t, i18n } = useTranslation();
@@ -80,7 +81,12 @@ export default function Research() {
     <div className={"research page_" + currentLang}>
       <Header route={"/research"} />
 
-      <div
+    <motion.div className="body"
+    initial={{ opacity: 0, y: 100 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 0.5 }}>
+    <div
         className="banner"
         id="banner-publications"
       >
@@ -106,7 +112,7 @@ export default function Research() {
               papersFiltered instanceof Array ? papersFiltered.length : 0
             }
           />
-          <div className="papers block lg:grid lg:grid-cols-2 gap_grid-r">
+          <div className="papers ">
             {papersFiltered
               .slice(0, papersToShow)
               .map(({ date, doi, author, title, journal }, ind) => {
@@ -115,6 +121,7 @@ export default function Research() {
                     <div className="paper_main">
                       <div className="paper_date">
                         <p className="year">{date ? date[0] : ""}</p>
+                        <span className="gradient_bg"></span>
                       </div>
                       <div className="paper_content justify-between">
                         <div className="">
@@ -158,6 +165,7 @@ export default function Research() {
           </div>
         </section>
       </main>
+    </motion.div>
       <Footer />
     </div>
   );
