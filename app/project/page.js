@@ -11,9 +11,12 @@ import { faCircleNodes } from "@fortawesome/free-solid-svg-icons";
 import { faGrip } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Projects() {
   // const [projects, setProjects] = useState(myprojectCards);
+  const [isHovered1, setIsHovered1] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
   useEffect(() => {
@@ -67,20 +70,28 @@ export default function Projects() {
           {t("project.Subprojects.sectionTitle")}
         </h2>
         <div className="flex flex-col sm:flex-row subprojects_container gap-0 sm:gap-16">
-          <div className="standard_margin-l subproject text-ffdGreen-300 basis-6/12 py-3 sm:py-6 border-2 sm:border-4 border-solid border-transparent border-t-ffdGreen-400">
-         
-              <h3 className="mb-1">
-                {t("project.Subprojects.Subproject1.Title")}
-              </h3>
-              <h5> {t("project.Subprojects.Subproject1.Subtitle")}</h5>
-              <p> {t("project.Subprojects.Subproject1.Body")} </p>
-              <button className="action_button margin_top_button text-ffdGreen-300 border-ffdGreen-300">
-                <Link rel="noopener noreferrer" target="_blank" href="#">
-                  <span>{t("project.Subprojects.Subproject1.Button")}</span>
+          <div className="standard_margin-l head subproject text-ffdGreen-300 basis-6/12 py-3 sm:py-6 border-2 sm:border-4 border-solid border-transparent border-t-ffdGreen-400">
+            <h3 className="mb-1">
+              {t("project.Subprojects.Subproject1.Title")}
+            </h3>
+            <h5> {t("project.Subprojects.Subproject1.Subtitle")}</h5>
+            <p> {t("project.Subprojects.Subproject1.Body")} </p>
+            <motion.button
+              className="action_button margin_top_button text-ffdGreen-300 border-ffdGreen-300"
+              onHoverStart={() => setIsHovered1(true)}
+              onHoverEnd={() => setIsHovered1(false)}
+            >
+              <Link rel="noopener noreferrer" target="_blank" href="#">
+                <span>{t("project.Subprojects.Subproject1.Button")}</span>
+                <motion.div
+                  animate={{ x: isHovered1 ? 10 : 0 }} // Adjust '10' to the desired amount of movement
+                  transition={{ type: "spring", stiffness: 300 }}
+                  style={{ display: "inline-block", marginLeft: "8px" }} // Adjust 'marginLeft' for spacing
+                >
                   <FontAwesomeIcon icon={faArrowRight} />
-                </Link>
-              </button>
-      
+                </motion.div>
+              </Link>
+            </motion.button>
           </div>
           {/* <div className="divisor-container basis-2/12">
             {/* <img
@@ -89,29 +100,36 @@ export default function Projects() {
             ></img> 
           </div> */}
           <div className="standard_margin-r subproject text-ffdBlue-300 basis-6/12 py-3 sm:py-6 border-2 sm:border-4 border-solid border-transparent border-t-ffdBlue-300">
-           
-              <h3 className="mb-1">
-              
-                {t("project.Subprojects.Subproject2.Title")}
-              </h3>
-              <h5> {t("project.Subprojects.Subproject2.Subtitle")}</h5>
-              <p> {t("project.Subprojects.Subproject2.Body")} </p>
-              <button className="action_button margin_top_button text-ffdBlue-300 border-ffdBlue-300">
-                <Link rel="noopener noreferrer" target="_blank" href="#">
-                  <span>{t("project.Subprojects.Subproject2.Button")}</span>
+            <h3 className="mb-1">
+              {t("project.Subprojects.Subproject2.Title")}
+            </h3>
+            <h5> {t("project.Subprojects.Subproject2.Subtitle")}</h5>
+            <p> {t("project.Subprojects.Subproject2.Body")} </p>
+            <motion.button
+              className="action_button margin_top_button text-ffdBlue-300 border-ffdBlue-300"
+              onHoverStart={() => setIsHovered2(true)}
+              onHoverEnd={() => setIsHovered2(false)}
+            >
+              <Link rel="noopener noreferrer" target="_blank" href="#">
+                <span>{t("project.Subprojects.Subproject2.Button")}</span>
+                <motion.div
+                  animate={{ x: isHovered2 ? 10 : 0 }} // Adjust '10' to the desired amount of movement
+                  transition={{ type: "spring", stiffness: 300 }}
+                  style={{ display: "inline-block", marginLeft: "8px" }} // Adjust 'marginLeft' for spacing
+                >
                   <FontAwesomeIcon icon={faArrowRight} />
-                </Link>
-              </button>
-           
+                </motion.div>
+              </Link>
+            </motion.button>
           </div>
         </div>
       </section>
       <section className="highlight-section">
         <div className="standard_padding">
-        <div className="flex flex-col sm:gap-4 md:gap-4">
-          <h2 className="text-left">{t("project.Impact.sectionTitle")}</h2>
-          <p className="sm:w-5/6">{t("project.Impact.sectionBody")}</p>
-        </div>
+          <div className="flex flex-col sm:gap-4 md:gap-4">
+            <h2 className="text-left">{t("project.Impact.sectionTitle")}</h2>
+            <p className="sm:w-5/6">{t("project.Impact.sectionBody")}</p>
+          </div>
         </div>
       </section>
       {/* <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6">

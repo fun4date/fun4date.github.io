@@ -374,6 +374,10 @@
   @apply p-6 sm:py-6 sm:px-8 md:py-8 md:px-14 lg:py-12 lg:px-36 xl:px-44 2xl:px-60;
 }
 
+.padding_home {
+  @apply py-8 sm:py-12 md:py-20 lg:py-24 2xl:py-32;
+}
+
 .padding_footer {
   @apply p-6 sm:py-6 sm:px-8 md:py-8 md:px-16 lg:py-16 lg:px-16 xl:px-24 2xl:px-36;
 }
@@ -1121,7 +1125,7 @@ header li.li-selected a:hover {
   .papers .paper {
     display: flex;
     flex-direction: column;
-    border-bottom: #606578 1px solid;
+    border-bottom: #393D49 1px solid;
   }
   .papers .paper_main {
     display: flex;
@@ -1993,20 +1997,49 @@ header li.li-selected a:hover {
   margin-bottom: 1em;
 }
 
-@media (min-width: 150px) {
+.home .head {
+  align-items: start;
+  display: flex;
+  justify-content: space-between;
+  height: 60vh;
+  margin-top: 3rem;
+  @apply max-h-[480px] lg:max-h-[646px] 2xl:max-h-[850px];
+}
+@media (min-width: 600px) {
+  .home .head {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    height: inherit;
+    margin-top: 8rem;
+  }
+}
+@media (min-width: 900px) {
   .home .head {
     display: flex;
     justify-content: space-between;
-    height: 60vh;
-    margin-top: 3rem;
-    @apply py-8 sm:py-12 md:py-20 lg:py-24 2xl:py-32;
+    height: 100%;
+    margin-top: 0rem;
   }
+}
+
+@media (min-width: 150px) {
   .home h3 {
     @apply text-slate-200;
     margin-bottom: 0rem;
   }
   .home p {
     margin-bottom: 1.4rem;
+  }
+  .home button {
+    border: 1px solid #F8F8F8;
+    padding: 0.5rem 1.2rem 0.7rem 1.4rem;
+    @apply bg-transparent text-gray-100 border border-gray-100;
+    cursor: pointer;
+  }
+  .home button:hover {
+    @apply bg-gray-100 text-black border border-gray-100;
+    transition: 200ms ease-in-out;
   }
   .project_description {
     background-image: url("/assets/img/section_description_home.png");
@@ -2031,6 +2064,7 @@ header li.li-selected a:hover {
   }
   .group_description {
     z-index: 100;
+    @apply sm:w-3/5 md:w-2/4 lg:w-2/4;
   }
   .group_description .logo_home {
     width: 60vw;
@@ -2052,10 +2086,13 @@ header li.li-selected a:hover {
     height: 50vh;
     opacity: 45%;
     z-index: 0;
-    background-image: url("/assets/img/banner-prov.svg");
+    background-image: url("/assets/img/banner.svg");
     margin: 0 0 0;
     background-size: cover;
     background-position: 70% 0;
+    max-height: inherit;
+    @apply sm:mr-4 md:mr-8 lg:mr-12 2xl:mr-20;
+    @apply sm:mt-0 md:mt-0 min-[900px]:mt-12 lg:mt-28 xl:mt-24;
   }
   .award_section {
     display: flex;
@@ -2108,13 +2145,7 @@ header li.li-selected a:hover {
     box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.08);
   }
 }
-@media (min-width: 640px) {
-  .home .head {
-    display: flex;
-    justify-content: space-between;
-    height: 80vh;
-    margin-top: 6rem;
-  }
+@media (min-width: 768px) {
   .container_front_description {
     padding-left: 2rem;
     border-left: 2px solid #6c707e;
@@ -2124,9 +2155,6 @@ header li.li-selected a:hover {
   }
   .project_description p {
     width: 80%;
-  }
-  .group_description {
-    width: 100vw;
   }
   .group_description .logo_home {
     height: auto;
@@ -2141,22 +2169,23 @@ header li.li-selected a:hover {
        object-position: 50% 0;
   }
   .banner_f4d_img {
+    background-position: 0% 60%;
     position: relative;
-    height: 27vw;
-    opacity: 100%;
+    height: 80vh;
+    width: auto;
+    flex-grow: 1;
+    opacity: 80%;
     z-index: 0;
-    background-position: 100% 0;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 @media (min-width: 900px) {
-  .home .head {
-    display: flex;
-    justify-content: space-between;
-    height: 100vh;
-    margin-top: 0rem;
-  }
   .project_description p {
     width: 80%;
+  }
+  .group_description {
+    margin-top: 4rem;
   }
   .group_description .logo_home {
     height: auto;
@@ -2734,7 +2763,8 @@ button {
   line-height: 3.35em;
 }
 .home .body {
-  padding-top: 1rem;
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   /* Media query for small screens */
