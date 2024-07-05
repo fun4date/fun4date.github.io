@@ -73,7 +73,7 @@ export default function Research() {
   const handleLoadMore = () => {
     setState((prevState) => ({
       ...prevState,
-      papersToShow: prevState.papersToShow + 3,
+      papersToShow: prevState.papersToShow + 4,
     }));
   };
 
@@ -81,11 +81,13 @@ export default function Research() {
     <div className={"research page_" + currentLang}>
       <Header route={"/research"} />
 
-    <motion.div className="body"
-    initial={{ opacity: 0, y: 100 }}
-    animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0 }}
-    transition={{ duration: 0.5 }}>
+      <motion.div
+                  className="body"
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.35 }}
+                >
     <div
         className="banner"
         id="banner-publications"
@@ -112,12 +114,21 @@ export default function Research() {
               papersFiltered instanceof Array ? papersFiltered.length : 0
             }
           />
+            
           <div className="papers ">
             {papersFiltered
               .slice(0, papersToShow)
               .map(({ date, doi, author, title, journal }, ind) => {
                 return (
-                  <div key={ind} className="paper">
+                  
+      <motion.div
+      key={ind} className="paper"
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.35 }}
+    >
+               
                     <div className="paper_main">
                       <div className="paper_date">
                         <p className="year">{date ? date[0] : ""}</p>
@@ -152,11 +163,13 @@ export default function Research() {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 );
               })}
           </div>
+     
           <div className="load_more">
+            
             {papersFiltered.length > papersToShow && (
               <button onClick={handleLoadMore}>
                 {t("publications.button2")}

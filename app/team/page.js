@@ -87,11 +87,13 @@ export default function Team(props) {
     <div className={"team page_" + currentLang}>
       <Header route={"/team"} />
       
-      <motion.div className="body"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}>
+      <motion.div
+                  className="body"
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.35 }}
+                >
         <div className="banner">
         <h1>{t("team.title")}</h1>
       </div>

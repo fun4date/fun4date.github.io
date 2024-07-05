@@ -26,6 +26,13 @@ export default function Projects() {
   return (
     <div className={"projects page_" + currentLang}>
       <Header route={"/project"} />
+      <motion.div
+                  className="body"
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.35 }}
+                >
       <section className="parallax__layer standard_margin">
         <div className="flex flex-col sm:gap-4 md:gap-4">
           <h2 className="text-left">{t("project.Intro.sectionTitle")}</h2>
@@ -37,6 +44,7 @@ export default function Projects() {
           </div>
         </div>
       </section>
+     
       <section className="standard_margin">
         <h2 className="text-left text-white">
           {t("project.Goals.sectionTitle")}
@@ -65,12 +73,13 @@ export default function Projects() {
           </div>
         </div>
       </section>
+      </motion.div>
       <section className="subprojects standard_margin-y">
         <h2 className="text-left standard_margin-x mb-4 ">
           {t("project.Subprojects.sectionTitle")}
         </h2>
         <div className="flex flex-col sm:flex-row subprojects_container gap-0 sm:gap-16">
-          <div className="standard_margin-l head subproject text-ffdGreen-300 basis-6/12 py-3 sm:py-6 border-2 sm:border-4 border-solid border-transparent border-t-ffdGreen-400">
+          <div className="standard_margin-l subproject text-ffdGreen-300 basis-6/12 py-3 sm:py-6 border-2 sm:border-4 border-solid border-transparent border-t-ffdGreen-400">
             <h3 className="mb-1">
               {t("project.Subprojects.Subproject1.Title")}
             </h3>

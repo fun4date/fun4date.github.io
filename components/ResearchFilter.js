@@ -28,15 +28,15 @@ export default function Filters(props) {
   return (
     <motion.div
       className="filters"
-      initial={{ opacity: 0, y: -10 }}
+      initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
       <motion.div
         className="filter"
-        initial={{ opacity: 0, y: -10 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.6 }}
       >
         <label htmlFor="search">{t("publications.filter.fieldTitle")}</label>
         <input
@@ -52,9 +52,9 @@ export default function Filters(props) {
       </motion.div>
       <motion.div
         className="filter"
-        initial={{ opacity: 0, y: -10 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, delay: 0.1 }}
+        transition={{ duration: 0.6 }}
       >
         <label className="publicationType" htmlFor="publication" onClick={()=> setShowPublication(!showPublication)}>
           {t("publications.filter.fieldTitle2")}
@@ -82,9 +82,9 @@ export default function Filters(props) {
       <motion.div
         className="filter"
         id="filter_year"
-        initial={{ opacity: 0, y: -10 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, delay: 0.2 }}
+        transition={{ duration: 0.35 }}
       >
         <label id="year_label" htmlFor="year">
           {t("publications.filter.fieldTitle3")}

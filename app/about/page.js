@@ -16,12 +16,12 @@ export default function About(props) {
     <div className={"about page_" + currentLang}>
       <Header route={"/about"} />
       <motion.div
-        className="body"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}
-      >
+                  className="body"
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.35 }}
+                >
         <div className="banner">
           <h1>{t("contact.title")}</h1>
           <p>

@@ -35,10 +35,10 @@ export default function Home() {
               <section className="home">
                 <motion.div
                   className="body"
-                  initial={{ opacity: 0, y: 100 }}
+                  initial={{ opacity: 0, y: 40 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0 }}
-                  transition={{ duration: 0.5 }}
+                  transition={{ duration: 0.35 }}
                 >
                   <div className="head block sm:flex sm:flew-row items-center ">
                     <div className="group_description flex flex-col gap-4 sm:items-start md:gap-8 padding_home  mx-8 sm:mx-8 md:ml-12 lg:ml-16 xl:ml-20 2xl:ml-24">

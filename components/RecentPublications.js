@@ -43,6 +43,7 @@ export default function RecentPublications(props) {
                     <span className="gradient_bg"></span>
                   </div>
                   <div className="paper_content">
+                    <div>
                     <div className="paper_title">
                       <h4>{title}</h4>
                     </div>
@@ -50,6 +51,7 @@ export default function RecentPublications(props) {
                       <p>
                         {author}. {journal}
                       </p>
+                    </div>
                     </div>
                     <div className="button_container">
                       {doi ? (
