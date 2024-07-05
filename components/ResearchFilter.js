@@ -5,7 +5,8 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
 export default function Filters(props) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language;
 
   function getYears(papers) {
     let yearSet = new Set();
@@ -30,13 +31,13 @@ export default function Filters(props) {
       className="filters"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.35 }}
     >
       <motion.div
         className="filter"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.35 }}
       >
         <label htmlFor="search">{t("publications.filter.fieldTitle")}</label>
         <input
@@ -54,9 +55,9 @@ export default function Filters(props) {
         className="filter"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.35 }}
       >
-        <label className="publicationType" htmlFor="publication" onClick={()=> setShowPublication(!showPublication)}>
+        <label className={"publicationType_" + currentLang} htmlFor="publication" onClick={()=> setShowPublication(!showPublication)}>
           {t("publications.filter.fieldTitle2")}
         </label>
         <select

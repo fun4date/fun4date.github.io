@@ -75,6 +75,7 @@ export default function Research() {
       ...prevState,
       papersToShow: prevState.papersToShow + 4,
     }));
+   
   };
 
   return (
