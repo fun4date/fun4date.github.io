@@ -15,7 +15,7 @@ export default function Team(props) {
   const currentLang = i18n.language;
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    //window.scrollTo(0, 0);
   }, []);
 
   const renderMembers = (members) => {
@@ -102,7 +102,7 @@ export default function Team(props) {
         <section className="teammates">
           {team["UC3M Team"]?.members ? renderMembers(team["UC3M Team"].members) : <p>No members found.</p>}
         </section>
-        <h2 className="teammates__title">UPM</h2>
+        <h2 className="teammates__title" id="upm_team">UPM</h2>
         <section className="teammates">
           {team["UPM Team"]?.members ? renderMembers(team["UPM Team"].members) : <p>No members found.</p>}
         </section>

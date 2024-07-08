@@ -58,8 +58,7 @@ export default function Home() {
                         >
                           <Link
                             rel="noopener noreferrer"
-                            target="_blank"
-                            href="#"
+                            href="/project"
                           >
                             <span>{t("front.action-button")}</span>
 
@@ -77,12 +76,18 @@ export default function Home() {
                         </motion.button>
                       </div>
                     </div>
-                    
+
                     <div className="banner_f4d_img" />
                   </div>
                 </motion.div>
 
-                <div className="body">
+                <motion.div
+                  className="body"
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.35 }}
+                >
                   <section className="project_description">
                     <div className="xl_margin gap_text">
                       <div>
@@ -90,50 +95,52 @@ export default function Home() {
                           {t("front.projectTitle")}{" "}
                         </h2>
 
-                      <h5 className="text-left sm:text-center">
-                        {t("front.projectSubtitle")}{" "}
-                      </h5>
+                        <h5 className="text-left sm:text-center">
+                          {t("front.projectSubtitle")}{" "}
+                        </h5>
+                      </div>
+                      <p className="text-white">
+                        {t("front.projectDescription")}{" "}
+                      </p>
                     </div>
-                    <p className="text-white">
-                      {t("front.projectDescription")}{" "}
-                    </p>
-                  </div>
-                </section>
-                <section className="standard_margin">
-                  <div className="text-left md:text-center flex flex-col gap-0 sm:gap-4 md:gap-12">
-                    <h2 className="text-left md:text-center">
-                      {t("front.sectionHomeTitle")}
-                    </h2>
-                    <div className="flex flex-col-reverse md:text-left md:flex-row gap-0 sm:gap-4 md:gap-12">
-                      <p className="basis-2/3">{t("front.sectionHomeBody")}</p>
-                      <h4 className="basis-1/3 font-semibold">
-                        {t("front.sectionHomeSubtitle")}
-                      </h4>
+                  </section>
+                  <section className="standard_margin">
+                    <div className="text-left md:text-center flex flex-col gap-0 sm:gap-4 md:gap-12">
+                      <h2 className="text-left md:text-center">
+                        {t("front.sectionHomeTitle")}
+                      </h2>
+                      <div className="flex flex-col-reverse md:text-left md:flex-row gap-0 sm:gap-4 md:gap-12">
+                        <p className="basis-2/3">
+                          {t("front.sectionHomeBody")}
+                        </p>
+                        <h4 className="basis-1/3 font-semibold">
+                          {t("front.sectionHomeSubtitle")}
+                        </h4>
+                      </div>
                     </div>
-                  </div>
-                </section>
-                <section className="latest_publications standard_padding justify-center ">
-                  <h2>{t("front.latestPublicationsTitle")}</h2>
-                  <div className="recent_publications_container">
-                    <RecentPublications />
-                    <a
-        className="flex justify-center"
-        href="/research"
-        rel="noopener noreferrer"
-      >
-        <div className="more margin_top_button">
-          {t("front.latestPublicationsButton")}
-        </div>
-      </a>
-                  </div>
-                </section>
-              </div>
-            </section>
-          </main>
-          <Footer />
+                  </section>
+                  <section className="latest_publications standard_padding justify-center ">
+                    <h2>{t("front.latestPublicationsTitle")}</h2>
+                    <div className="recent_publications_container">
+                      <RecentPublications />
+                      <a
+                        className="flex justify-center"
+                        href="/research"
+                        rel="noopener noreferrer"
+                      >
+                        <div className="more margin_top_button">
+                          {t("front.latestPublicationsButton")}
+                        </div>
+                      </a>
+                    </div>
+                  </section>
+                </motion.div>
+              </section>
+            </main>
+            <Footer />
+          </div>
         </div>
       </div>
-    </div>
     </AnimatePresence>
   );
 }

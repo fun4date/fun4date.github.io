@@ -96,7 +96,7 @@
             display: flex
             flex-direction: column
             justify-content: space-between
-            padding: 1.2rem 0.8rem
+            padding: 1.2rem 0rem
             .paper_date
                 p
                     // @include border-tag
@@ -104,15 +104,17 @@
                     font-size: 1.6rem
                     font-weight: 400
                     display: block
+                    margin-bottom:0.6rem
                 .gradient_bg
-                    width: 4px
+                    width: 0px
                     background: linear-gradient(to bottom, $ffd_green, #97ce004b, #97ce0000)
             .paper_content
                 @apply flex flex-col justify-between
                 height: 100%
                 .button_container
                     .paper_link
-                        @apply py-2 mt-2
+                        
+                        @apply py-2 px-0 mt-2
                         &:active
                             background: $background-secondary
 
@@ -352,7 +354,7 @@
                     display: flex
 
                     .gradient_bg
-                        width: 4px
+                        width: 0px
                         background: linear-gradient(to bottom, $ffd_green, #97ce004b, #97ce0000)
                 .paper_content
                     @apply flex flex-col justify-between

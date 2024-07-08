@@ -90,7 +90,7 @@ export default function Projects() {
               onHoverStart={() => setIsHovered1(true)}
               onHoverEnd={() => setIsHovered1(false)}
             >
-              <Link rel="noopener noreferrer" target="_blank" href="#">
+              <Link rel="noopener noreferrer" href="/team">
                 <span>{t("project.Subprojects.Subproject1.Button")}</span>
                 <motion.div
                   animate={{ x: isHovered1 ? 10 : 0 }} // Adjust '10' to the desired amount of movement
@@ -119,7 +119,7 @@ export default function Projects() {
               onHoverStart={() => setIsHovered2(true)}
               onHoverEnd={() => setIsHovered2(false)}
             >
-              <Link rel="noopener noreferrer" target="_blank" href="#">
+              <Link rel="noopener noreferrer"  href="/team#upm_team">
                 <span>{t("project.Subprojects.Subproject2.Button")}</span>
                 <motion.div
                   animate={{ x: isHovered2 ? 10 : 0 }} // Adjust '10' to the desired amount of movement
@@ -156,7 +156,7 @@ export default function Projects() {
 
 const CreateLink = (props) => {
   return props.route.match("http") ? (
-    <a target="_blank" href={props.route} rel="noopener noreferrer">
+    <a href={props.route} rel="noopener noreferrer">
       {props.children}
     </a>
   ) : (

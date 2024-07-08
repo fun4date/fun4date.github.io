@@ -27,17 +27,11 @@ export default function Filters(props) {
   let years = getYears(props.papers);
 
   return (
-    <motion.div
+    <div
       className="filters"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.35 }}
     >
-      <motion.div
-        className="filter"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.35 }}
+      <div
+        className="filter"    
       >
         <label htmlFor="search">{t("publications.filter.fieldTitle")}</label>
         <input
@@ -50,12 +44,10 @@ export default function Filters(props) {
             )
           }
         />
-      </motion.div>
-      <motion.div
+      </div>
+      <div
         className="filter"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.35 }}
+     
       >
         <label className={"publicationType_" + currentLang} htmlFor="publication" onClick={()=> setShowPublication(!showPublication)}>
           {t("publications.filter.fieldTitle2")}
@@ -79,8 +71,8 @@ export default function Filters(props) {
             {t("publications.filter.fieldOpt3")}
           </option>
         </select>
-      </motion.div>
-      <motion.div
+      </div>
+      <div
         className="filter"
         id="filter_year"
         initial={{ opacity: 0, y: 20 }}
@@ -108,20 +100,18 @@ export default function Filters(props) {
             </option>
           ))}
         </select>
-      </motion.div>
+      </div>
       {props.results === undefined ? null : (
-        <motion.div
+        <div
           className="research_results"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
+       
         >
           <p className="">
             {t("publications.filter.text")}
             <b> {props.results} </b>
           </p>
-        </motion.div>
+        </div>
       )}
-    </motion.div>
+    </div>
   );
 }
