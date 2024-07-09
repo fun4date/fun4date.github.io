@@ -95,10 +95,8 @@ export default function Research() {
       >
         <h1>{t("publications.title")}</h1>
         <p>
-          Este apartado es una recopilación de las publicaciones del equipo de
-          la UPM y de la UC3M. Las publicaciones de la UPM están centrados en el
-          tema de computación bla bla bla etc y los de la UC3M se centran en
-          sistemas de redes de no se cuantitos.
+          Este apartado es una recopilación de las publicaciones de todo el proyecto, tanto del equipo de
+          la UPM, como de la UC3M, como publicaciones en conjunto.
         </p>
       </div>
       <main>
