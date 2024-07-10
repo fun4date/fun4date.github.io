@@ -94,8 +94,10 @@ export const en = {
                "roles":{
                 "1":"IP1",
                 "2":"IP2",
-                "3":"PhD candidate",
+                "3":"PhD candidate", // Estudiante de doctorado
                 "4":"Full-Time Technician",
+                "5":"Full Professor", // Profesor Titular de Universidad
+                "6":"Associate Professor" // Profesor Titular
             },
                 "positions":{
                     "1":"Coordinator",

@@ -5,8 +5,8 @@ export const myteam = {
       // las keys de uc3m empiezan por 14
       {
         name: "José Alberto Hernández",
-        position: "IP1",
-        translationKey: "",
+        position: "Profesor Titular de Universidad - IP1",
+        translationKey: "team.professorCards.roles.5",
         // "description":"description",
         photo: "/assets/img/team/jose_alberto_hernandez.jpg",
         // "github":"github",
@@ -16,8 +16,8 @@ export const myteam = {
       },
       {
         name: "Alfonso Sánchez-Macián Pérez",
-        position: "IP2",
-        translationKey: "",
+        position: "Profesor Titular - IP2",
+        translationKey: "team.professorCards.roles.6",
         // "description":"description",
         photo: "/assets/img/team/alfonso-sanchez-macian.jpg",
         // "github":"github",
@@ -27,8 +27,8 @@ export const myteam = {
       },
       {
         name: "Ángel Cuevas Rumín",
-        position: "",
-        translationKey: "",
+        position: "Profesor Titular de Universidad",
+        translationKey: "team.professorCards.roles.6",
         // "description":"description",
         photo: "/assets/img/team/angel-cuevas.jpg",
         // "github":"github",
@@ -38,8 +38,8 @@ export const myteam = {
       },
       {
         name: "David Larrabeiti López",
-        position: "",
-        translationKey: "",
+        position: "Profesor Titular de Universidad",
+        translationKey: "team.professorCards.roles.5",
         // "description":"description",
         photo: "/assets/img/team/david-larrabeiti.png",
         // "github":"github",
@@ -49,7 +49,7 @@ export const myteam = {
       },
       {
         name: "Gabriel Otero Pérez",
-        position: "",
+        position: "Research Engineer",
         translationKey: "",
         // "description":"description",
         photo: "/assets/img/team/gabriel-otero.jpg",
@@ -60,8 +60,8 @@ export const myteam = {
       },
       {
         name: "Jorge Pleite Guerra",
-        position: "",
-        translationKey: "",
+        position: "Profesor Titular",
+        translationKey: "team.professorCards.roles.6", // Associate Professor
         // "description":"description",
         photo: "/assets/img/team/avatar.png",
         // "github":"github",
@@ -71,8 +71,8 @@ export const myteam = {
       },
       {
         name: "Gonzalo Martínez Ruiz de Arcaute",
-        position: "PhD candidate",
-        translationKey: "",
+        position: "Estudiante de doctorado",
+        translationKey: "team.professorCards.roles.3", // PhD candidate
         // "description":"description",
         photo: "/assets/img/team/avatar.png",
         // "github":"github",
@@ -82,8 +82,8 @@ export const myteam = {
       },
       {
         name: "Roberto Boris Martinez",
-        position: "PhD candidate",
-        translationKey: "",
+        position: "Personal con contrato predoctoral",
+        translationKey: "team.professorCards.roles.3", // PhD candidate 
         // "description":"description",
         photo: "/assets/img/team/boris-martinez.jpeg",
         // "github":"github",
@@ -93,8 +93,8 @@ export const myteam = {
       },
       {
         name: "Francisco Caravaca Crespo",
-        position: "PhD candidate",
-        translationKey: "",
+        position: "Estudiante de doctorado",
+        translationKey: "team.professorCards.roles.3", // PhD candidate
         // "description":"description",
         photo: "/assets/img/team/francisco-caravaca.jpg",
         // "github":"github",
@@ -104,8 +104,8 @@ export const myteam = {
       },
       {
         name: "Juan Carlos Hernández",
-        position: "PhD candidate",
-        translationKey: "",
+        position: "Estudiante de Doctorado",
+        translationKey: "team.professorCards.roles.3", // PhD candidate
         // "description":"description",
         photo: "/assets/img/team/juan-hernandez-hernandez.png",
         // "github":"github",
@@ -115,8 +115,8 @@ export const myteam = {
       },
       {
         name: "Angel Merino Hernández",
-        position: "PhD candidate",
-        translationKey: "",
+        position: "Estudiante de Doctorado",
+        translationKey: "team.professorCards.roles.3", // PhD candidate
         // "description":"description",
         photo: "/assets/img/team/angel-merino.jpg",
         // "github":"github",
@@ -126,8 +126,8 @@ export const myteam = {
       },
       {
         name: "Nataliia Koneva",
-        position: "PhD candidate",
-        translationKey: "",
+        position: "Estudiante de Doctorado",
+        translationKey: "team.professorCards.roles.3", // PhD candidate
         // "description":"description",
         photo: "/assets/img/team/nataliia_koneva.jpeg",
         // "github":"github",
@@ -135,39 +135,39 @@ export const myteam = {
         center: "UC3M",
         key: "25",
       },
-      {
-        name: "PhD Student 1",
-        position: "PhD Student 1",
-        translationKey: "",
-        // "description":"description",
-        photo: "/assets/img/team/avatar.png",
-        // "github":"github",
-        // "email": "mail",
-        center: "UC3M",
-        key: "26",
-      },
-      {
-        name: "PhD Student 2",
-        position: "PhD Student 2",
-        translationKey: "",
-        // "description":"description",
-        photo: "/assets/img/team/avatar.png",
-        // "github":"github",
-        // "email": "mail",
-        center: "UC3M",
-        key: "27",
-      },
-      {
-        name: "Full-Time Technician 1",
-        position: "Full-Time Technician 1",
-        translationKey: "",
-        // "description":"description",
-        photo: "/assets/img/team/avatar.png",
-        // "github":"github",
-        // "email": "mail",
-        center: "UC3M",
-        key: "28",
-      },
+      // {
+      //   name: "PhD Student 1",
+      //   position: "PhD Student 1",
+      //   translationKey: "",
+      //   // "description":"description",
+      //   photo: "/assets/img/team/avatar.png",
+      //   // "github":"github",
+      //   // "email": "mail",
+      //   center: "UC3M",
+      //   key: "26",
+      // },
+      // {
+      //   name: "PhD Student 2",
+      //   position: "PhD Student 2",
+      //   translationKey: "",
+      //   // "description":"description",
+      //   photo: "/assets/img/team/avatar.png",
+      //   // "github":"github",
+      //   // "email": "mail",
+      //   center: "UC3M",
+      //   key: "27",
+      // },
+      // {
+      //   name: "Full-Time Technician 1",
+      //   position: "Full-Time Technician 1",
+      //   translationKey: "",
+      //   // "description":"description",
+      //   photo: "/assets/img/team/avatar.png",
+      //   // "github":"github",
+      //   // "email": "mail",
+      //   center: "UC3M",
+      //   key: "28",
+      // },
     ],
   },
   // upm -- team
@@ -332,7 +332,7 @@ export const myteam = {
       {
         name: "Carlos Aparicio",
         position: "Estudiante de doctorado",
-        translationKey: "",
+        translationKey: "team.professorCards.roles.3",
         description: "",
         photo: "/assets/img/team/avatar.png",
         github: "",

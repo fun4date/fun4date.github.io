@@ -96,7 +96,9 @@ export const es = {
                 "2":"IP2",
                 "3":"Candidato de doctorado",
                 "4":"Técnico a tiempo completo",
-            },
+                "5":"Profesor Titular de Universidad", // Full Professor
+                "6":"Profesor Titular" // Associate Professor
+             },
             "positions":{
                 "1":"Coordinador",
             },
