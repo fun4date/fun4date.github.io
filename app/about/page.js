@@ -25,9 +25,7 @@ export default function About(props) {
         <div className="banner">
           <h1>{t("contact.title")}</h1>
           <p>
-            Para consultas sobre este proyecto o solicitudes para futuras
-            colaboraciones, puedes ponerte en contacto con los equipos de ambas
-            universidades.
+          {t("contact.description")}
           </p>
         </div>
         <main className=" xs:my-4 sm:mx-8 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2">
@@ -60,8 +58,7 @@ export default function About(props) {
                       {" "}
                       <FontAwesomeIcon className="icon" icon={faLocationDot} />
                       <p>
-                        E.T.S. DE INGENIEROS DE TELECOMUNICACIÓN Av.
-                        Complutense, 30, 28040 Madrid Edificio B
+                      {t("contact.address1")}
                       </p>
                     </h5>
                   </li>
@@ -88,8 +85,7 @@ export default function About(props) {
                       {" "}
                       <FontAwesomeIcon className="icon" icon={faLocationDot} />
                       <p>
-                        Escuela Politécnica Superior, Avda. de la Universidad,
-                        30. 28911 Leganés (Madrid) España
+                      {t("contact.address2")}
                       </p>
                     </h5>
                   </li>

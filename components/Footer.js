@@ -43,56 +43,50 @@ export default function Footer(props) {
           <div className="footer_email"> enrique.barra@upm.es</div>
         </div>*/}
         </div>
-
-        
-          {" "}
-          {/*<nav>
-          <ul>
-            <li className="sections_title smallcaps text-left mb-4">
-              {t("footer.title1")}
-            </li>
-            {routes.map((route, index) => (
-              <li
-                key={index}
-                className={
-                  route.route === props.route
-                    ? "li-selected text-left mb-2 font-medium md:text-"
-                    : "text-left mb-2 font-medium"
-                }
-              >
-                <Link className="font-medium" href={route.route}>
-                {t(route.key)}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>  */}
-   
         <div className="footer_mid">
           <div className="footer_img_container_funder">
             <p>{t("footer.title2")}</p>
+            <a
+                  className="font-normal text-base"
+                  rel="noopener noreferrer"
+                  href="https://www.fecyt.es/"
+                  target="_blank"
+                >
             <img
-           
               src="assets/img/footer/financiador.png"
               alt="logo"
             />
+            </a>
           </div>
         </div>
         <div className="footer_mid">
           <div className="footer_img_container_partners">
             <p>{t("footer.title3")}</p>
             <div>
-              
+            <a
+                  className="font-normal text-base"
+                  rel="noopener noreferrer"
+                  href="https://www.uc3m.es/Inicio"
+                  target="_blank"
+                >
               <img
             
                 src="assets/img/footer/UC3M-logo.png"
                 alt="logo"
               />
+              </a>
+                <a
+                  className="font-normal text-base"
+                  rel="noopener noreferrer"
+                  href="https://www.upm.es/"
+                  target="_blank"
+                >
               <img
             
                 src="assets/img/footer/UPM-logo.png"
                 alt="logo"
               />
+              </a>
             </div>
           </div>
         </div>
@@ -139,7 +133,7 @@ export default function Footer(props) {
 */}
       </div>
       <div>
-        <div className="footer_right size-full">
+        {/* <div className="footer_right size-full">
           <div className="copyright">
             {" "}
                 <a
@@ -156,10 +150,9 @@ export default function Footer(props) {
                   href="http://www.etsit.upm.es/de.html"
                   target="_blank"
                 >
-                 
                 </a>
-          </div>
-        </div>
+          </div> 
+        </div>*/}
       </div>
     </footer>
   );

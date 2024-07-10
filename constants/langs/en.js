@@ -16,29 +16,30 @@ export const en = {
         "projectTitle": "Short description of the project",
         "projectSubtitle": "FuN4DaTe aims at designing a cost-effective energy-efficient network architecture",
         "projectDescription": "FuN4DaTe aims at designing a cost-effective energy-efficient network architecture that approaches the envisioned by the ITU FG-NET2030 network and the Hyperscale cloud providers to upgrade telco networks by boosting bandwidth, latency, security, manynets while incorporating AI/ML into the network operations, on attempts to deal with forthcoming challenging services like holographic-type communications, tactile Internet for remote operations, intelligent operations networks, network and computing convergence, digital twins, space-terrestrial integrated network and industrial IoT with cloudification.",
-        "latestPublicationsTitle": "Latest publications",
-        "latestPublicationsButton": "See all publications",
         "sectionHomeTitle": "A collaborative project between UC3M and UPM",
         "sectionHomeBody": "The collaboration between the groups will help in aligning the strategies to meet the objectives, instead of producing divergent solutions. Finally, the PI1 for the UPM subproject was part of UC3M team until a few months ago, with multipleshared projects and papers published with both PIs from UC3M, many of them related to the topics of this project. This will greatly facilitate the alignment of both subprojects and effective coordination.",
         "sectionHomeSubtitle": "“The collaboration between the groups will help in aligning the strategies to meet the objectives, instead of producing divergent solutions”.",
+        "latestPublicationsTitle": "Latest publications",
+        "latestPublicationsButton": "See all publications",
+      
          },
     "project": {
         "Intro": {
             "sectionTitle": "Introduction",
-            "sectionBody": "(Estado del arte) According to Cisco’s Visual Networking Index (VNI), data traffic has been continuously growing since the introduction of the Internet. While in the past the average overall growth seen in the operators’ networks has been around 35%, this trend seems to keep increasing towards a 45% growth rate [Cisco2018]. Video streaming is still the dominating type of traffic nowadays, but other applications and services have appeared in the past years to stress networks even more, for example Machine-2-Machine (M2M) applications and Online Gaming, with 46% CAGR and 59% CAGR respectively. In parallel, mobile traffic (5G and Beyond-5G) is expected to play a key role in the use of telco infrastructure. Indeed, global mobile traffic is expected to grow twice as fast as IP traffic.",
-            "sectionHighlight": "“Frase destacada del texto de la introducción un poco más larga y tal”",
+            "sectionBody": "According to Cisco’s Visual Networking Index (VNI), data traffic has been continuously growing since the introduction of the Internet. While in the past the average overall growth seen in the operators’ networks has been around 35%, this trend seems to keep increasing towards a 45% growth rate [Cisco2018]. Video streaming is still the dominating type of traffic nowadays, but other applications and services have appeared in the past years to stress networks even more, for example Machine-2-Machine (M2M) applications and Online Gaming, with 46% CAGR and 59% CAGR respectively. In parallel, mobile traffic (5G and Beyond-5G) is expected to play a key role in the use of telco infrastructure. Indeed, global mobile traffic is expected to grow twice as fast as IP traffic.",
+            "sectionHighlight": "“Data traffic has been continuously growing since the introduction of the Internet”",
         },
         "Goals": {
             "sectionTitle": "Goals",
-            "Goal1": {
-                "GoalTitle": "A nivel de red",
-                "GoalBody": "Innovaciones en conectividad, seguridad y operaciones autónomas.",
+             "Goal1": {
+                "GoalTitle": "Network level",
+                "GoalBody": "Innovations in connectivity, safety and autonomous operations.",
             },
             "Goal2": {
-                "GoalTitle": "A nivel de sistemas",
-                "GoalBody": "Innovaciones en nodos de red programables, offloading de funcionalidades y procesamiento distribuido.",
-            }
-        },
+                "GoalTitle": "System level",
+                "GoalBody": "Innovations in programmable network nodes, offloading of functionalities and distributed processing.",
+            },},
+       
         "Subprojects": {
             "sectionTitle": "Subprojects",
             "Subproject1": {
@@ -56,11 +57,12 @@ export const en = {
         },
         "Impact": {
             "sectionTitle": "Impact",
-            "sectionBody": "Contribución a la generación de conocimiento: Cómo el proyecto ayudará a avanzar en las áreas de redes y sistemas de computación. Relevancia estratégica: Alineación con estrategias nacionales y europeas como España Digital 2026 y Horizon Europe.",
+            "sectionBody": "Contribution to knowledge generation: How the project will help advance in the areas of networks and computer systems. Strategic relevance: Alignment with national and European strategies such as Spain Digital 2026 and Horizon Europe.",
         }
     },
     "publications": {
         "title": "Publications",
+        "description": "This section is a compilation of the publications of the entire project, both from the UPM and UC3M teams, as well as publications as a whole.",
         "filter":{
             "fieldTitle":"Search",
             "fieldTitle2":"Publication type",
@@ -104,10 +106,13 @@ export const en = {
     },
     "contact": {
         "title": "Contact",
+        "description": "For questions about this project or requests for future collaborations, please contact the teams at both universities.",
         "title2": "Any questions? Contact us. ",
         "title3": "Where are we?",
         "listTitle2":"Phone",
         "body": "Do you want to get in touch with us for any consultation or colaborations ( course, project or publication) ? In the CyberAula group we are open to work together with other groups or educational institutions, as well as the participation in european or national projects as long as they are related to our main lines of action. Ask and we'll be glad to establish contact for possible colaborations.",
+        "address1": "Escuela Politécnica Superior, Avda. de la Universidad, 30. 28911 Leganés, Comunidad de Madrid, Spain",
+        "address2": "E.T.S. de ingenieros de telecomunicación, Av. Complutense, 30, Edificio B, 28040 Madrid, Spain",
     },
     "footer": {
         "title1":"sections",
