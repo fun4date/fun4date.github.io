@@ -32,9 +32,6 @@ module.exports = {
         accent: "#5340FF",
         black: "#1F2023",
         white: "#FAFBFF",
-        burgundy: "#9F226D",
-        cyan: "#21E2ED",
-        lilac: "#AE9FF2",
         // f4d brand colors
         bluePrimary:'#1C74D9',
         greenPrimary:'#98CE00',
@@ -63,11 +60,6 @@ module.exports = {
           200: "#DBE2FF",
           100: "#EBF0FF",
           50: "#F5F8FF",
-        },
-        ca_orange: {
-          300: "FF9900",
-          200: "FFBD1B",
-          100: "FFE685",
         },
         //borrar
 
