@@ -120,8 +120,8 @@ export const es = {
         "listTitle":"E-mail",
         "listTitle2":"Teléfono",
         "body": "¿Deseas ponerte en contacto con nosotros para cualquier colaboración o consulta (curso, proyecto o publicación)?. En el grupo CyberAula estamos abiertos a colaborar con grupos e instituciones educativas, y a la participación en proyectos europeos y nacionales, siempre y cuando estén relacionados con nuestras principales líneas de actuación. Pregúntanos y estaremos encantados de contactar para posibles colaboraciones. ", 
-        "address1": "Escuela Politécnica Superior, Avda. de la Universidad, 30. 28911 Leganés, Comunidad de Madrid, España",
-        "address2": "E.T.S. de ingenieros de telecomunicación, Av. Complutense, 30, Edificio B, 28040 Madrid, España",
+        "address1": "E.T.S. de ingenieros de telecomunicación, Av. Complutense, 30, Edificio B, 28040 Madrid, España",
+        "address2": "Escuela Politécnica Superior, Avda. de la Universidad, 30. 28911 Leganés, Comunidad de Madrid, España",
     },
     "footer": {
         "title1":"secciones",
