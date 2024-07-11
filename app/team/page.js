@@ -99,12 +99,12 @@ export default function Team(props) {
       </div>
         <main>
         <h2 className="teammates__title">UC3M</h2>
-        <p>{t("team.description1")}</p>
+        <p className="standard_margin">{t("team.description1")}</p>
         <section className="teammates">
           {team["UC3M Team"]?.members ? renderMembers(team["UC3M Team"].members) : <p>No members found.</p>}
         </section>
         <h2 className="teammates__title" id="upm_team">UPM</h2>
-        <p>{t("team.description2")}</p>
+        <p className="standard_margin">{t("team.description2")}</p>
         <section className="teammates">
           {team["UPM Team"]?.members ? renderMembers(team["UPM Team"].members) : <p>No members found.</p>}
         </section>

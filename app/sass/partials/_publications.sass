@@ -13,26 +13,10 @@
         display: flex
         flex-direction: column
         flex: 1
-
-        // .filters
-        //     justify-content: space-between
-        // .filter
-        //     display: flex
-        //     flex-direction: column
-        //     align-items: start
-
-        // .main
-        //     min-height: calc(100vh - 150px)
-        //     padding: 5rem 0 0 0
-        //     background-color: red
-
-     
-
-            //width: 13rem
-                justify-content: flex-end
-            b
-                margin-left: 0.4rem
-                width: 2rem
+        justify-content: flex-end
+        b
+            margin-left: 0.4rem
+            width: 2rem
 
         section
 
@@ -78,7 +62,7 @@
             min-height: 3rem
             align-content: center
             margin-right: 1rem
-            @apply mb-8
+            // @apply mb-8
             p
                 @apply text-gray-400
                 @apply bg-black px-3 py-2 rounded
@@ -131,18 +115,7 @@
         .paper_link
             @include icon-button-right
             @include link-button
-            // @include button    
-            // display: flex
-            // flex-direction: row
-            // //gap: $spacing_xsm
-            // align-content: center
-            // justify-content: left
-            // margin-top: 0.6rem        
-            // a 
-
-            //     display: flex
-            //     align-content: center
-                //margin-top: $spacing_sm          
+        
 
 @media (min-width: 640px)
     .research
@@ -151,21 +124,14 @@
             display: flex
             flex-wrap: wrap
             gap: 1.5rem
-            padding-bottom: $spacing_xl
             border-bottom: solid 1px $gray-600
             justify-content: space-between
             .filter
-                // display: flex
-                // flex-direction: row
-                // align-items: center
                 font-size: 1.3rem
                 margin: 0
-                //height: 42px
                 width: auto
                 text-align: left
                 label
-                    //display: inline-block
-                    //margin-bottom: 0rem
                     width: 12rem
                 #year_label
                     text-align: right
@@ -175,13 +141,12 @@
                 min-height: 3rem
                 margin:0
                 p
-                    margin-bottom: 0.6rem
+                    margin-top: 1rem
     .papers
         display: flex
         flex-direction: column
         display: flex
         flex-direction: column
-        //padding: $spacing_sm 0 $spacing_md 0
         .paper
             @apply mt-2
             padding: $spacing_sm 0 
@@ -273,7 +238,6 @@
             flex-wrap: wrap
             gap: 2rem
             margin-top:0
-            padding-bottom: $spacing_xl
             border-bottom: solid 1px $gray-600
             justify-content: space-between
             .filter
@@ -286,10 +250,6 @@
                 width: auto
                 text-align: left
                 label
-                    // display: inline-block
-                    // margin-bottom: 0rem
-                    // width: auto !important
-                    // width: 6.2rem
             
               
                 input, select
@@ -317,7 +277,7 @@
 @media (min-width: 1200px)
     .research
     .papers
-        @apply grid grid-cols-2 gap_grid-r
+        // @apply grid grid-cols-2 gap_grid-r
 
         .paper
             @apply mt-2
@@ -376,3 +336,14 @@
                             margin: 0
                         a
                             display: flex
+
+.filters
+    @apply px-4 py-4 sm:px-8 md:px-14 md:py-8 lg:px-24 lg:py-10 xl:px-28 2xl:px-32
+    @apply flex flex-wrap
+    .filter
+        @apply min-w-[200px]
+
+.papers
+    @apply mx-auto
+.paper
+    @apply max-w-[1080px]

@@ -98,9 +98,7 @@ export default function Research() {
         {t("publications.description")}
         </p>
       </div>
-      <main>
-        <section className="research standard_margin">
-          <Filters
+      <Filters
             search={search}
             year={year}
             type={type}
@@ -112,7 +110,8 @@ export default function Research() {
               papersFiltered instanceof Array ? papersFiltered.length : 0
             }
           />
-            
+      <main>
+        <div className="research standard_margin">            
           <div className="papers ">
             {papersFiltered
               .slice(0, papersToShow)
@@ -174,7 +173,7 @@ export default function Research() {
               </button>
             )}
           </div>
-        </section>
+        </div>
       </main>
     </motion.div>
       <Footer />
