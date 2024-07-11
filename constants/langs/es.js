@@ -10,14 +10,14 @@ export const es = {
         "publicationstab": "Publicaciones",
     },
     "front": {
-        "title": "Redes Futuras para Centros de Datos y Empresas de Telecomunicaciones",
-        "description": "La propuesta del proyecto es un enfoque holístico e integral que requiere la participación y colaboración activa de expertos en redes e informática.",
+        "title": "Redes del Futuro para Centros de Datos y Operadores",
+        "description": "FuN4DaTe investiga redes eficientes en coste y energia que integran IA para mejorar el ancho de banda, reducir la latencia y dar soporte a servicios avanzados.",
         "action-button": "Sobre el proyecto",
-        "projectTitle": "Descripción corta del proyecto",
+        "projectTitle": "Descripción del proyecto",
         "projectSubtitle": "Diseño de una arquitectura de red rentable y eficiente",
         "projectDescription": "El objetivo de FuN4DaTe es diseñar una arquitectura de red rentable y eficiente desde el punto de vista energético que se aproxime a la prevista por la red FG-NET2030 de la UIT y los proveedores de nube a hiperescala para mejorar las redes de telecomunicaciones aumentando el ancho de banda, la latencia, la seguridad y las numerosas redes, al tiempo que se incorpora la IA/ML a las operaciones de red, en un intento de hacer frente a los próximos servicios desafiantes como las comunicaciones de tipo holográfico, Internet táctil para operaciones remotas, redes de operaciones inteligentes, convergencia de redes y computación, gemelos digitales, red integrada espacio-terrestre e IoT industrial con cloudificación.",
         "sectionHomeTitle": "Un proyecto colaborativo entre la UC3M y la UPM",
-        "sectionHomeBody": "La colaboración entre los grupos ayudará a alinear las estrategias para cumplir los objetivos, en lugar de producir soluciones divergentes. Finalmente, el PI1 del subproyecto de la UPM formó parte del equipo de la UC3M hasta hace unos meses, con múltiples proyectos compartidos y artículos publicados con ambos PI de la UC3M, muchos de ellos relacionados con los temas de este proyecto. Esto facilitará enormemente la alineación de ambos subproyectos y una coordinación efectiva.",
+        "sectionHomeBody": "Este proyecto es un enfoque holístico e integral que requiere la participación y colaboración activa de expertos en redes e informática. La colaboración entre los grupos ayudará a alinear las estrategias para cumplir los objetivos, en lugar de producir soluciones divergentes. Ambos equipos tienen proyectos compartidos y artículos publicados en conjunto, muchos de ellos relacionados con los temas de este proyecto. Esto facilitará enormemente la alineación de ambos subproyectos y una coordinación efectiva.",
         "sectionHomeSubtitle": "“La colaboración entre los grupos ayudará a alinear las estrategias para cumplir los objetivos, en lugar de producir soluciones divergentes”.",
         "latestPublicationsTitle": "Últimas publicaciones",
         "latestPublicationsButton": "Ver todas las publicaciones",
@@ -39,25 +39,29 @@ export const es = {
                 "GoalTitle": "A nivel de sistemas",
                 "GoalBody": "Innovaciones en nodos de red programables, offloading de funcionalidades y procesamiento distribuido.",
             },
+            "Goal3": {
+                "GoalTitle": "A nivel conjunto",
+                "GoalBody": "Innovaciones en la integración de redes y sistemas de computación, y en la gestión de la energía."
+            }
         },
         "Subprojects": {
             "sectionTitle": "Subproyectos",
             "Subproject1": {
                 "Title": "Subproyecto 1",
                 "Subtitle": "Tecnologías de red",
-                "Body": "El grupo de la UC3M tiene una larga trayectoria en diferentes tecnologías de redes, incluyendo arquitectura telco, sistemas ópticos WDM, soporte para la integración 5G/5G+ y operaciones basadas en AI/ML para un plano de control inteligente.",
+                "Body": "",
                 "Button": "Ver equipo de UC3M"
             },
             "Subproject2": {
                 "Title": "Subproyecto 2",
                 "Subtitle": "Sistemas informáticos",
-                "Body": "El grupo de la UPM tiene una amplia experiencia en la implantación de grandes sistemas informáticos, tanto locales como en la nube, centrados en aplicaciones de big data y aprendizaje automático, y ambos grupos tienen experiencia en el diseño de elementos de red programables.",
+                "Body": "",
                 "Button": "Ver equipo de UPM"
             }
         },
         "Impact": {
             "sectionTitle": "Impacto",
-            "sectionBody": "Contribución a la generación de conocimiento: Cómo el proyecto ayudará a avanzar en las áreas de redes y sistemas de computación. Relevancia estratégica: Alineación con estrategias nacionales y europeas como España Digital 2026 y Horizon Europe.",
+            "sectionBody": "Contribución a la generación de conocimiento: el proyecto ayudará a avanzar en las áreas de redes y sistemas de computación. Relevancia estratégica: Alineación con estrategias nacionales y europeas como España Digital 2026 y Horizon Europe.",
         },
     },
     "publications": {
@@ -92,6 +96,8 @@ export const es = {
     },
     "team": {
         "title": "Equipo",
+        "description1": "El grupo de la UC3M tiene una larga trayectoria en diferentes tecnologías de redes, incluyendo arquitectura telco, sistemas ópticos WDM, soporte para la integración 5G/5G+ y operaciones basadas en AI/ML para un plano de control inteligente.",
+        "description2": "El grupo de la UPM tiene una amplia experiencia en la implantación de grandes sistemas informáticos, tanto locales como en la nube, centrados en aplicaciones de big data y aprendizaje automático, y ambos grupos tienen experiencia en el diseño de elementos de red programables.",
         "professorCards":{
             "roles":{
                 "1":"IP1",

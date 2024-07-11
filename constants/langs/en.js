@@ -11,13 +11,13 @@ export const en = {
     },
     "front": {
         "title": "Future Networks for Datacenters and Telcos",
-        "description": "The project proposal is a holistic and comprehensive approach that requires the active involvement and collaboration of both experts in networking and computing.",
+        "description": "FuN4DaTe designs cost-effective, energy-efficient networks integrating AI to enhance bandwidth, reduce latency and support advanced services.",
         "action-button": "About the project",
-        "projectTitle": "Short description of the project",
+        "projectTitle": "Description of the project",
         "projectSubtitle": "FuN4DaTe aims at designing a cost-effective energy-efficient network architecture",
         "projectDescription": "FuN4DaTe aims at designing a cost-effective energy-efficient network architecture that approaches the envisioned by the ITU FG-NET2030 network and the Hyperscale cloud providers to upgrade telco networks by boosting bandwidth, latency, security, manynets while incorporating AI/ML into the network operations, on attempts to deal with forthcoming challenging services like holographic-type communications, tactile Internet for remote operations, intelligent operations networks, network and computing convergence, digital twins, space-terrestrial integrated network and industrial IoT with cloudification.",
         "sectionHomeTitle": "A collaborative project between UC3M and UPM",
-        "sectionHomeBody": "The collaboration between the groups will help in aligning the strategies to meet the objectives, instead of producing divergent solutions. Finally, the PI1 for the UPM subproject was part of UC3M team until a few months ago, with multipleshared projects and papers published with both PIs from UC3M, many of them related to the topics of this project. This will greatly facilitate the alignment of both subprojects and effective coordination.",
+        "sectionHomeBody": "This project is a holistic and comprehensive approach that requires the active participation and collaboration of network and IT experts. Collaboration between the groups will help align strategies to meet objectives, rather than produce divergent solutions. Both teams have shared projects and jointly published papers, many of them related to the topics of this project. This will greatly facilitate alignment of both subprojects and effective coordination.",
         "sectionHomeSubtitle": "“The collaboration between the groups will help in aligning the strategies to meet the objectives, instead of producing divergent solutions”.",
         "latestPublicationsTitle": "Latest publications",
         "latestPublicationsButton": "See all publications",
@@ -38,26 +38,37 @@ export const en = {
             "Goal2": {
                 "GoalTitle": "System level",
                 "GoalBody": "Innovations in programmable network nodes, offloading of functionalities and distributed processing.",
-            },},
-       
+            },
+            "Goal3": {
+                "GoalTitle": "At both levels",
+                "GoalBody": "Innovations in network and computer systems integration, and energy management."
+            }        
+        },       
         "Subprojects": {
             "sectionTitle": "Subprojects",
             "Subproject1": {
                 "Title": "Subproject 1",
                 "Subtitle": "Networking technologies",
-                "Body": "The group at UC3M has a long track record on different networking technologies including telco architecture, optical WDM systems, support for 5G/5G+ integration, and AI/ML-based operations for an intelligent control plane.",
+                "Body": "The specific sub-objectives are:",
+                "ListItem1": "Design a high-capacity, energy-efficient network architecture",
+                "ListItem2": "Evaluate emerging network technologies",
+                "ListItem3": "Develop intelligent network optimization techniques using AI/ML",
+                "ListItem4": "Focus on advanced use cases like digital twins, holographic communications, and tactile Internet remote operations",
                 "Button": "See UC3M Team"
             },
             "Subproject2": {
                 "Title": "Subproject 2",
                 "Subtitle": "Computing systems",
-                "Body": "The group at UPM has vast experience at implementing large computing systems both on premises and on the cloud focusing on big data and machine learning applications and both groups have experience at designing programmable network elements.",
+                "Body": "The specific sub-objectives are:",
+                "ListItem1": "Develop high-speed processing systems for network nodes",
+                "ListItem2": "Implement data-sketches and offloading capacities for AI and data analytics functions",
+                "ListItem3": "Validate technologies through specific use cases",
                 "Button": "See UPM Team"
             }
         },
         "Impact": {
             "sectionTitle": "Impact",
-            "sectionBody": "Contribution to knowledge generation: How the project will help advance in the areas of networks and computer systems. Strategic relevance: Alignment with national and European strategies such as Spain Digital 2026 and Horizon Europe.",
+            "sectionBody": "Contribution to knowledge generation: the project will help advance in the areas of networks and computer systems. Strategic relevance: Alignment with national and European strategies such as Spain Digital 2026 and Horizon Europe.",
         }
     },
     "publications": {
@@ -92,6 +103,8 @@ export const en = {
     },
     "team": {
         "title": "Team",
+        "description1": "The group at UC3M has a long track record on different networking technologies including telco architecture, optical WDM systems, support for 5G/5G+ integration, and AI/ML-based operations for an intelligent control plane.",
+        "description2": "The group at UPM has vast experience at implementing large computing systems both on premises and on the cloud focusing on big data and machine learning applications and both groups have experience at designing programmable network elements.",
             "professorCards":{
                "roles":{
                 "1":"IP1",
