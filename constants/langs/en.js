@@ -126,8 +126,8 @@ export const en = {
         "title3": "Where are we?",
         "listTitle2":"Phone",
         "body": "Do you want to get in touch with us for any consultation or colaborations ( course, project or publication) ? In the CyberAula group we are open to work together with other groups or educational institutions, as well as the participation in european or national projects as long as they are related to our main lines of action. Ask and we'll be glad to establish contact for possible colaborations.",
-        "address1": "Escuela Politécnica Superior, Avda. de la Universidad, 30. 28911 Leganés, Comunidad de Madrid, Spain",
-        "address2": "E.T.S. de ingenieros de telecomunicación, Av. Complutense, 30, Edificio B, 28040 Madrid, Spain",
+        "address1": "E.T.S. de ingenieros de telecomunicación, Av. Complutense, 30, Edificio B, 28040 Madrid, Spain",
+        "address2": "Escuela Politécnica Superior, Avda. de la Universidad, 30. 28911 Leganés, Comunidad de Madrid, Spain",
     },
     "footer": {
         "title1":"sections",
