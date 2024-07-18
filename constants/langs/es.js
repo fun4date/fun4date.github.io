@@ -25,7 +25,7 @@ export const es = {
     },
     "project": {
         "Intro": {
-            "sectionTitle": "Introduccion",
+            "sectionTitle": "Introducción",
             "sectionBody": "Según el Visual Networking Index (VNI) de Cisco, el tráfico de datos no ha dejado de crecer desde la introducción de Internet. Mientras que en el pasado el crecimiento medio global observado en las redes de los operadores se situaba en torno al 35%, esta tendencia parece seguir aumentando hacia una tasa de crecimiento del 45% [Cisco2018]. El streaming de vídeo sigue siendo el tipo de tráfico dominante en la actualidad, pero en los últimos años han aparecido otras aplicaciones y servicios que sobrecargan aún más las redes, como por ejemplo las aplicaciones Machine-2-Machine (M2M) y los juegos en línea, con un 46% CAGR y un 59% CAGR respectivamente. Paralelamente, se espera que el tráfico móvil (5G y Beyond-5G) desempeñe un papel clave en el uso de la infraestructura de telecomunicaciones. De hecho, se espera que el tráfico móvil mundial crezca dos veces más rápido que el tráfico IP.",
             "sectionHighlight": "“El tráfico de datos ha ido creciendo continuamente desde la introducción de Internet.”",
         },
