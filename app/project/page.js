@@ -67,8 +67,8 @@ export default function Projects() {
           <div className="card_goals bg-black text-center padding_card_highlight">
             <FontAwesomeIcon icon={faGrip} className="icon_circle" />
             <div>
-              <h3> {t("project.Goals.Goal2.GoalTitle")}</h3>
-              <p className=""> {t("project.Goals.Goal2.GoalBody")}</p>
+              <h3> {t("project.Goals.Goal3.GoalTitle")}</h3>
+              <p className=""> {t("project.Goals.Goal3.GoalBody")}</p>
             </div>
           </div>
         </div>
@@ -85,6 +85,12 @@ export default function Projects() {
             </h3>
             <h5> {t("project.Subprojects.Subproject1.Subtitle")}</h5>
             <p> {t("project.Subprojects.Subproject1.Body")} </p>
+            <ul>
+              <li>{t("project.Subprojects.Subproject1.ListItem1")}</li>
+              <li>{t("project.Subprojects.Subproject1.ListItem2")}</li>
+              <li>{t("project.Subprojects.Subproject1.ListItem3")}</li>
+              <li>{t("project.Subprojects.Subproject1.ListItem4")}</li>
+            </ul>
             <motion.button
               className="action_button margin_top_button text-ffdGreen-300 border-ffdGreen-300"
               onHoverStart={() => setIsHovered1(true)}
@@ -114,6 +120,11 @@ export default function Projects() {
             </h3>
             <h5> {t("project.Subprojects.Subproject2.Subtitle")}</h5>
             <p> {t("project.Subprojects.Subproject2.Body")} </p>
+            <ul>
+              <li>{t("project.Subprojects.Subproject1.ListItem1")}</li>
+              <li>{t("project.Subprojects.Subproject1.ListItem2")}</li>
+              <li>{t("project.Subprojects.Subproject1.ListItem3")}</li>
+            </ul>
             <motion.button
               className="action_button margin_top_button text-ffdBlue-300 border-ffdBlue-300"
               onHoverStart={() => setIsHovered2(true)}
