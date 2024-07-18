@@ -67,7 +67,7 @@ export default function Team(props) {
               {/* description */}
               <div className="mate_coordination">
                 <span className={position === "Coordinator" ? "coordinator" : ""}>
-                  {translatedPosition}
+                  {translatedRole}
                 </span>
               </div>
               {/* description */}
