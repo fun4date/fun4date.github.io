@@ -107,15 +107,18 @@ export const en = {
         "description2": "The group at UPM has vast experience at implementing large computing systems both on premises and on the cloud focusing on big data and machine learning applications and both groups have experience at designing programmable network elements.",
             "professorCards":{
                "roles":{
-                "1":"IP1",
-                "2":"IP2",
+                "1":"External staff",
+                "2":"Assistant Professor",
                 "3":"PhD candidate", // Estudiante de doctorado
                 "4":"Full-Time Technician",
-                "5":"Full Professor", // Profesor Titular de Universidad
-                "6":"Associate Professor" // Profesor Titular
+                "5":"Professor", // Profesor Titular de Universidad
+                "6":"Associate Professor", // Profesor Titular
+                "7":"Researcher",
+          
             },
                 "positions":{
-                    "1":"Coordinator",
+                    "1":"IP1",
+                    "2":"IP2",
                 },
             },
     },

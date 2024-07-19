@@ -100,15 +100,18 @@ export const es = {
         "description2": "El grupo de la UPM tiene una amplia experiencia en la implantación de grandes sistemas informáticos, tanto locales como en la nube, centrados en aplicaciones de big data y aprendizaje automático, y ambos grupos tienen experiencia en el diseño de elementos de red programables.",
         "professorCards":{
             "roles":{
-                "1":"IP1",
-                "2":"IP2",
+                "1":"Personal externo",
+                "2":"Profesor ayudante doctor", 
                 "3":"Candidato de doctorado",
                 "4":"Técnico a tiempo completo",
                 "5":"Profesor Titular de Universidad", // Full Professor
-                "6":"Profesor Titular" // Associate Professor
+                "6":"Profesor Titular", // Associate Professor
+                "7":"Investigador",
+       
              },
             "positions":{
-                "1":"Coordinador",
+                "1":"IP1",
+                "2":"IP2",
             },
         },
     },
