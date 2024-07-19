@@ -1,6 +1,7 @@
 "use client";
 
-import { Montserrat } from "next/font/google";
+
+import { Archivo } from "next/font/google";
 import './sass/main.scss';
 import "./globals.sass";
 import { useState, useEffect } from "react";
@@ -8,7 +9,7 @@ import { useState, useEffect } from "react";
 // import i18n (needs to be bundled ;))
 import './i18n';
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const archivo = Archivo({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   //disable SSR whole project, this will make the project to be rendered only on client side
@@ -19,8 +20,8 @@ export default function RootLayout({ children }) {
   }, [])
 
   return (
-    <html hola="bye">
-      <body className={montserrat.className}>{isClient  ? children:null}</body>
+    <html>
+      <body className={archivo.className}>{isClient  ? children:null}</body>
     </html>
   );
 }

@@ -84,12 +84,12 @@ export default function Projects() {
               {t("project.Subprojects.Subproject1.Title")}
             </h3>
             <h5> {t("project.Subprojects.Subproject1.Subtitle")}</h5>
-            <p> {t("project.Subprojects.Subproject1.Body")} </p>
+            <p className="text-ffdGreen-300"> {t("project.Subprojects.Subproject1.Body")} </p>
             <ul>
-              <li>{t("project.Subprojects.Subproject1.ListItem1")}</li>
-              <li>{t("project.Subprojects.Subproject1.ListItem2")}</li>
-              <li>{t("project.Subprojects.Subproject1.ListItem3")}</li>
-              <li>{t("project.Subprojects.Subproject1.ListItem4")}</li>
+              <li><p className="text-ffdGreen-300">{t("project.Subprojects.Subproject1.ListItem1")}</p></li>
+              <li><p className="text-ffdGreen-300">{t("project.Subprojects.Subproject1.ListItem2")}</p></li>
+              <li><p className="text-ffdGreen-300">{t("project.Subprojects.Subproject1.ListItem3")}</p></li>
+              <li><p className="text-ffdGreen-300">{t("project.Subprojects.Subproject1.ListItem4")}</p></li>
             </ul>
             <motion.button
               className="action_button margin_top_button text-ffdGreen-300 border-ffdGreen-300"
@@ -119,11 +119,11 @@ export default function Projects() {
               {t("project.Subprojects.Subproject2.Title")}
             </h3>
             <h5> {t("project.Subprojects.Subproject2.Subtitle")}</h5>
-            <p> {t("project.Subprojects.Subproject2.Body")} </p>
+            <p className="text-ffdBlue-300"> {t("project.Subprojects.Subproject2.Body")} </p>
             <ul>
-              <li>{t("project.Subprojects.Subproject1.ListItem1")}</li>
-              <li>{t("project.Subprojects.Subproject1.ListItem2")}</li>
-              <li>{t("project.Subprojects.Subproject1.ListItem3")}</li>
+              <li><p className="text-ffdBlue-300">{t("project.Subprojects.Subproject1.ListItem1")}</p></li>
+              <li><p className="text-ffdBlue-300">{t("project.Subprojects.Subproject1.ListItem2")}</p></li>
+              <li><p className="text-ffdBlue-300">{t("project.Subprojects.Subproject1.ListItem3")}</p></li>
             </ul>
             <motion.button
               className="action_button margin_top_button text-ffdBlue-300 border-ffdBlue-300"
