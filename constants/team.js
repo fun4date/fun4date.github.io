@@ -345,7 +345,7 @@ export const myteam = {
         position: "",
         translationKey: "team.professorCards.roles.1",
         description: "",
-        photo: "./assets/img/team/elena-merino.jpg",
+        photo: "./assets/img/team/elena-merino.JPG",
         github: "",
         email: "",
         center: "E.T.S. de ingenieros de telecomunicacion",

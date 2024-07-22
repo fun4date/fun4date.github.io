@@ -112,9 +112,9 @@ export const en = {
                 "3":"PhD candidate", // Estudiante de doctorado
                 "4":"Full-Time Technician",
                 "5":"Professor", // Profesor Titular de Universidad
-                "6":"Associate Professor", // Profesor Titular
+                "6":"Associate Professor", // Profesor Titular (así está para los de la UC3M)
                 "7":"Researcher",
-                "8":"Associate Professor"
+                "8":"Associate Professor" // Profesor contratado doctor (así está para los de la UPM)
           
             },
                 "positions":{
