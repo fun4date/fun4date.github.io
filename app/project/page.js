@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleNodes } from "@fortawesome/free-solid-svg-icons";
 import { faGrip } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -65,7 +66,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="card_goals bg-black text-center padding_card_highlight">
-            <FontAwesomeIcon icon={faGrip} className="icon_circle" />
+            <FontAwesomeIcon icon={faArrowsRotate} className="icon_circle" />
             <div>
               <h3> {t("project.Goals.Goal3.GoalTitle")}</h3>
               <p className=""> {t("project.Goals.Goal3.GoalBody")}</p>
