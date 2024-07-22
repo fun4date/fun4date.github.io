@@ -40,7 +40,7 @@ export default function Team(props) {
               <a href={github} target="_blank" rel="noopener noreferrer">
                 <img
                   alt={"Team member"}
-                  src={/*process.env.PUBLIC_URL + */photo}
+                  src={process.env.PUBLIC_URL + photo}
                   className="grayscale"
                 />
               </a>
