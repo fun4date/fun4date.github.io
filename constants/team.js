@@ -5,7 +5,7 @@ export const myteam = {
       // las keys de uc3m empiezan por 14
       {
         name: "José Alberto Hernández",
-        position: "IP1",
+        position: "(IP1)",
         translationKey: "team.professorCards.roles.5",
         // "description":"description",
         photo: "./assets/img/team/jose_alberto_hernandez.jpg",
@@ -16,7 +16,7 @@ export const myteam = {
       },
       {
         name: "Alfonso Sánchez-Macián Pérez",
-        position: "IP2",
+        position: "(IP2)",
         translationKey: "team.professorCards.roles.6",
         // "description":"description",
         photo: "./assets/img/team/alfonso-sanchez-macian.jpg",
@@ -176,11 +176,11 @@ export const myteam = {
     members: [
       {
         name: "Pedro Reviriego",
-        position: "IP1",
+        position: "(IP1)",
         translationKey: "team.professorCards.roles.5",
         description:
           "Pedro Reviriego received the M.Sc. and Ph.D. degrees in telecommunications engineering from the Technical University of Madrid, Madrid, Spain, in 1994 and 1997, respectively. From 1997 to 2000, he was an Engineer with Teldat, Madrid, working on router implementation. In 2000, he joined Massana to work on the development of 1000BASE-T transceivers. From 2004 to 2007, he was a Distinguished Member of Technical Staff with the LSI Corporation, working on the development of Ethernet transceivers. From 2007 to 2018 he was with Nebrija University, from 2018 to 2022 with Universidad Carlos III de Madrid. He is currently with Universidad Politécnica de Madrid working on probabilistic data structures, high speed packet processing and machine learning.",
-        photo: "./assets/img/team/PR.jpg",
+        photo: "./assets/img/team/pedro-reviriego.jpg",
         email: "pedro.reviriego@upm.es",
         center: "E.T.S. de ingenieros de telecomunicacion",
         key: "8",
@@ -200,8 +200,8 @@ export const myteam = {
       {
         name: "Enrique Barra",
         // position: "team.professorCards.positions.1",
-        position: "IP2",
-        translationKey: "team.professorCards.roles.5",
+        position: "(IP2)",
+        translationKey: "team.professorCards.roles.8",
         description:
           "Enrique Barra is a professor at Telematic Engineering Department, School of Telecommunications Engineering. He received the Ph.D. degree in Telematic Engineering with minoring in Multimedia and Technology Enhanced Learning from  Universidad Politécnica de Madrid (UPM).He has participated in many European projects, such as GLOBAL, FIWARE, and C@R. He is currently involved in several projects contributing to the generation and distribution of educational content in TEL environments. His research interests include videoconferencing, games in education, and social networks in education.",
         photo: "./assets/img/team/enrique-barra.jpg",
@@ -213,7 +213,7 @@ export const myteam = {
       {
         name: "Álvaro Alonso",
         position: "",
-        translationKey: "team.professorCards.roles.6",
+        translationKey: "team.professorCards.roles.8",
         description:
           "Álvaro Alonso, Ph.D. in Telecommunications Engineering, Professor at the Telematic Systems Engineering Department, School of Telecommunications Engineering, is a WebHTML5 Videoconference and Cloud Computing expert.He is the author of several articles and participates in a lot of Spanish and European research projects. His research interests include multi-conferencing systems in cloud computing, security, and the IoT in the future Internet.",
         photo: "./assets/img/team/alvaro-alonso.jpg",
@@ -225,7 +225,7 @@ export const myteam = {
       {
         name: "Aldo Gordillo",
         position: "",
-        translationKey: "team.professorCards.roles.6",
+        translationKey: "team.professorCards.roles.8",
         description:
           "Aldo Gordillo received the degree in Telecommunications Engineering and the PhD degree in Telematics Engineering from UPM, in 2012 and 2017, respectively. From 2012 to 2017, he was a Research and Development Engineer with the Telematics Engineering Department, UPM. He is currently an Assistant Professor with the Computer Science Department, also at UPM. His research interests include the field of technology-enhanced learning, with a special focus on creation, evaluation, and dissemination of e-learning resources, computer science education, game-based learning, and e-learning systems.",
         photo: "./assets/img/team/aldo-gordillo.jpg",
@@ -299,7 +299,7 @@ export const myteam = {
         position: "",
         translationKey: "team.professorCards.roles.3",
         description: "",
-        photo: "./assets/img/team/avatar.png",
+        photo: "./assets/img/team/anabel-pilicita.jpg",
         github: "",
         email: "",
         center: "E.T.S. de ingenieros de telecomunicacion",
@@ -334,7 +334,7 @@ export const myteam = {
         position: "",
         translationKey: "team.professorCards.roles.3",
         description: "",
-        photo: "./assets/img/team/avatar.png",
+        photo: "./assets/img/team/carlos-aparicio.jpeg",
         github: "",
         email: "",
         center: "E.T.S. de ingenieros de telecomunicacion",
@@ -345,7 +345,7 @@ export const myteam = {
         position: "",
         translationKey: "team.professorCards.roles.1",
         description: "",
-        photo: "./assets/img/team/avatar.png",
+        photo: "./assets/img/team/elena-merino.jpg",
         github: "",
         email: "",
         center: "E.T.S. de ingenieros de telecomunicacion",
@@ -356,7 +356,7 @@ export const myteam = {
         position: "",
         translationKey: "team.professorCards.roles.1",
         description: "",
-        photo: "./assets/img/team/avatar.png",
+        photo: "./assets/img/team/fernando-moral.jpg",
         github: "",
         email: "",
         center: "E.T.S. de ingenieros de telecomunicacion",
@@ -367,8 +367,8 @@ export const myteam = {
         position: "",
         translationKey: "team.professorCards.roles.1",
         description: "",
-        photo: "./assets/img/team/avatar.png",
-        github: "",
+        photo: "./assets/img/team/sonsoles-lopez.jpg",
+        github: "https://sonsoles.me/",
         email: "",
         center: "E.T.S. de ingenieros de telecomunicacion",
         key: "33",
@@ -378,7 +378,7 @@ export const myteam = {
         position: "",
         translationKey: "team.professorCards.roles.1",
         description: "",
-        photo: "./assets/img/team/avatar.png",
+        photo: "./assets/img/team/mohammed-saqr.jpg",
         github: "",
         email: "",
         center: "E.T.S. de ingenieros de telecomunicacion",

@@ -114,6 +114,7 @@ export const en = {
                 "5":"Professor", // Profesor Titular de Universidad
                 "6":"Associate Professor", // Profesor Titular
                 "7":"Researcher",
+                "8":"Associate Professor"
           
             },
                 "positions":{
