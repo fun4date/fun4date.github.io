@@ -30,7 +30,7 @@ export const es = {
             "sectionHighlight": "“El tráfico de datos ha ido creciendo continuamente desde la introducción de Internet.”",
         },
         "Goals": {
-            "sectionTitle": "Goals",
+            "sectionTitle": "Objetivos",
             "Goal1": {
                 "GoalTitle": "A nivel de red",
                 "GoalBody": "Innovaciones en conectividad, seguridad y operaciones autónomas.",

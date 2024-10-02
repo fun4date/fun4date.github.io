@@ -27,9 +27,7 @@ export default function Filters(props) {
   let years = getYears(props.papers);
 
   return (
-    <div
-      className="filters"
-    >
+    <div className="filters">
       <div
         className="filter"    
       >
@@ -45,31 +43,18 @@ export default function Filters(props) {
           }
         />
       </div>
-      <div
-        className="filter"
-     
-      >
+      <div className="filter">
         <label className={"publicationType_" + currentLang} htmlFor="publication" onClick={()=> setShowPublication(!showPublication)}>
           {t("publications.filter.fieldTitle2")}
         </label>
-        <select
-          id="publication"
+        <select id="publication"
           name="publication"
           onChange={(e) =>
             props.changeType(
-              e.target.value === "all" ? undefined : e.target.value
-            )
-          }
-        >
-          <option key={"all"} value={"all"}>
-            {t("publications.filter.fieldOpt")}
-          </option>
-          <option key={"journal"} value={"article-journal"}>
-            {t("publications.filter.fieldOpt2")}
-          </option>
-          <option key={"conference"} value={"paper-conference"}>
-            {t("publications.filter.fieldOpt3")}
-          </option>
+              e.target.value === "all" ? undefined : e.target.value)}>
+          <option key={"all"} value={"all"}> {t("publications.filter.fieldOpt")} </option>
+          <option key={"journal"} value={"article-journal"}>{t("publications.filter.fieldOpt2")}</option>
+          <option key={"conference"} value={"paper-conference"}>{t("publications.filter.fieldOpt3")}</option>
         </select>
       </div>
       <div
