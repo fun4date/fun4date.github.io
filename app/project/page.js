@@ -109,12 +109,6 @@ export default function Projects() {
               </Link>
             </motion.button>
           </div>
-          {/* <div className="divisor-container basis-2/12">
-            {/* <img
-              className=" divisor-partial"
-              src="assets/img/divisor-partial.png"
-            ></img> 
-          </div> */}
           <div className="standard_margin-r subproject text-ffdBlue-300 basis-6/12 py-3 sm:py-6 border-2 sm:border-4 border-solid border-transparent border-t-ffdBlue-300">
             <h3 className="mb-1">
               {t("project.Subprojects.Subproject2.Title")}

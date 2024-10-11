@@ -1,7 +1,7 @@
 export const en = {
     "nav":{
         "item1":"Home",
-        "item2":"The project",
+        "item2":"About",
         "item3":"Team",
         "item4":"Research",
         "item5":"Contact",

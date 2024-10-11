@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html>
+       <title>FuN4DaTe</title>
       <body className={archivo.className}>{isClient  ? children:null}</body>
     </html>
   );
