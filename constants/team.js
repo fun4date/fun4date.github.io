@@ -72,9 +72,9 @@ export const myteam = {
       {
         name: "Gonzalo Martínez Ruiz de Arcaute",
         position: "",
-        translationKey: "team.professorCards.roles.3", // PhD candidate
+        translationKey: "team.professorCards.roles.7", // Researcher
         // "description":"description",
-        photo: "./assets/img/team/avatar.png",
+        photo: "./assets/img/team/gonzalo.jpg",
         // "github":"github",
         // "email": "mail",
         center: "UC3M",
